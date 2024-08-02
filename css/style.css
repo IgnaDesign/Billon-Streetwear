@@ -32,6 +32,7 @@ header nav ul li {
 }
 header nav ul li a{
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
     text-decoration: none;
     max-width: 8rem;
     margin-left: 2rem;
@@ -109,6 +110,7 @@ header nav ul li img {
 .imagen-links .subtitulo {
     color: #FFC000;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
     font-size: 0.7rem;
     margin-top: 0.2rem;
     display: block;
@@ -139,6 +141,7 @@ main section {
 main section h2 {
     color: #FFC000;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
     font-size: 1.25rem;
     text-shadow: 8px -5px 15px #909090;
     margin-top: 2rem;
@@ -372,6 +375,7 @@ section {
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
     letter-spacing: 0.2rem;
 }
 .portada-dos h1::before,
@@ -417,6 +421,7 @@ section {
     color: #FFC000;
     margin-bottom: 1rem;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
     text-align: left;
 }
 .informacion p {
@@ -442,11 +447,13 @@ legend {
     font-weight: bold;
     margin-bottom: 1rem;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
 }
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-family: "Silian Rail PERSONAL USE";
+    font-weight: bold;
 }
 input[type="text"],
 textarea {
