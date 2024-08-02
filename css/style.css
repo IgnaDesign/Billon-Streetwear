@@ -103,6 +103,9 @@ header nav ul li img {
     box-shadow: 5px -5px 20px #FFC000;
     border-radius: 8px;
 }
+.imagen-links img:hover {
+    filter: drop-shadow(1px -1px 10px red);
+}
 .imagen-links .subtitulo {
     color: #FFC000;
     font-family: "Silian Rail PERSONAL USE";
@@ -176,6 +179,9 @@ main section h2::after {
     height: auto;
     max-height: 20rem;
     border-radius: 8px;
+}
+.drop:hover {
+    filter: drop-shadow(5px -5px 20px #FFC000);
 }
 .estrellas {
     max-width: 100%;
