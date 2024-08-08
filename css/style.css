@@ -70,8 +70,7 @@ header nav ul li a{
 
 /* ENCABEZADO GENERAL CON BOOTSTRAP  */
 .navbar-nav .nav-link {
-    font-family: "Silian Rail PERSONAL USE", sans-serif;
-    font-weight:lighter;
+    font-family: "Silian Rail PERSONAL USE" !important;
 }
 .navbar-nav {
     padding-left: 2rem;
