@@ -7,7 +7,7 @@
     margin-right: auto;
 }
 
-/* ENCABEZADO GENERAL */
+/* ENCABEZADO GENERAL - MENU BURGER
 header {
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@ header nav ul li a{
     color: black;
     font-size: 0.8rem;
 }
-/* LOGO */
+/* LOGO
 .header-container {
     margin-right: 2rem;
     margin-left: 8rem;
@@ -66,8 +66,51 @@ header nav ul li a{
 .logo img {
     max-height: 12rem;
     vertical-align: middle;
-}
+} */
 
+/* ENCABEZADO GENERAL CON BOOTSTRAP  */
+.navbar-nav .nav-link {
+    font-family: "Silian Rail PERSONAL USE", sans-serif;
+    font-weight:lighter;
+}
+.navbar-nav {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+/* Estilos para el boton */
+.btn {
+    font-family: vazir;
+    font-size: .8rem;
+    color: rgb(66, 63, 63);
+    margin: 0;
+}
+.btn-outline-success {
+    border-color: #FFC000; 
+    color: rgb(66, 63, 63);
+}
+.btn-outline-success:hover {
+    background-color: #000000;
+    color: #FFC000;
+    border-color: #FFC000; /* Cambia el color del borde cuando el fondo está activo */
+}
+.btn-outline-success:active {
+    background-color: #FFC000 !important;
+    border-color: #000000 !important; /* Color del borde al hacer clic */
+    color: #000000 !important; /* Color del texto al hacer clic */
+}
+/* Buscador */
+.form-control {
+    font-family: vazir;
+    font-size:small;
+}
+.form-control:focus {
+    border-color: rgb(0, 0, 0); /* Cambia el color del borde */
+    box-shadow: 0 0 0 0.2rem #FFC000; /* Cambia el color de la sombra */
+}
+/* LOGO */
+.logo {
+    width: 150px;;
+}
 
 /* INDEX - HOME */
 /* PORTADA */
@@ -531,8 +574,9 @@ footer section::before {
 footer p {
     font-family: "Silian Rail PERSONAL USE";
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 footer .iconos {
     margin-top: 0.5rem;
@@ -560,7 +604,7 @@ footer h4 {
 /* LAPTOP 1024px */
 @media (max-width:1024px){
     /* INDEX - HOME */
-    /* ENCABEZADO */
+    /* ENCABEZADO GENERAL - MENU BURGER
     header nav ul li a{
         max-width: 8rem;
         margin-left: 1rem;
@@ -571,6 +615,7 @@ footer h4 {
     .bodyheadernavullia2 {
         font-size: 0.8rem;
     }
+
     /* CUERPO - Enlaces */
     .imagen-links {
         display: grid;
@@ -613,7 +658,7 @@ footer h4 {
 
 /* TABLET -*/
 @media (max-width: 768px) {
-    /* ENCABEZADO GENERAL */
+    /* ENCABEZADO GENERAL
     header nav ul li {
         margin-right: 0.5rem;
     }
@@ -627,13 +672,67 @@ footer h4 {
     .bodyheadernavullia2 {
         font-size: .6rem;
     }
-    /* LOGO */
+    /* LOGO
     .header-container:last-child {
         margin-right: 0.5rem;
         margin-left: 4rem;
     }
     .logo img {
         max-height: 8rem;
+    }
+
+    /* ENCABEZADO GENERAL - BOOTSTRAP */
+    .navbar-toggler {
+        padding: 0.2rem 0.2rem;
+        font-size: 1rem;
+        color:#FFC000;
+        background-color: #000000;
+        border: 2px solid #ffffff;
+        margin-left: 2rem;
+    }
+    .navbar-toggler-icon {
+        background-size: contain;
+    }
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+    form.d-flex {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: .5rem;
+    }
+    .navbar-nav {
+        font-size: 0.75rem;
+        gap: .5rem;
+    }
+    .navbar-nav .nav-link {
+        padding: 0 1rem;
+    }
+    .dropdown-menu {
+        padding: 0;
+    }
+    .dropdown-item {
+        font-size: 0.7rem;
+    }
+    .dropdown-divider {
+        margin: 0;
+    }
+    /* Estilos para el boton */
+    .btn {
+        font-size: .7rem;
+    }
+    /* Busqueda */
+    .form-control {
+        font-size:xx-small;
+        width: 150px;
+    }
+    /* LOGO */
+    .logo {
+        width: 150px;
     }
 
     /* PIE DE PAGINA GENERAL */
@@ -778,7 +877,8 @@ footer h4 {
 
 /* PHONE */
 @media (max-width: 390px) {
-    /* ENCABEZADO GENERAL */
+    /*ENCABEZADO GENERAL */
+    /* MENU HAMBURGUESA
     nav .menu {
         width: 100%;
         height: 0;
@@ -797,7 +897,7 @@ footer h4 {
         margin: 0;
         width: 100%;
     }
-    /* Estilo para el Botón de Menú */
+    /* Estilo para el Botón de Menú 
     nav label {
         display: inline-flex;
         align-items: center; 
@@ -814,7 +914,7 @@ footer h4 {
         border-color: #FFD700; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
-    /* Estilo del Icono dentro del Botón */
+    /* Estilo del Icono dentro del Botón
     nav .material-icons {
         font-size: 1rem;
         color: #FFD700;
@@ -822,7 +922,6 @@ footer h4 {
     nav #toogle:checked ~ .menu {
         height: 100%;
     }
-
     .bodyheadernavulliahome {
         font-size: .5rem;
         margin-top: 1rem;
@@ -836,10 +935,80 @@ footer h4 {
         display:block;
         white-space: nowrap;
         margin-left: 0;
+     */
+    
+    /* ENCABEZADO CON BOOTSTRAP */
+    .navbar-toggler {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+        color: #FFC000;
+        background-color: #000000;
+        border: 1px solid #ffffff;
+        margin-left: .2rem;
     }
-    /* LOGO */
-    .logo img {
-        max-height: 6rem;
+    .navbar-collapse {
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .navbar-nav {
+        font-size: 0.6rem;
+        gap: 0.2rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:flex-start;
+    }
+    .navbar-nav .nav-link {
+        padding: 0 0.2rem;
+        white-space: wrap;
+    }
+    .form-container {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 5rem;
+        padding: 0 0.5rem;
+    }
+    .form-control {
+        font-size: xx-small;
+        width: 70px;
+        padding: 0.2rem;
+        margin-right: 0.1rem;
+    }
+    form.d-flex {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+        margin-right: 3.5rem;
+    }
+    .btn {
+        font-size: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        height: auto;
+        margin: 0px;
+    }
+    .dropdown-item {
+        font-size: 0.5rem;
+    }
+    .dropdown-divider {
+        margin: 0;
+    }
+    .logo {
+        width: 80px;
+        margin: 1px -3.8rem;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .logo.hidden {
+        display: none;
+    }
+    .navbar-collapse.show + .navbar-brand .logo {
+        opacity: 0;
+        transform: translateX(100px);
     }
 
     /* PIE DE PAGINA GENERAL */
@@ -847,9 +1016,8 @@ footer h4 {
         max-width: 24.375rem;
     }
     footer p {
-        font-size: 0.6rem;
-        padding-top: .5rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.5rem;
+        margin-bottom: 0.2rem;
     }
     footer .iconos a img {
         width: 1.2rem;
