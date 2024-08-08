@@ -69,9 +69,6 @@ header nav ul li a{
 } */
 
 /* ENCABEZADO GENERAL CON BOOTSTRAP  */
-.navbar-nav .nav-link {
-    font-family: "Silian Rail PERSONAL USE",
-}
 .navbar-nav {
     padding-left: 2rem;
     font-size: 1.2rem;
