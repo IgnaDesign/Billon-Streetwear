@@ -26,7 +26,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black; font-family: Silian Rail PERSONAL USE">
                             <strong>Nosotros</strong>
                             </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-nosotros">
                         <li><a class="dropdown-item" style="color:rgb(66, 63, 63)" href="./pages/preguntas frecuentes.html">Preguntas Frecuentes</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" style="color:rgb(66, 63, 63)" href="./pages/informacion.html">Informacion</a></li>
@@ -35,7 +35,7 @@
                     </ul>
                         </li>
                     </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex search" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
@@ -149,13 +149,16 @@
         document.addEventListener('DOMContentLoaded', function() {
             var navbarCollapse = document.querySelector('.navbar-collapse');
             var logo = document.querySelector('.logo');
-
+            var searchElements = document.querySelector('.search');  // Selecciona el formulario de búsqueda
+    
             navbarCollapse.addEventListener('shown.bs.collapse', function () {
                 logo.classList.add('logo-hidden');
+                searchElements.classList.add('search-hidden');  // Oculta el formulario de búsqueda
             });
-
+    
             navbarCollapse.addEventListener('hidden.bs.collapse', function () {
                 logo.classList.remove('logo-hidden');
+                searchElements.classList.remove('search-hidden');  // Muestra el formulario de búsqueda
             });
         });
     </script>

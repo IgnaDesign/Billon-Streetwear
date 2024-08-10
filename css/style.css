@@ -995,6 +995,9 @@ footer h4 {
         margin-left: 0.5rem;
         margin-right: 3.5rem;
     }
+    .search-hidden {
+        display: none;
+    }
     .btn {
         font-size: 0.5rem;
         padding: 0.2rem 0.5rem;
@@ -1002,10 +1005,20 @@ footer h4 {
         margin: 0px;
     }
     .dropdown-item {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.3rem;
     }
     .dropdown-divider {
         margin: 0;
+    }
+    .dropdown-menu {
+        font-size: 0.6rem;
+        padding: 0.2rem 0;
+    }
+    .dropdown-menu-nosotros {
+        width: 150px;
+        max-width: 110px;
+        min-width: 100px;
     }
     .logo {
         width: 80px;
