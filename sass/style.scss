@@ -1,12 +1,10 @@
-/* VARIABLES */
-/* PALETA DE COLORES */
+/* MAPAS */
 $colores: (
     color1: #FFC000,
     color2:  #909090be,
     color3: #000000,
     color4: #FFFFFF,
 );
-/* FUENTE Y TEXTO */
 $tipografias: (
 );
 $tamaniodefuente: (
@@ -20,7 +18,6 @@ $tamaniodefuente: (
     XXS: .5rem,
     XXXSS: .45rem,
     XXXX: .3rem,
-
 );
 
 /* CONTENEDOR PRINCIPAL */
@@ -47,7 +44,6 @@ $tamaniodefuente: (
     font-style: normal;
     font-size: map-get($tamaniodefuente, XL );
 }
-
 /* Buscador */
 .form-control {
     font-family: "Bona Nova SC", serif;

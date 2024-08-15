@@ -1,0 +1,263 @@
+/* PHONE */
+@media (max-width: 390px) {
+    /* ENCABEZADO CON BOOTSTRAP */
+    .navbar-nav {
+        font-size: map-get($tamaniodefuente, S);
+        gap: 0.2rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:flex-start;
+    }
+    .navbar-toggler {
+        padding: 0.2rem;
+        font-size: map-get($tamaniodefuente, XXS);
+        color: map-get($colores, color1);
+        background-color: map-get($colores, color3);
+        border: 1px solid map-get($colores, color4);
+        margin-left: .2rem;
+    }
+    .navbar-collapse {
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: space-between;
+        margin-left: .7rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0 0.01rem;
+        white-space: wrap;
+    }
+    .form-control {
+        font-size: xx-small;
+        width: 70px;
+        padding: 0.2rem;
+        margin-right: 0.1rem;
+    }
+    form.d-flex {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+        margin-right: 3.5rem;
+    }
+    .search-hidden {
+        display: none;
+    }
+    .btn {
+        font-size: map-get($tamaniodefuente, XXS);
+        padding: 0.2rem 0.2rem !important;
+        height: auto;
+        margin: 0px;
+    }
+    .dropdown-menu {
+        font-size: map-get($tamaniodefuente, XS);
+        padding: 0.2rem 0;
+    }
+    .dropdown-item {
+        font-size: map-get($tamaniodefuente, XXS);
+        padding: 0.2rem 0.3rem;
+    }
+    .logo {
+        width: 80px;
+        margin: 1px -3.8rem;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .logo.hidden {
+        display: none;
+    }
+    .navbar-collapse.show + .navbar-brand .logo {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    /* HOME - INDEX */
+    /* CUERPO */
+    /* Enlaces */
+    .imagen-links {
+        padding-left: 0;
+    }
+    .imagen-links .subtitulo {
+        font-size:  map-get($tamaniodefuente, XXS) !important;
+        margin-top: .5625rem;
+        margin-bottom: -2rem;
+    }
+    .imagen-links div {
+        margin: 2rem;
+    }
+    /* Productos Destacados */
+    main section h2 {
+        font-size: map-get($tamaniodefuente, S);
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        ::after {
+            height: .05rem;
+        }
+    }
+    .productos-destacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .producto-card {
+        width: 80%;
+        p {
+            font-size: map-get($tamaniodefuente, XS) !important; 
+            margin-left: 2rem; 
+        }
+        h3 {
+            text-align: left;
+            margin-left: .5rem;
+            font-size: map-get($tamaniodefuente, L) !important;
+        }
+    }
+    .whatsapp-button {
+        padding: 0.3rem 0.3rem;
+        font-size: map-get($tamaniodefuente, XXS) !important;
+        margin-top: -1.5rem;
+    }
+    /* THE BLACKJACK COLLECTION */
+    /* CUERPO - Drops */
+    section {
+        margin-bottom: .8rem;
+    }
+    .drop-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    .drop-card {
+        padding: .1563rem;
+        margin: 0.2rem;
+        h2 {
+            font-size: map-get($tamaniodefuente, S) !important;
+            padding-top: .8rem;   
+        }
+        img { 
+            max-width: 80% !important;  
+            padding-top: 0.1rem !important;
+            padding-bottom: 0.1rem !important;
+        }
+        p {
+            font-size: map-get($tamaniodefuente, XS) !important;
+            padding-left: 1rem; 
+            padding-right: 1rem; 
+        }
+        label {
+            font-size: map-get($tamaniodefuente, S) !important;
+            margin-right: 1.5rem !important; 
+            margin-top: 0.45rem !important; 
+        } 
+        select {
+            font-size: map-get($tamaniodefuente, XXXS);
+            padding: 3px;
+            margin-top: -1rem;
+            margin-right: 0;
+            padding: 1px;
+            width: 35%;
+        }
+        .price { 
+            font-size: map-get($tamaniodefuente, S) !important;
+            margin-top: 0;
+            }
+        }
+        .price-talles-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: -1rem;
+            font-size: map-get($tamaniodefuente, S) !important;
+        }
+        .talles-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1rem;
+        }
+        .botones {
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
+        }
+        .boton-uno, .boton-dos {
+            font-size: map-get($tamaniodefuente, XXXX);
+        }
+    /* Fondo cuerpo Index - The Blackjack*/
+    .fondo-cuerpo-home {
+        background: map-get($colores, color3);
+    }
+    /* INFORMACION - CONTACTO . PREG FRECUENTES */
+    /* Titulo portada */
+    .portada-dos h1 {
+        font-size: map-get($tamaniodefuente, XXS);
+    }
+    /* INFORMACION */
+    /* Ajuste de imagenes */
+    .imagenes-horizontal {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+        justify-items: center;
+        align-items: center;
+        margin: 1rem 2rem 2rem 2rem;
+        img {
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    }
+    /* PREGUNTAS FRECUENTES */
+    /* CUERPO */
+    .informacion {
+        h3 {
+            font-size: map-get($tamaniodefuente, L);
+            margin-bottom: 0.5rem !important; 
+        }
+        p {
+            font-size: map-get($tamaniodefuente, XS);
+        }
+    }
+    /* CONTACTO */
+    /* CUERPO */
+    /* Formulario */
+    fieldset {
+        padding: 0.5rem;
+        width: 80%;
+        margin: 1rem auto;
+        max-width: 300px;
+        height: 370px;
+        legend {
+            font-size: map-get($tamaniodefuente, S);
+            margin-top: .5rem; 
+            margin-bottom: .5rem; 
+            }
+        label {
+            font-size: map-get($tamaniodefuente, XS);
+            margin-bottom: 0;
+            }
+        input[type="text"],
+        textarea {
+            font-size: map-get($tamaniodefuente, S);
+            padding: 0.25rem; 
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+            }
+        input[type="submit"] {
+            font-size: map-get($tamaniodefuente, XS);
+            }
+        }
+    /* Mapa */
+    section iframe {
+            height: 250px;
+            width: 250px;
+        }
+    .ubicacion {
+        font-size: map-get($tamaniodefuente, XS);
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
+    }
+}

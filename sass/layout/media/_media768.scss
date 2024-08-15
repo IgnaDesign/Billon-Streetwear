@@ -1,0 +1,213 @@
+/* TABLET -*/
+@media (max-width: 768px) {
+    /* ENCABEZADO GENERAL - BOOTSTRAP */
+    .navbar-nav {
+        font-size: map-get($tamaniodefuente, L);
+        gap: .5rem; 
+    }
+    .navbar-toggler {
+        padding: 0.2rem 0.2rem;
+        font-size: map-get($tamaniodefuente, XL);
+        color:map-get($colores, color1);
+        background-color:map-get($colores, color3);
+        border: 2px solid map-get($colores, color4);
+        margin-left: 2rem;
+    }
+    .navbar-toggler-icon {
+        background-size: contain;
+    }
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+    .navbar-nav .nav-link {
+        padding: 0 1rem;
+    }
+    .dropdown-menu {
+        padding: 0;
+    }
+    .dropdown-item {
+        font-size: map-get($tamaniodefuente, L );
+    }
+    .dropdown-divider {
+        margin: 0;
+    }
+    form.d-flex {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: .5rem;
+    }
+    /* Estilos para el boton */
+    .btn {
+        font-size: map-get($tamaniodefuente, L );
+    }
+    /* Busqueda */
+    .form-control {
+        font-size:xx-small;
+        width: 150px;
+    }
+    /* LOGO */
+    .logo {
+        width: 150px;
+    }
+
+    /* HOME- INDEX */
+    /* CUERPO - Enlaces */
+    .imagen-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 0;
+        padding-left: 3rem;
+    }
+    /* Presentacion img */
+    .presentacion img {
+        width: 90%;
+    }
+    /* Productos Destacados */
+    main section h2 {
+        font-size: map-get($tamaniodefuente , L);
+        ::after {
+            height: .08rem;
+        }
+    }
+    .containerdos {
+        max-width: 48rem;
+    }
+    .drop {
+        max-height: 14rem !important;
+    }
+    .estrellas {
+        max-height: 2.5rem;
+    }
+    .producto-card {
+        p {
+            width: 80%;
+            font-size: map-get($tamaniodefuente , L) !important;
+            margin-bottom: 0.5rem !important;
+            margin-left: 1.5rem;
+        }
+        h3 {
+            margin-left: 0;
+            text-align: left;
+            padding-left: 1.5rem;
+            font-size: map-get($tamaniodefuente, L) !important;
+        }
+    }
+    /* Estilo de botones de WhatsApp */
+    .whatsapp-button {
+        font-size: 0.6rem !important;
+        padding: 0.5rem 0.5rem;
+        margin-top: -2rem;
+    }
+    .buttoncontainer {
+        margin-top: .6rem !important;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+
+    /* THE BLACKJACK COLLECTION */
+    /* CUERPO - Drops */
+    /* Título de producto */
+    .drop-card {
+        h2 {
+            font-size: map-get($tamaniodefuente, L) !important;
+            margin-bottom: .5rem;
+        }
+        p {
+        font-size: map-get($tamaniodefuente, XS) !important;
+        margin-bottom: 0;
+        }
+        label {
+            font-size: map-get($tamaniodefuente, S) !important;
+            margin-right: 0.5rem !important; 
+            margin-top: -1rem;
+        }
+        select {
+            font-size: map-get($tamaniodefuente, XS); 
+            padding: .125rem; 
+            margin-right: 0; 
+            margin-top: -1rem; 
+        }
+        .price {
+            font-size: map-get($tamaniodefuente, S) !important;
+            text-align: left !important; 
+            margin-left: 0 ;
+            margin-top: -.5rem;
+        }
+    }
+    .botones {
+        padding-top: 0.5rem;
+        padding-bottom: 2.5rem;
+    }
+    /* Estilo de botones */
+    .boton-uno, .boton-dos {
+        font-size: map-get($tamaniodefuente, S);
+    }
+
+    /* INFORMACION - CONTACTO . PREG FRECUENTES */
+    /* Titulo portada */
+    .portada-dos h1 {
+        font-size: map-get($tamaniodefuente, XL);
+    }
+    /* PREGUNTAS FRECUENTES */
+    /* CUERPO */
+    .informacion {
+        h3 {
+            font-size:  map-get($tamaniodefuente, XL);
+            margin-bottom: 0 !important;
+        }
+        p {
+            font-size:  map-get($tamaniodefuente, L);
+            margin-bottom: -.5rem !important;
+        }
+    }
+    /* CONTACTO */
+    /* CUERPO */
+    /* Formulario */
+    fieldset {
+        padding: 0.5rem;
+        width: 60%;
+        legend {
+            font-size: map-get($tamaniodefuente, L);
+        }
+        label {
+            font-size: map-get($tamaniodefuente, S);
+        }
+        input[type="text"],
+        textarea {
+            font-size: map-get($tamaniodefuente, S);
+        }
+        input[type="submit"] {
+            font-size: map-get($tamaniodefuente, XS);
+        }
+    }
+    /* Parrafo del mapa */
+    .ubicacion {
+        font-size: map-get($tamaniodefuente, L);
+        padding-top: .5rem;
+        padding-bottom: 2rem;
+    }
+    /* Fondo cuerpo Index - The Blackjack*/
+    .fondo-cuerpo-home {
+        background: map-get($colores, color4);
+    }
+    /* PIE DE PAGINA GENERAL */
+    footer {
+        section {
+            max-width: 48rem;
+        }
+        p {
+        font-size: map-get($tamaniodefuente, S);
+        }
+        .iconos a img {
+        width: 1.5rem;
+        }
+        h4 {
+        font-size: map-get($tamaniodefuente, S);
+        }
+    }
+}
