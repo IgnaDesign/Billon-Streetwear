@@ -1,24 +1,26 @@
-/* MAPAS */
-$colores: (
-    color1: #FFC000,
-    color2:  #909090be,
-    color3: #000000,
-    color4: #FFFFFF,
-);
-$tipografias: (
-);
-$tamaniodefuente: (
-    XXXXL: 2rem,
-    XXXL: 1.5rem,
-    XXL: 1.2rem,
-    XL: 1rem, 
-    L: 0.8rem,
-    S: .625rem,
-    XS: .5625rem,
-    XXS: .5rem,
-    XXXSS: .45rem,
-    XXXX: .3rem,
-);
+/* UTILITIES */
+@import "./utilities/maps";
+@import "./utilities/variables";
+@import "./utilities/mixing";
+
+/* BASE */
+@import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
+
+/* LAYOUT */
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+/* COMPONENTS*/
+@import "./components/bootstrap";
+
+/* MEDIA QUERY */
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media390";
+@import "./layout/media/media360";
 
 /* CONTENEDOR PRINCIPAL */
 .container {
