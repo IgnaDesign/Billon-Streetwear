@@ -1,0 +1,56 @@
+/* ENCABEZADO PANTALLA 1440PX - 1024PX */
+.navbar-nav {
+    padding-left: 2rem;
+    font-size: map-get($tamaniodefuente , XXL );
+}
+.nav-link {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.dropdown-item {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: map-get($tamaniodefuente, XL );
+}
+/* Buscador */
+.form-control {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: map-get($tamaniodefuente, L );
+    .form-control:focus {
+        border-color: map-get($colores , color3 ); 
+        box-shadow: 0 0 0 0.2rem map-get($colores, color1 );
+    }
+}
+/* Estilos para el boton */
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: map-get($tamaniodefuente, L );
+    color: map-get($colores, color2 );
+    margin: 0;
+}
+.btn-outline-success {
+    border-color: map-get($colores, color1 );
+    color: map-get($colores, color2 );
+    .btn-outline-success:hover {
+        background-color: map-get($colores, color3);
+        color: map-get($colores, color1 );
+        border-color: map-get($colores, color1 );
+    }
+    .btn-outline-success:active {
+        background-color: map-get($colores, color1 ) !important;
+        border-color: map-get($colores, color3) !important;
+        color: map-get($colores, color3) !important; 
+    }
+}
+/* LOGO */
+.logo {
+    width: 150px;;
+}

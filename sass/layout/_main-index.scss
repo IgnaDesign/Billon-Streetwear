@@ -1,0 +1,155 @@
+
+/* CUERPO */
+/* ENLACES */
+.imagen-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0;
+    div {
+        text-align: center;
+        margin: 2rem;
+        flex: 1 1 220px;
+        max-width: 220px;
+        a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin-bottom: -2rem;
+                box-shadow: 5px -5px 20px map-get($colores, color1 );
+                border-radius: 8px;
+            }
+            img:hover {
+                filter: drop-shadow(1px -1px 10px map-get($colores, color4));
+                box-shadow: none;
+            }
+            .subtitulo {
+                color: map-get($colores, color1 );
+                font-family: "Bona Nova SC", serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: map-get($tamaniodefuente, L );
+                margin-top: 0.2rem;
+                display: block;
+            }
+        }
+    }
+}
+/* PRESENTACION */
+.presentacion {
+    margin-top: 3rem;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 90%;
+        border-radius: 8px;
+    }
+}
+/* PRODUCTOS DESTACADOS */
+/* TITULO */
+main section {
+    text-align: center;
+    h2 {
+        color:  map-get($colores, color1 );
+        font-family: "Bona Nova SC", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size:  map-get($tamaniodefuente, XXL );
+        text-shadow: 8px -5px 15px map-get($colores, color2 );
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        display: inline-block;
+    }
+    h2::after {
+        content: "";
+        width: 100%;
+        height: .1500rem;
+        background-color: map-get($colores, color1 );
+        position: absolute;
+        left: 0;
+        bottom: -0.2rem;
+    }
+}
+/* DROPS */
+.productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 0.1rem; 
+}
+.producto-card { 
+    text-align: center; 
+    width: calc(33.333% - 0.1rem); 
+    margin: 0; 
+    color: map-get($colores, color4 ); 
+    box-sizing: border-box; 
+    p { 
+        font-family: "Bona Nova SC", serif; 
+        font-style: normal; 
+        text-align: left; 
+        width: 80%; 
+        margin-left: 3rem; 
+        margin-top: auto; 
+        font-size: map-get($tamaniodefuente, XL );
+        box-sizing: border-box;
+    } 
+    h3 {
+        text-align: left;
+        margin-left: 3rem;
+        font-size: map-get($tamaniodefuente, XLL);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+.drop {
+    max-width: 100%;
+    height: auto;
+    max-height: 20rem;
+    border-radius: 8px;
+}
+.drop:hover {
+    filter: drop-shadow(5px -5px 20px map-get($colores, color1));
+}
+.estrellas {
+    max-width: 100%;
+    height: auto;
+    max-height: 5rem;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+    gap: 1rem;
+}
+/* Estilo de botones de WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    color: map-get($colores, color4 );
+    background-color: map-get($colores, color3 );
+    border: .0625rem solid map-get($colores, color1 );
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: map-get($tamaniodefuente, L );
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.whatsapp-button:hover {
+    background-color: map-get($colores, color1 );
+    color: map-get($colores, color3); 
+}

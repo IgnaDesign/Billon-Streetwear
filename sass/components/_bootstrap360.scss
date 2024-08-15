@@ -1,0 +1,16 @@
+/* ENCABEZADO PANTALLA 360PX*/
+.navbar-nav {
+    font-size: map-get($tamaniodefuente, S);
+}
+.form-control { 
+    font-size: xx-small; 
+    width: 85px; 
+    padding: 0.2rem; 
+    margin-right: 0.1rem; 
+}
+header nav ul li:last-child {
+    margin-right: 0.8rem;
+}
+header nav ul li img {
+    max-height: 5rem;
+}

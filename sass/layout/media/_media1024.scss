@@ -1,47 +1,47 @@
-/* LAPTOP 1024px */
-@media (max-width:1024px){
 
-    /* CUERPO - Enlaces */
-    .imagen-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 1rem;
-        padding-left: 5rem;
+
+/* LAPTOP*/
+@media (max-width:1024px){
+/* CUERPO - Enlaces */
+.imagen-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    padding-left: 5rem;
+}
+.drop {
+    max-height: 18rem !important; 
+}
+.estrellas {
+    max-height: 3rem;
+}
+.producto-card h3 {
+    font-size: 1rem;
+}
+.buttoncontainer {
+    margin-right: 2.5rem;
+}
+
+/* THE BLACKJACK COLLECTION */
+/* CUERPO - Drops */
+/* Título de producto */
+.drop-card h2 {
+    font-size: map-get($tamaniodefuente, XXL );
     }
-    .drop {
-        max-height: 18rem !important; 
+    /* Imagen del producto */
+    .drop-card img {
+        max-width: 90%; 
+        height: auto;
     }
-    .estrellas {
-        max-height: 3rem;
-    }
-    .producto-card h3 {
-        font-size: 1rem;
-    }
-    .buttoncontainer {
-        margin-right: 2.5rem;
-    }
-    
-    /* THE BLACKJACK COLLECTION */
-    /* CUERPO - Drops */
-    /* Título de producto */
-    .drop-card h2 {
-        font-size: map-get($tamaniodefuente, XXL );
-        }
-        /* Imagen del producto */
-        .drop-card img {
-            max-width: 90%; 
-            height: auto;
-        }
-        /* Texto de producto */
-        .drop-card p {
-            font-size: map-get($tamaniodefuente, L );
-            margin-bottom: 0;
-        }
-        /* Precio de producto */
-        .drop-card .price {
-        font-size:  map-get($tamaniodefuente, XL );
+    /* Texto de producto */
+    .drop-card p {
+        font-size: map-get($tamaniodefuente, L );
         margin-bottom: 0;
-        }
     }
-    
+    /* Precio de producto */
+    .drop-card .price {
+    font-size:  map-get($tamaniodefuente, XL );
+    margin-bottom: 0;
+    }
+}

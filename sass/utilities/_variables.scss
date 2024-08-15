@@ -1,0 +1,75 @@
+
+/* FONDO CUERPO HOME - THE BLACKJACK*/
+.fondo-cuerpo-home {
+    position: relative;
+    background-image: url(../assets/img/fondohome.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fondo cuerpo - Media 768px-390px-360px*/
+.fondo-cuerpo-home {
+    background: map-get($colores, color3);
+}
+
+/* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
+.fondo-cuerpo-archivos {
+    position: relative;
+    background-image: url(../assets/img/fondoblanco.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* HOME - THE BLACKJACKS COLLECTION */
+/* PORTADA */
+.portada {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* INFORMACIÓN / P.FRECUENTES / CONTACTO*/
+/* PORTADA*/
+.portada-dos {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+    img {
+        display: block;
+        width: 100%;
+    }
+    h1 {
+        font-family: "Bona Nova SC", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: map-get($tamaniodefuente, XXXXL );
+        letter-spacing: 0.2rem;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:map-get($colores, color3 );
+    }
+}
+.portada-dos h1::before,
+.portada-dos h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: map-get($colores, color3 );
+    position: absolute;
+    left: 0;
+}
+.portada-dos h1::before {
+    top: -10px;
+}
+.portada-dos h1::after {
+    bottom: -10px;
+}

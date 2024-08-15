@@ -1,77 +1,5 @@
 /* PHONE */
 @media (max-width: 390px) {
-    /* ENCABEZADO CON BOOTSTRAP */
-    .navbar-nav {
-        font-size: map-get($tamaniodefuente, S);
-        gap: 0.2rem;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items:flex-start;
-    }
-    .navbar-toggler {
-        padding: 0.2rem;
-        font-size: map-get($tamaniodefuente, XXS);
-        color: map-get($colores, color1);
-        background-color: map-get($colores, color3);
-        border: 1px solid map-get($colores, color4);
-        margin-left: .2rem;
-    }
-    .navbar-collapse {
-        width: calc(100% - 2rem);
-        display: flex;
-        justify-content: space-between;
-        margin-left: .7rem;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 0 0.01rem;
-        white-space: wrap;
-    }
-    .form-control {
-        font-size: xx-small;
-        width: 70px;
-        padding: 0.2rem;
-        margin-right: 0.1rem;
-    }
-    form.d-flex {
-        display: flex;
-        align-items: center;
-        margin-left: 0.5rem;
-        margin-right: 3.5rem;
-    }
-    .search-hidden {
-        display: none;
-    }
-    .btn {
-        font-size: map-get($tamaniodefuente, XXS);
-        padding: 0.2rem 0.2rem !important;
-        height: auto;
-        margin: 0px;
-    }
-    .dropdown-menu {
-        font-size: map-get($tamaniodefuente, XS);
-        padding: 0.2rem 0;
-    }
-    .dropdown-item {
-        font-size: map-get($tamaniodefuente, XXS);
-        padding: 0.2rem 0.3rem;
-    }
-    .logo {
-        width: 80px;
-        margin: 1px -3.8rem;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .logo.hidden {
-        display: none;
-    }
-    .navbar-collapse.show + .navbar-brand .logo {
-        opacity: 0;
-        transform: translateX(100px);
-    }
     /* HOME - INDEX */
     /* CUERPO */
     /* Enlaces */
@@ -183,10 +111,7 @@
         .boton-uno, .boton-dos {
             font-size: map-get($tamaniodefuente, XXXX);
         }
-    /* Fondo cuerpo Index - The Blackjack*/
-    .fondo-cuerpo-home {
-        background: map-get($colores, color3);
-    }
+    
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */
     .portada-dos h1 {

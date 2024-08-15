@@ -1,0 +1,22 @@
+.informacion {
+    padding: 2rem;
+    h3 {
+        font-family: "Bona Nova SC", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: map-get($tamaniodefuente , XXXL );
+        color: map-get($colores , color1 );
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: map-get($tamaniodefuente, XL);
+        color: map-get($colores , color3);
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+}

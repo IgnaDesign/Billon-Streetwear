@@ -1,59 +1,5 @@
 /* TABLET -*/
 @media (max-width: 768px) {
-    /* ENCABEZADO GENERAL - BOOTSTRAP */
-    .navbar-nav {
-        font-size: map-get($tamaniodefuente, L);
-        gap: .5rem; 
-    }
-    .navbar-toggler {
-        padding: 0.2rem 0.2rem;
-        font-size: map-get($tamaniodefuente, XL);
-        color:map-get($colores, color1);
-        background-color:map-get($colores, color3);
-        border: 2px solid map-get($colores, color4);
-        margin-left: 2rem;
-    }
-    .navbar-toggler-icon {
-        background-size: contain;
-    }
-    .navbar-collapse {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex: 1;
-    }
-    .navbar-nav .nav-link {
-        padding: 0 1rem;
-    }
-    .dropdown-menu {
-        padding: 0;
-    }
-    .dropdown-item {
-        font-size: map-get($tamaniodefuente, L );
-    }
-    .dropdown-divider {
-        margin: 0;
-    }
-    form.d-flex {
-        display: flex;
-        align-items: center;
-        margin-left: 2rem;
-        margin-right: .5rem;
-    }
-    /* Estilos para el boton */
-    .btn {
-        font-size: map-get($tamaniodefuente, L );
-    }
-    /* Busqueda */
-    .form-control {
-        font-size:xx-small;
-        width: 150px;
-    }
-    /* LOGO */
-    .logo {
-        width: 150px;
-    }
-
     /* HOME- INDEX */
     /* CUERPO - Enlaces */
     .imagen-links {
@@ -190,10 +136,6 @@
         font-size: map-get($tamaniodefuente, L);
         padding-top: .5rem;
         padding-bottom: 2rem;
-    }
-    /* Fondo cuerpo Index - The Blackjack*/
-    .fondo-cuerpo-home {
-        background: map-get($colores, color4);
     }
     /* PIE DE PAGINA GENERAL */
     footer {
