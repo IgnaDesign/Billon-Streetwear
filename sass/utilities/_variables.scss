@@ -1,3 +1,15 @@
+/* PALETA DE COLORES */
+$color-principal: #FFC000;
+$color-secundario: #909090be;
+$color-dark: #000000;
+$color-clear: #FFFFFF;
+
+/* TIPOGRAFIAS */
+$font-family: "Bona Nova SC", serif;
+$font-family: "Montserrat", sans-serif;
+$font-style: normal;
+$font-style: italic;
+
 
 /* FONDO CUERPO HOME - THE BLACKJACK*/
 .fondo-cuerpo-home {
@@ -10,7 +22,7 @@
 
 /* Fondo cuerpo - Media 768px-390px-360px*/
 .fondo-cuerpo-home {
-    background: map-get($colores, color3);
+    background: $color-dark;
 }
 
 /* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
@@ -48,13 +60,13 @@
         font-family: "Bona Nova SC", serif;
         font-weight: 700;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, XXXXL );
         letter-spacing: 0.2rem;
         position: absolute;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color:map-get($colores, color3 );
+        font-size: 2rem;
+        color:$color-clear;
     }
 }
 .portada-dos h1::before,
@@ -63,7 +75,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: map-get($colores, color3 );
+    background-color:$color-dark;
     position: absolute;
     left: 0;
 }

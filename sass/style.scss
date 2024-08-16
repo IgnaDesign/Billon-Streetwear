@@ -1,18 +1,15 @@
-/* UTILITIES */
-@import "./utilities/maps";
-@import "./utilities/variables";
-@import "./utilities/mixing";
-
 /* BASE */
+@import "./base/resets";
 @import "./base/base";
-@import "./base/reset";
 @import "./base/typography";
 
+/* UTILITIES */
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixing";
+
 /* COMPONENTS*/
-@import "./components/bootstrap-general";
-@import "./components/bootstrap768";
-@import "./components/bootstrap390";
-@import "./components/bootstrap360";
+@import "./components/bootstrap";
 
 /* LAYOUT */
 @import "./layout/body"; 

@@ -4,8 +4,8 @@
         font-family: "Bona Nova SC", serif;
         font-weight: 700;
         font-style: normal;
-        font-size: map-get($tamaniodefuente , XXXL );
-        color: map-get($colores , color1 );
+        font-size: map-get($font-size, size14);
+        color: $color-principal;
         margin-bottom: 1rem;
         text-align: left;
     }
@@ -14,8 +14,8 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, XL);
-        color: map-get($colores , color3);
+        font-size: map-get($font-size, size12);
+        color: $color-dark;
         margin-bottom: 1rem;
         text-align: left;
     }

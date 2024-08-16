@@ -7,7 +7,7 @@
         padding-left: 0;
     }
     .imagen-links .subtitulo {
-        font-size:  map-get($tamaniodefuente, XXS) !important;
+        font-size: map-get($font-size, size19) !important;
         margin-top: .5625rem;
         margin-bottom: -2rem;
     }
@@ -16,7 +16,7 @@
     }
     /* Productos Destacados */
     main section h2 {
-        font-size: map-get($tamaniodefuente, S);
+        font-size: map-get($font-size, size17);
         margin-top: 0.5rem;
         margin-bottom: 1.5rem;
         ::after {
@@ -31,18 +31,18 @@
     .producto-card {
         width: 80%;
         p {
-            font-size: map-get($tamaniodefuente, XS) !important; 
+            font-size: map-get($font-size, size7) !important; 
             margin-left: 2rem; 
         }
         h3 {
             text-align: left;
             margin-left: .5rem;
-            font-size: map-get($tamaniodefuente, L) !important;
+            font-size: map-get($font-size, size6) !important;
         }
     }
     .whatsapp-button {
         padding: 0.3rem 0.3rem;
-        font-size: map-get($tamaniodefuente, XXS) !important;
+        font-size: map-get($font-size, size9) !important;
         margin-top: -1.5rem;
     }
     /* THE BLACKJACK COLLECTION */
@@ -57,7 +57,7 @@
         padding: .1563rem;
         margin: 0.2rem;
         h2 {
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size6) !important;
             padding-top: .8rem;   
         }
         img { 
@@ -66,17 +66,17 @@
             padding-bottom: 0.1rem !important;
         }
         p {
-            font-size: map-get($tamaniodefuente, XS) !important;
+            font-size: map-get($font-size, size17) !important;
             padding-left: 1rem; 
             padding-right: 1rem; 
         }
         label {
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size7) !important;
             margin-right: 1.5rem !important; 
             margin-top: 0.45rem !important; 
         } 
         select {
-            font-size: map-get($tamaniodefuente, XXXS);
+            font-size: map-get($font-size, size10);
             padding: 3px;
             margin-top: -1rem;
             margin-right: 0;
@@ -84,7 +84,7 @@
             width: 35%;
         }
         .price { 
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size17) !important;
             margin-top: 0;
             }
         }
@@ -92,7 +92,7 @@
             @include flex (none,none,space-between,flex-start,none);
             width: 100%;
             margin-top: -1rem;
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size17) !important;
         }
         .talles-container {
             @include flex (column,none,none,flex-end,none);
@@ -103,13 +103,13 @@
             padding-bottom: 2.5rem;
         }
         .boton-uno, .boton-dos {
-            font-size: map-get($tamaniodefuente, XXXX);
+            font-size:map-get($font-size, size11);
         }
     
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */
     .portada-dos h1 {
-        font-size: map-get($tamaniodefuente, XXS);
+        font-size: map-get($font-size, size9);
     }
     /* INFORMACION */
     /* Ajuste de imagenes */
@@ -130,11 +130,11 @@
     /* CUERPO */
     .informacion {
         h3 {
-            font-size: map-get($tamaniodefuente, L);
+            font-size:map-get($font-size, size7);
             margin-bottom: 0.5rem !important; 
         }
         p {
-            font-size: map-get($tamaniodefuente, XS);
+            font-size: map-get($font-size, size9);
         }
     }
     /* CONTACTO */
@@ -147,23 +147,23 @@
         max-width: 300px;
         height: 370px;
         legend {
-            font-size: map-get($tamaniodefuente, S);
+            font-size: map-get($font-size, size6);
             margin-top: .5rem; 
             margin-bottom: .5rem; 
             }
         label {
-            font-size: map-get($tamaniodefuente, XS);
+            font-size: map-get($font-size, size7);
             margin-bottom: 0;
             }
         input[type="text"],
         textarea {
-            font-size: map-get($tamaniodefuente, S);
+            font-size: map-get($font-size, size7);
             padding: 0.25rem; 
             margin-bottom: 0.5rem;
             margin-top: 0;
             }
         input[type="submit"] {
-            font-size: map-get($tamaniodefuente, XS);
+            font-size: map-get($font-size, size9);
             }
         }
     /* Mapa */
@@ -172,7 +172,7 @@
             width: 250px;
         }
     .ubicacion {
-        font-size: map-get($tamaniodefuente, XS);
+        font-size: map-get($font-size, size8);
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 2rem;

@@ -1,5 +1,13 @@
 @charset "UTF-8";
+/* BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 /* UTILITIES */
+/* PALETA DE COLORES */
+/* TIPOGRAFIAS */
 /* FONDO CUERPO HOME - THE BLACKJACK*/
 .fondo-cuerpo-home {
   position: relative;
@@ -43,13 +51,13 @@
     font-family: "Bona Nova SC", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2rem;
     letter-spacing: 0.2rem;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000000; }
+    font-size: 2rem;
+    color: #FFFFFF; }
 
 .portada-dos h1::before,
 .portada-dos h1::after {
@@ -67,16 +75,12 @@
 .portada-dos h1::after {
   bottom: -10px; }
 
-/* BASE */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* TAMAÑO DE FUENTE */
 /* COMPONENTS*/
-/* ENCABEZADO PANTALLA 1440PX - 1024PX */
+/* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
+/* BOOTSTRAP */
 .navbar-nav {
-  padding-left: 2rem;
+  padding-left: 0rem;
   font-size: 1.2rem; }
 
 .nav-link {
@@ -99,7 +103,7 @@
   font-size: 0.8rem; }
   .form-control .form-control:focus {
     border-color: #000000;
-    box-shadow: 0 0 0 0.2rem #FFC000; }
+    box-shadow: 0 0 0 0.2rem #000000; }
 
 /* Estilos para el boton */
 .btn {
@@ -129,8 +133,10 @@
 
 /* ENCABEZADO PANTALLA 768PX*/
 .navbar-nav {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   gap: .5rem; }
+  .navbar-nav .nav-link {
+    padding: 0 1rem; }
 
 .navbar-toggler {
   padding: 0.2rem 0.2rem;
@@ -151,14 +157,11 @@
   align-items: center;
   flex: 1; }
 
-.navbar-nav .nav-link {
-  padding: 0 1rem; }
-
 .dropdown-menu {
   padding: 0; }
 
 .dropdown-item {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
 .dropdown-divider {
   margin: 0; }
@@ -175,7 +178,7 @@ form.d-flex {
 
 /* Estilos para el boton */
 .btn {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
 /* Busqueda */
 .form-control {
@@ -245,7 +248,7 @@ form.d-flex {
   margin: 0px; }
 
 .dropdown-menu {
-  font-size: 0.5625rem;
+  font-size: 0.6rem;
   padding: 0.2rem 0; }
 
 .dropdown-item {
@@ -384,11 +387,12 @@ main section {
     width: 80%;
     margin-left: 3rem;
     margin-top: auto;
-    font-size: 1rem;
+    font-size: 0.9rem;
     box-sizing: border-box; }
   .producto-card h3 {
     text-align: left;
     margin-left: 3rem;
+    font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -427,7 +431,7 @@ main section {
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s ease;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-family: "Bona Nova SC", serif;
   font-weight: 400;
   font-style: normal; }
@@ -487,7 +491,7 @@ section {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #000000;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -574,7 +578,7 @@ section {
     font-family: "Bona Nova SC", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #FFC000;
     margin-bottom: 1rem;
     text-align: left; }
@@ -583,7 +587,7 @@ section {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #000000;
     margin-bottom: 1rem;
     text-align: left; }
@@ -631,7 +635,6 @@ fieldset {
     margin-right: 0.5rem; }
   fieldset input[type="submit"] {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 0.8rem;
@@ -650,7 +653,7 @@ main section p {
   font-style: normal;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  font-size: 1rem; }
+  font-size: 0.9rem; }
 
 /* PIE DE PAGINA GENERAL */
 footer {
@@ -754,7 +757,7 @@ footer {
     width: 90%; }
   /* Productos Destacados */
   main section h2 {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
     main section h2 ::after {
       height: .08rem; }
   .containerdos {
@@ -765,14 +768,14 @@ footer {
     max-height: 2.5rem; }
   .producto-card p {
     width: 80%;
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 0.5rem !important;
     margin-left: 1.5rem; }
   .producto-card h3 {
     margin-left: 0;
     text-align: left;
     padding-left: 1.5rem;
-    font-size: 0.8rem !important; }
+    font-size: 0.75rem !important; }
   /* Estilo de botones de WhatsApp */
   .whatsapp-button {
     font-size: 0.6rem !important;
@@ -789,14 +792,14 @@ footer {
     font-size: 0.8rem !important;
     margin-bottom: .5rem; }
   .drop-card p {
-    font-size: 0.5625rem !important;
+    font-size: 0.576rem !important;
     margin-bottom: 0; }
   .drop-card label {
-    font-size: 0.625rem !important;
+    font-size: 0.6rem !important;
     margin-right: 0.5rem !important;
     margin-top: -1rem; }
   .drop-card select {
-    font-size: 0.5625rem;
+    font-size: 0.5rem;
     padding: .125rem;
     margin-right: 0;
     margin-top: -1rem; }
@@ -810,7 +813,7 @@ footer {
     padding-bottom: 2.5rem; }
   /* Estilo de botones */
   .boton-uno, .boton-dos {
-    font-size: 0.625rem; }
+    font-size: 0.6rem; }
   /* INFORMACION - CONTACTO . PREG FRECUENTES */
   /* Titulo portada */
   .portada-dos h1 {
@@ -818,10 +821,10 @@ footer {
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 0 !important; }
   .informacion p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin-bottom: -.5rem !important; }
   /* CONTACTO */
   /* CUERPO */
@@ -832,26 +835,25 @@ footer {
     fieldset legend {
       font-size: 0.8rem; }
     fieldset label {
-      font-size: 0.625rem; }
+      font-size: 0.75rem; }
     fieldset input[type="text"],
     fieldset textarea {
-      font-size: 0.625rem; }
+      font-size: 0.7rem; }
     fieldset input[type="submit"] {
-      font-size: 0.5625rem; }
+      font-size: 0.625rem; }
   /* Parrafo del mapa */
   .ubicacion {
-    font-size: 0.8rem;
-    padding-top: .5rem;
+    font-size: 0.7rem;
     padding-bottom: 2rem; }
   /* PIE DE PAGINA GENERAL */
   footer section {
     max-width: 48rem; }
   footer p {
-    font-size: 0.625rem; }
+    font-size: 0.75rem; }
   footer .iconos a img {
     width: 1.5rem; }
   footer h4 {
-    font-size: 0.625rem; } }
+    font-size: 0.75rem; } }
 
 /* PHONE */
 @media (max-width: 390px) {
@@ -861,14 +863,14 @@ footer {
   .imagen-links {
     padding-left: 0; }
   .imagen-links .subtitulo {
-    font-size: 0.5rem !important;
+    font-size: 0.43rem !important;
     margin-top: .5625rem;
     margin-bottom: -2rem; }
   .imagen-links div {
     margin: 2rem; }
   /* Productos Destacados */
   main section h2 {
-    font-size: 0.625rem;
+    font-size: 0.6rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem; }
     main section h2 ::after {
@@ -880,12 +882,12 @@ footer {
   .producto-card {
     width: 80%; }
     .producto-card p {
-      font-size: 0.5625rem !important;
+      font-size: 0.625rem !important;
       margin-left: 2rem; }
     .producto-card h3 {
       text-align: left;
       margin-left: .5rem;
-      font-size: 0.8rem !important; }
+      font-size: 0.7rem !important; }
   .whatsapp-button {
     padding: 0.3rem 0.3rem;
     font-size: 0.5rem !important;
@@ -904,14 +906,14 @@ footer {
     padding: .1563rem;
     margin: 0.2rem; }
     .drop-card h2 {
-      font-size: 0.625rem !important;
+      font-size: 0.7rem !important;
       padding-top: .8rem; }
     .drop-card img {
       max-width: 80% !important;
       padding-top: 0.1rem !important;
       padding-bottom: 0.1rem !important; }
     .drop-card p {
-      font-size: 0.5625rem !important;
+      font-size: 0.6rem !important;
       padding-left: 1rem;
       padding-right: 1rem; }
     .drop-card label {
@@ -919,13 +921,14 @@ footer {
       margin-right: 1.5rem !important;
       margin-top: 0.45rem !important; }
     .drop-card select {
+      font-size: 0.45rem;
       padding: 3px;
       margin-top: -1rem;
       margin-right: 0;
       padding: 1px;
       width: 35%; }
     .drop-card .price {
-      font-size: 0.625rem !important;
+      font-size: 0.6rem !important;
       margin-top: 0; }
   .price-talles-container {
     display: flex;
@@ -936,7 +939,7 @@ footer {
     flex: none;
     width: 100%;
     margin-top: -1rem;
-    font-size: 0.625rem !important; }
+    font-size: 0.6rem !important; }
   .talles-container {
     display: flex;
     flex-direction: column;
@@ -974,10 +977,10 @@ footer {
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
-    font-size: 0.8rem;
+    font-size: 0.625rem;
     margin-bottom: 0.5rem !important; }
   .informacion p {
-    font-size: 0.5625rem; }
+    font-size: 0.5rem; }
   /* CONTACTO */
   /* CUERPO */
   /* Formulario */
@@ -988,11 +991,11 @@ footer {
     max-width: 300px;
     height: 370px; }
     fieldset legend {
-      font-size: 0.625rem;
+      font-size: 0.7rem;
       margin-top: .5rem;
       margin-bottom: .5rem; }
     fieldset label {
-      font-size: 0.5625rem;
+      font-size: 0.625rem;
       margin-bottom: 0; }
     fieldset input[type="text"],
     fieldset textarea {
@@ -1001,7 +1004,7 @@ footer {
       margin-bottom: 0.5rem;
       margin-top: 0; }
     fieldset input[type="submit"] {
-      font-size: 0.5625rem; }
+      font-size: 0.5rem; }
   /* Mapa */
   section iframe {
     height: 250px;
@@ -1026,7 +1029,7 @@ footer {
     max-height: 3rem; }
   .producto-card p {
     margin-left: 2rem;
-    font-size: 0.625rem !important;
+    font-size: 0.7rem !important;
     width: 80%; }
   /* PORTADA PREG FRECUENTES - CONTACTO -INFORMACION */
   /* Subrayado de titulo */

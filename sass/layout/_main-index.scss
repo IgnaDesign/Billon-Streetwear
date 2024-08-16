@@ -19,19 +19,19 @@
                 max-width: 100%;
                 height: auto;
                 margin-bottom: -2rem;
-                box-shadow: 5px -5px 20px map-get($colores, color1 );
+                box-shadow: 5px -5px 20px $color-principal;
                 border-radius: 8px;
             }
             img:hover {
-                filter: drop-shadow(1px -1px 10px map-get($colores, color4));
+                filter: drop-shadow(1px -1px 10px $color-clear);
                 box-shadow: none;
             }
             .subtitulo {
-                color: map-get($colores, color1 );
+                color: $color-principal;
                 font-family: "Bona Nova SC", serif;
                 font-weight: 700;
                 font-style: normal;
-                font-size: map-get($tamaniodefuente, L );
+                font-size: map-get($font-size, size5);
                 margin-top: 0.2rem;
                 display: block;
             }
@@ -56,12 +56,12 @@ main section {
     h2 {
         position: relative;
         display: inline-block;
-        color:  map-get($colores, color1 );
+        color: $color-principal;
         font-family: "Bona Nova SC", serif;
         font-weight: 700;
         font-style: normal;
-        font-size:  map-get($tamaniodefuente, XXL );
-        text-shadow: 8px -5px 15px map-get($colores, color2 );
+        font-size:  map-get($font-size, size3);
+        text-shadow: 8px -5px 15px $color-secundario;
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
@@ -69,7 +69,7 @@ main section {
         content: "";
         width: 100%;
         height: .1500rem;
-        background-color: map-get($colores, color1 );
+        background-color: $color-principal;
         position: absolute;
         left: 0;
         bottom: -0.2rem;
@@ -84,7 +84,7 @@ main section {
     text-align: center; 
     width: calc(33.333% - 0.1rem); 
     margin: 0; 
-    color: map-get($colores, color4 ); 
+    color: $color-clear;
     box-sizing: border-box; 
     p { 
         font-family: "Bona Nova SC", serif; 
@@ -93,13 +93,13 @@ main section {
         width: 80%; 
         margin-left: 3rem; 
         margin-top: auto; 
-        font-size: map-get($tamaniodefuente, XL );
+        font-size: map-get($font-size, size12);
         box-sizing: border-box;
     } 
     h3 {
         text-align: left;
         margin-left: 3rem;
-        font-size: map-get($tamaniodefuente, XLL);
+        font-size: map-get($font-size, size3);
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 600;
@@ -113,7 +113,7 @@ main section {
     border-radius: 8px;
 }
 .drop:hover {
-    filter: drop-shadow(5px -5px 20px map-get($colores, color1));
+    filter: drop-shadow(5px -5px 20px $color-principal);
 }
 .estrellas {
     max-width: 100%;
@@ -132,19 +132,19 @@ main section {
 .whatsapp-button {
     display: inline-block;
     padding: 0.4rem 1rem;
-    color: map-get($colores, color4 );
-    background-color: map-get($colores, color3 );
-    border: .0625rem solid map-get($colores, color1 );
+    color: $color-clear;
+    background-color: $color-dark;
+    border: .0625rem solid $color-principal;
     border-radius: .5rem;
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s ease;
-    font-size: map-get($tamaniodefuente, L );
+    font-size: map-get($font-size, size3);
     font-family: "Bona Nova SC", serif;
     font-weight: 400;
     font-style: normal;
 }
 .whatsapp-button:hover {
-    background-color: map-get($colores, color1 );
-    color: map-get($colores, color3); 
+    background-color: $color-principal;
+    color: $color-dark;
 }

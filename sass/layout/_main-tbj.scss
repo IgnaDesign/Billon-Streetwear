@@ -9,19 +9,19 @@ section {
 /* Elementos de producto */
 .drop-card {
     @include flex (column,none,space-between,center,none);
-    background: map-get($colores, color4);
-    border: 1px solid map-get($colores, color4);
+    background: $color-clear;
+    border: 1px solid $color-clear;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0px 6px map-get($colores, color4);
+    box-shadow: 0 0px 6px $color-clear;
     border-radius: 10px;
     
     h2 {
         font-family: "Bona Nova SC", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, XXXL );
-        color: map-get($colores , color1 );
+        font-size: map-get($font-size, size2);
+        color: $color-principal;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -33,8 +33,8 @@ section {
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, XL );
-        color:map-get($colores, color3 );
+        font-size: map-get($font-size, size4);
+        color: $color-dark;
         margin-bottom: 3px;
         margin-top: 1rem;
         text-align: left;
@@ -44,8 +44,8 @@ section {
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, XXL );
-        color: map-get($colores, color3 );
+        font-size: map-get($font-size, size13);
+        color: $color-dark;
         margin-top: 1rem;
         margin-right: 1rem;
         text-align: right;
@@ -55,12 +55,12 @@ section {
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size: map-get($tamaniodefuente, L );
+        font-size: map-get($font-size, size5);
         margin-top: 1rem;
         margin-right: 1rem;
         padding: 3px;
         border-radius: .625rem;
-        border: 1px solid map-get($colores, color3 );
+        border: 1px solid $color-dark;
         width: 50%;
     }
 }
@@ -75,8 +75,8 @@ section {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: map-get($tamaniodefuente, XXL );
-    color: map-get($colores, color3 );
+    font-size: map-get($font-size, size3);
+    color: $color-dark;
     margin-bottom: 10px;
     margin-left: 1.5rem;
 }
@@ -95,10 +95,10 @@ section {
     font-family: "Bona Nova SC", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: map-get($tamaniodefuente, XL );
+    font-size: map-get($font-size, size4);
     color: #ffffff;
-    background-color: map-get($colores, color3 );
-    border: 0.0625rem solid map-get($colores, color1);
+    background-color: $color-dark;
+    border: 0.0625rem solid $color-principal;
     border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
@@ -106,6 +106,6 @@ section {
     transition: background-color 0.3s ease;
 }
 .boton-uno:hover, .boton-dos:hover {
-    background-color:map-get($colores, color1);
-    color: map-get($colores, color3);
+    background-color: $color-principal;
+    color: $color-dark;
 }

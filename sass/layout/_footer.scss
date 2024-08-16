@@ -2,12 +2,12 @@
 /* PIE DE PAGINA GENERAL */
 footer {
     position: relative;
-    color: map-get($colores, color3);
+    color: $color-dark;
     text-align: center;
     padding: 0;
     margin-top: -2rem;
     z-index: 1;
-    background-color: map-get($colores, color4 );
+    background-color: $color-clear;
     section {
         @include flex (column,none,center,center,none);
         position: relative;
@@ -29,7 +29,7 @@ footer {
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size: map-get($tamaniodefuente , XL );
+        font-size: map-get($font-size, size4);
         margin-bottom: 1rem;
         margin-top: 2rem;
         }

@@ -1172,7 +1172,7 @@ footer h4 {
     /* Estilo del botón de WhatsApp */
     .whatsapp-button {
         padding: 0.3rem 0.3rem;
-        font-size: 0.5rem !;
+        font-size: 0.5rem !important;
         margin-top: -1.5rem;
     }
 

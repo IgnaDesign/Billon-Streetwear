@@ -14,7 +14,7 @@
     max-height: 3rem;
 }
 .producto-card h3 {
-    font-size: 1rem;
+    font-size: map-get($font-size, size4);
 }
 .buttoncontainer {
     margin-right: 2.5rem;
@@ -24,7 +24,7 @@
 /* CUERPO - Drops */
 /* Título de producto */
 .drop-card h2 {
-    font-size: map-get($tamaniodefuente, XXL );
+    font-size: map-get($font-size, size3);
     }
     /* Imagen del producto */
     .drop-card img {
@@ -33,12 +33,12 @@
     }
     /* Texto de producto */
     .drop-card p {
-        font-size: map-get($tamaniodefuente, L );
+        font-size: map-get($font-size, size5);
         margin-bottom: 0;
     }
     /* Precio de producto */
     .drop-card .price {
-    font-size:  map-get($tamaniodefuente, XL );
+    font-size: map-get($font-size, size4);
     margin-bottom: 0;
     }
 }

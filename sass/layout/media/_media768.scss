@@ -12,7 +12,7 @@
     }
     /* Productos Destacados */
     main section h2 {
-        font-size: map-get($tamaniodefuente , L);
+        font-size: map-get($font-size, size12);
         ::after {
             height: .08rem;
         }
@@ -29,7 +29,7 @@
     .producto-card {
         p {
             width: 80%;
-            font-size: map-get($tamaniodefuente , L) !important;
+            font-size: map-get($font-size, size6) !important;
             margin-bottom: 0.5rem !important;
             margin-left: 1.5rem;
         }
@@ -37,12 +37,12 @@
             margin-left: 0;
             text-align: left;
             padding-left: 1.5rem;
-            font-size: map-get($tamaniodefuente, L) !important;
+            font-size: map-get($font-size, size16) !important;
         }
     }
     /* Estilo de botones de WhatsApp */
     .whatsapp-button {
-        font-size: 0.6rem !important;
+        font-size: map-get($font-size, size17) !important;
         padding: 0.5rem 0.5rem;
         margin-top: -2rem;
     }
@@ -57,26 +57,26 @@
     /* Título de producto */
     .drop-card {
         h2 {
-            font-size: map-get($tamaniodefuente, L) !important;
+            font-size: map-get($font-size, size5) !important;
             margin-bottom: .5rem;
         }
         p {
-        font-size: map-get($tamaniodefuente, XS) !important;
+        font-size: map-get($font-size, size18)!important;
         margin-bottom: 0;
         }
         label {
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size17) !important;
             margin-right: 0.5rem !important; 
             margin-top: -1rem;
         }
         select {
-            font-size: map-get($tamaniodefuente, XS); 
+            font-size:map-get($font-size, size9);
             padding: .125rem; 
             margin-right: 0; 
             margin-top: -1rem; 
         }
         .price {
-            font-size: map-get($tamaniodefuente, S) !important;
+            font-size: map-get($font-size, size7) !important;
             text-align: left !important; 
             margin-left: 0 ;
             margin-top: -.5rem;
@@ -88,23 +88,23 @@
     }
     /* Estilo de botones */
     .boton-uno, .boton-dos {
-        font-size: map-get($tamaniodefuente, S);
+        font-size:map-get($font-size, size17);
     }
 
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */
     .portada-dos h1 {
-        font-size: map-get($tamaniodefuente, XL);
+        font-size: map-get($font-size, size4);
     }
     /* PREGUNTAS FRECUENTES */
     /* CUERPO */
     .informacion {
         h3 {
-            font-size:  map-get($tamaniodefuente, XL);
+            font-size: map-get($font-size, size12);
             margin-bottom: 0 !important;
         }
         p {
-            font-size:  map-get($tamaniodefuente, L);
+            font-size: map-get($font-size, size16);
             margin-bottom: -.5rem !important;
         }
     }
@@ -115,23 +115,22 @@
         padding: 0.5rem;
         width: 60%;
         legend {
-            font-size: map-get($tamaniodefuente, L);
+            font-size: map-get($font-size, size5);
         }
         label {
-            font-size: map-get($tamaniodefuente, S);
+            font-size: map-get($font-size, size16);
         }
         input[type="text"],
         textarea {
-            font-size: map-get($tamaniodefuente, S);
+            font-size: map-get($font-size, size6);
         }
         input[type="submit"] {
-            font-size: map-get($tamaniodefuente, XS);
+            font-size: map-get($font-size, size7);
         }
     }
     /* Parrafo del mapa */
     .ubicacion {
-        font-size: map-get($tamaniodefuente, L);
-        padding-top: .5rem;
+        font-size: map-get($font-size, size6);
         padding-bottom: 2rem;
     }
     /* PIE DE PAGINA GENERAL */
@@ -140,13 +139,13 @@
             max-width: 48rem;
         }
         p {
-        font-size: map-get($tamaniodefuente, S);
+        font-size: map-get($font-size, size16);
         }
         .iconos a img {
         width: 1.5rem;
         }
         h4 {
-        font-size: map-get($tamaniodefuente, S);
+        font-size: map-get($font-size, size16);
         }
     }
 }

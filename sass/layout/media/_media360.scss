@@ -7,7 +7,7 @@
         padding: .5rem;
     }
     .imagen-links img {
-        box-shadow: 2px -2px 20px map-get($colores, color1);
+        box-shadow: 2px -2px 20px $color-principal;
     }
     /* Productos Destacados */
     .estrellas {
@@ -15,7 +15,7 @@
     }
     .producto-card p {
         margin-left: 2rem;
-        font-size: map-get($tamaniodefuente, S) !important;
+        font-size: map-get($font-size, size6) !important;
         width: 80%;
     }
     /* PORTADA PREG FRECUENTES - CONTACTO -INFORMACION */
@@ -27,7 +27,7 @@
     /* CUERPO - THE BLACKJACK COLLECTION */
     /* Etiqueta de talle */
     .drop-card label {
-        font-size: map-get($tamaniodefuente, S);
+        font-size: map-get($font-size, size7);
         margin-right: 1.5rem !important;
         margin-top: 0.45rem !important;
     }
