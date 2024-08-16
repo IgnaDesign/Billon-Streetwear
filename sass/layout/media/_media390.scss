@@ -177,4 +177,22 @@
         padding-right: 3rem;
         padding-bottom: 2rem;
     }
+
+    /* PIE DE PAGINA GENERAL */
+    footer {
+        section {
+        max-width: 24.375rem;
+        }   
+        p {
+            font-size: map-get($font-size, size19);
+        margin-bottom: 0.2rem;
+        }
+        .iconos a img {
+        width: 1.2rem;
+        }
+        h4 {
+        font-size: map-get($font-size, size17);
+        margin-top: 1rem;
+        }
+    }
 }
