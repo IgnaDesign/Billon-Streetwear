@@ -1,12 +1,10 @@
 /* ENCABEZADO PANTALLA 390PX*/
 .navbar-nav {
+    @include flex (none,nowrap,none,flex-start,none);
     font-size: map-get($tamaniodefuente, S);
     gap: 0.2rem;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items:flex-start;
+    padding: 0; 
 }
 .navbar-toggler {
     padding: 0.2rem;
@@ -20,11 +18,10 @@
     width: calc(100% - 2rem);
     display: flex;
     justify-content: space-between;
-    margin-left: .7rem;
+    margin-left: 1.4rem;
     overflow: hidden;
     position: relative;
 }
-
 .navbar-nav .nav-link {
     padding: 0 0.01rem;
     white-space: wrap;
@@ -36,8 +33,7 @@
     margin-right: 0.1rem;
 }
 form.d-flex {
-    display: flex;
-    align-items: center;
+    @include flex (none,none,none,center,none);
     margin-left: 0.5rem;
     margin-right: 3.5rem;
 }
@@ -61,7 +57,7 @@ form.d-flex {
 .logo {
     width: 80px;
     margin: 1px -3.8rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.2s ease;
 }
 .logo.hidden {
     display: none;

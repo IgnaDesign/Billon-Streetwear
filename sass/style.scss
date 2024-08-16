@@ -8,6 +8,12 @@
 @import "./base/reset";
 @import "./base/typography";
 
+/* COMPONENTS*/
+@import "./components/bootstrap-general";
+@import "./components/bootstrap768";
+@import "./components/bootstrap390";
+@import "./components/bootstrap360";
+
 /* LAYOUT */
 @import "./layout/body"; 
 @import "./layout/main-index";
@@ -16,13 +22,6 @@
 @import "./layout/main-pf";
 @import "./layout/main-contact";
 @import "./layout/footer";
-
-/* COMPONENTS*/
-@import "./components/bootstrap-general";
-@import "./components/bootstrap768";
-@import "./components/bootstrap390";
-@import "./components/bootstrap360";
-
 
 /* MEDIA QUERY */
 @import "./layout/media/media1024";

@@ -15,17 +15,14 @@
     background-size: contain;
 }
 .navbar-collapse {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
+    @include flex (none,none,space-between,center,1); 
 }
 .navbar-nav .nav-link {
     padding: 0 1rem;
 }
 .dropdown-menu {
     padding: 0;
-}
+} 
 .dropdown-item {
     font-size: map-get($tamaniodefuente, L );
 }
@@ -33,8 +30,7 @@
     margin: 0;
 }
 form.d-flex {
-    display: flex;
-    align-items: center;
+    @include flex (none,none,none,center,none);
     margin-left: 2rem;
     margin-right: .5rem;
 }

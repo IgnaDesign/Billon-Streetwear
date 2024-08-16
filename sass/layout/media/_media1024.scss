@@ -4,10 +4,7 @@
 @media (max-width:1024px){
 /* CUERPO - Enlaces */
 .imagen-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 1rem;
+    @include grid (repeat(2, 1fr),repeat(2, auto),1rem,none);
     padding-left: 5rem;
 }
 .drop {

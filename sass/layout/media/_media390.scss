@@ -51,9 +51,7 @@
         margin-bottom: .8rem;
     }
     .drop-section {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        padding: 0 0.5rem;
+        @include grid (repeat(2, 1fr),none,0.5rem,0 0.5rem);
     }
     .drop-card {
         padding: .1563rem;
@@ -91,17 +89,13 @@
             }
         }
         .price-talles-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            @include flex (none,none,space-between,flex-start,none);
             width: 100%;
             margin-top: -1rem;
             font-size: map-get($tamaniodefuente, S) !important;
         }
         .talles-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            @include flex (column,none,none,flex-end,none);
             padding-right: 1rem;
         }
         .botones {
@@ -120,9 +114,7 @@
     /* INFORMACION */
     /* Ajuste de imagenes */
     .imagenes-horizontal {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, auto);
+        @include grid (repeat(1, 1fr),repeat(1, auto),none,none);
         justify-items: center;
         align-items: center;
         margin: 1rem 2rem 2rem 2rem;

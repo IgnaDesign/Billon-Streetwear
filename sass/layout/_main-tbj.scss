@@ -4,23 +4,18 @@ section {
     margin-bottom: 2rem;
 }
 .drop-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 0 2rem;
+    @include grid (repeat(3, 1fr),none,1rem,0 2rem);
 }
 /* Elementos de producto */
 .drop-card {
+    @include flex (column,none,space-between,center,none);
     background: map-get($colores, color4);
     border: 1px solid map-get($colores, color4);
     padding: 20px;
     text-align: center;
     box-shadow: 0 0px 6px map-get($colores, color4);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    
     h2 {
         font-family: "Bona Nova SC", serif;
         font-weight: 400;
@@ -86,9 +81,7 @@ section {
     margin-left: 1.5rem;
 }
 .talles-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex (none,none,center,center,none);
 }
 .botones {
     display: flex;
