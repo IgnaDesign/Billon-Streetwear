@@ -12,16 +12,21 @@
 @import "./components/bootstrap";
 
 /* LAYOUT */
-@import "./layout/body"; 
+@import "./layout/portada";
 @import "./layout/main-index";
 @import "./layout/main-tbj";
 @import "./layout/main-info";
 @import "./layout/main-pf";
 @import "./layout/main-contact";
+@import "./layout/fondo-main";
 @import "./layout/footer";
 
-/* MEDIA QUERY */
+/* MEDIA QUERY - MIX */
 @import "./layout/media/media1024";
 @import "./layout/media/media768";
 @import "./layout/media/media390";
 @import "./layout/media/media360";
+
+
+
+

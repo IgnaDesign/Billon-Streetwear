@@ -1,6 +1,22 @@
 /* PHONE */
 @media (max-width: 360px) {
     /*  HOME - INDEX */
+    /* ENCABEZADO PANTALLA 360PX*/
+.navbar-nav {
+    font-size: map-get($font-size, size7);
+}
+.form-control { 
+    font-size: xx-small; 
+    width: 85px; 
+    padding: 0.2rem; 
+    margin-right: 0.1rem; 
+}
+header nav ul li:last-child {
+    margin-right: 0.8rem;
+}
+header nav ul li img {
+    max-height: 5rem;
+}
     /* CUERPO */
     /* Enlaces */
     .container {

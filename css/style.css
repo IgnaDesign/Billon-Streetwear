@@ -8,74 +8,14 @@
 /* UTILITIES */
 /* PALETA DE COLORES */
 /* TIPOGRAFIAS */
-/* FONDO CUERPO HOME - THE BLACKJACK*/
-.fondo-cuerpo-home {
-  position: relative;
-  background-image: url(../assets/img/fondohome.png);
-  backdrop-filter: blur(2px);
-  background-size: cover;
-  background-position: center; }
-
-/* Fondo cuerpo - Media 768px-390px-360px*/
-.fondo-cuerpo-home {
-  background: #000000; }
-
-/* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
-.fondo-cuerpo-archivos {
-  position: relative;
-  background-image: url(../assets/img/fondoblanco.png);
-  backdrop-filter: blur(2px);
-  background-size: cover;
-  background-position: center; }
-
-/* HOME - THE BLACKJACKS COLLECTION */
-/* PORTADA */
-.portada {
-  max-width: 90rem;
-  margin: 0 auto;
-  position: relative; }
-  .portada img {
-    display: block;
-    width: 100%; }
-
-/* INFORMACIÓN / P.FRECUENTES / CONTACTO*/
-/* PORTADA*/
-.portada-dos {
-  max-width: 90rem;
-  margin: 0 auto;
-  position: relative; }
-  .portada-dos img {
-    display: block;
-    width: 100%; }
-  .portada-dos h1 {
-    font-family: "Bona Nova SC", serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0.2rem;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    color: #FFFFFF; }
-
-.portada-dos h1::before,
-.portada-dos h1::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  position: absolute;
-  left: 0; }
-
-.portada-dos h1::before {
-  top: -10px; }
-
-.portada-dos h1::after {
-  bottom: -10px; }
-
 /* TAMAÑO DE FUENTE */
+/* CONTENEDOR PRINCIPAL */
+.container {
+  max-width: 1440px;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
 /* BOOTSTRAP */
@@ -131,165 +71,53 @@
 .logo {
   width: 150px; }
 
-/* ENCABEZADO PANTALLA 768PX*/
-.navbar-nav {
-  font-size: 0.875rem;
-  gap: .5rem; }
-  .navbar-nav .nav-link {
-    padding: 0 1rem; }
-
-.navbar-toggler {
-  padding: 0.2rem 0.2rem;
-  font-size: 1rem;
-  color: #FFC000;
-  background-color: #000000;
-  border: 2px solid #FFFFFF;
-  margin-left: 2rem; }
-
-.navbar-toggler-icon {
-  background-size: contain; }
-
-.navbar-collapse {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1; }
-
-.dropdown-menu {
-  padding: 0; }
-
-.dropdown-item {
-  font-size: 0.7rem; }
-
-.dropdown-divider {
-  margin: 0; }
-
-form.d-flex {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  justify-content: none;
-  align-items: center;
-  flex: none;
-  margin-left: 2rem;
-  margin-right: .5rem; }
-
-/* Estilos para el boton */
-.btn {
-  font-size: 0.7rem; }
-
-/* Busqueda */
-.form-control {
-  font-size: xx-small;
-  width: 150px; }
-
-/* LOGO */
-.logo {
-  width: 150px; }
-
-/* ENCABEZADO PANTALLA 390PX*/
-.navbar-nav {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: nowrap;
-  justify-content: none;
-  align-items: flex-start;
-  flex: none;
-  font-size: 0.625rem;
-  gap: 0.2rem;
-  margin: 0;
-  padding: 0; }
-
-.navbar-toggler {
-  padding: 0.2rem;
-  font-size: 0.5rem;
-  color: #FFC000;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-  margin-left: .2rem; }
-
-.navbar-collapse {
-  width: calc(100% - 2rem);
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1.4rem;
-  overflow: hidden;
-  position: relative; }
-
-.navbar-nav .nav-link {
-  padding: 0 0.01rem;
-  white-space: wrap; }
-
-.form-control {
-  font-size: xx-small;
-  width: 70px;
-  padding: 0.2rem;
-  margin-right: 0.1rem; }
-
-form.d-flex {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  justify-content: none;
-  align-items: center;
-  flex: none;
-  margin-left: 0.5rem;
-  margin-right: 3.5rem; }
-
-.search-hidden {
-  display: none; }
-
-.btn {
-  font-size: 0.5rem;
-  padding: 0.2rem 0.2rem !important;
-  height: auto;
-  margin: 0px; }
-
-.dropdown-menu {
-  font-size: 0.6rem;
-  padding: 0.2rem 0; }
-
-.dropdown-item {
-  font-size: 0.5rem;
-  padding: 0.2rem 0.3rem; }
-
-.logo {
-  width: 80px;
-  margin: 1px -3.8rem;
-  transition: opacity 0.3s ease, transform 0.2s ease; }
-
-.logo.hidden {
-  display: none; }
-
-.navbar-collapse.show + .navbar-brand .logo {
-  opacity: 0;
-  transform: translateX(100px); }
-
-/* ENCABEZADO PANTALLA 360PX*/
-.navbar-nav {
-  font-size: 0.625rem; }
-
-.form-control {
-  font-size: xx-small;
-  width: 85px;
-  padding: 0.2rem;
-  margin-right: 0.1rem; }
-
-header nav ul li:last-child {
-  margin-right: 0.8rem; }
-
-header nav ul li img {
-  max-height: 5rem; }
-
 /* LAYOUT */
-/* CONTENEDOR PRINCIPAL */
-.container {
-  max-width: 1440px;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto; }
+/* HOME - THE BLACKJACKS COLLECTION */
+/* PORTADA */
+.portada {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative; }
+  .portada img {
+    display: block;
+    width: 100%; }
+
+/* INFORMACIÓN / P.FRECUENTES / CONTACTO*/
+/* PORTADA*/
+.portada-dos {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative; }
+  .portada-dos img {
+    display: block;
+    width: 100%; }
+  .portada-dos h1 {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #FFFFFF; }
+
+.portada-dos h1::before,
+.portada-dos h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  left: 0; }
+
+.portada-dos h1::before {
+  top: -10px; }
+
+.portada-dos h1::after {
+  bottom: -10px; }
 
 /* CUERPO */
 /* ENLACES */
@@ -655,6 +483,22 @@ main section p {
   padding-bottom: 1rem;
   font-size: 0.9rem; }
 
+/* FONDO CUERPO HOME - THE BLACKJACK*/
+.fondo-cuerpo-home {
+  position: relative;
+  background-image: url(../assets/img/fondohome.png);
+  backdrop-filter: blur(2px);
+  background-size: cover;
+  background-position: center; }
+
+/* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
+.fondo-cuerpo-archivos {
+  position: relative;
+  background-image: url(../assets/img/fondoblanco.png);
+  backdrop-filter: blur(2px);
+  background-size: cover;
+  background-position: center; }
+
 /* PIE DE PAGINA GENERAL */
 footer {
   position: relative;
@@ -708,7 +552,7 @@ footer {
     margin-top: 2rem;
     font-size: .9375rem; }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY - MIX */
 /* LAPTOP*/
 @media (max-width: 1024px) {
   /* CUERPO - Enlaces */
@@ -748,6 +592,53 @@ footer {
 /* TABLET -*/
 @media (max-width: 768px) {
   /* HOME- INDEX */
+  /* ENCABEZADO PANTALLA 768PX*/
+  .navbar-nav {
+    font-size: 0.875rem;
+    gap: .5rem; }
+    .navbar-nav .nav-link {
+      padding: 0 1rem; }
+  .navbar-toggler {
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
+    color: #FFC000;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    margin-left: 2rem; }
+  .navbar-toggler-icon {
+    background-size: contain; }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: none;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1; }
+  .dropdown-menu {
+    padding: 0; }
+  .dropdown-item {
+    font-size: 0.7rem; }
+  .dropdown-divider {
+    margin: 0; }
+  form.d-flex {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex: none;
+    margin-left: 2rem;
+    margin-right: .5rem; }
+  /* Estilos para el boton */
+  .btn {
+    font-size: 0.7rem; }
+  /* Busqueda */
+  .form-control {
+    font-size: xx-small;
+    width: 150px; }
+  /* LOGO */
+  .logo {
+    width: 150px; }
   /* CUERPO - Enlaces */
   .imagen-links {
     gap: 0;
@@ -845,7 +736,6 @@ footer {
   .ubicacion {
     font-size: 0.7rem;
     padding-bottom: 2rem; }
-  /* PIE DE PAGINA GENERAL */
   footer section {
     max-width: 48rem; }
   footer p {
@@ -858,6 +748,71 @@ footer {
 /* PHONE */
 @media (max-width: 390px) {
   /* HOME - INDEX */
+  /* ENCABEZADO PANTALLA 390PX*/
+  .navbar-nav {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: nowrap;
+    justify-content: none;
+    align-items: flex-start;
+    flex: none;
+    font-size: 0.625rem;
+    gap: 0.2rem;
+    margin: 0;
+    padding: 0; }
+  .navbar-toggler {
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    color: #FFC000;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    margin-left: .2rem; }
+  .navbar-collapse {
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.4rem;
+    overflow: hidden;
+    position: relative; }
+  .navbar-nav .nav-link {
+    padding: 0 0.01rem;
+    white-space: wrap; }
+  .form-control {
+    font-size: xx-small;
+    width: 70px;
+    padding: 0.2rem;
+    margin-right: 0.1rem; }
+  form.d-flex {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    flex: none;
+    margin-left: 0.5rem;
+    margin-right: 3.5rem; }
+  .search-hidden {
+    display: none; }
+  .btn {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.2rem !important;
+    height: auto;
+    margin: 0px; }
+  .dropdown-menu {
+    font-size: 0.6rem;
+    padding: 0.2rem 0; }
+  .dropdown-item {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.3rem; }
+  .logo {
+    width: 80px;
+    margin: 1px -3.8rem;
+    transition: opacity 0.3s ease, transform 0.2s ease; }
+  .logo.hidden {
+    display: none; }
+  .navbar-collapse.show + .navbar-brand .logo {
+    opacity: 0;
+    transform: translateX(100px); }
   /* CUERPO */
   /* Enlaces */
   .imagen-links {
@@ -1013,22 +968,37 @@ footer {
     font-size: 0.5625rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 2rem; }
-  /* PIE DE PAGINA GENERAL */
-  footer section {
-    max-width: 24.375rem; }
-  footer p {
-    font-size: 0.43rem;
-    margin-bottom: 0.2rem; }
-  footer .iconos a img {
-    width: 1.2rem; }
-  footer h4 {
-    font-size: 0.6rem;
-    margin-top: 1rem; } }
+    padding-bottom: 2rem; } }
+
+footer section {
+  max-width: 24.375rem; }
+
+footer p {
+  font-size: 0.43rem;
+  margin-bottom: 0.2rem; }
+
+footer .iconos a img {
+  width: 1.2rem; }
+
+footer h4 {
+  font-size: 0.6rem;
+  margin-top: 1rem; }
 
 /* PHONE */
 @media (max-width: 360px) {
   /*  HOME - INDEX */
+  /* ENCABEZADO PANTALLA 360PX*/
+  .navbar-nav {
+    font-size: 0.625rem; }
+  .form-control {
+    font-size: xx-small;
+    width: 85px;
+    padding: 0.2rem;
+    margin-right: 0.1rem; }
+  header nav ul li:last-child {
+    margin-right: 0.8rem; }
+  header nav ul li img {
+    max-height: 5rem; }
   /* CUERPO */
   /* Enlaces */
   .container {
