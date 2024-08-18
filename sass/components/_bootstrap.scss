@@ -18,39 +18,48 @@
 }
 /* Buscador */
 .form-control {
-    font-family:$font-uno;
+    font-family:$font-dos;
     font-style: $font-normal;
     font-weight: 400;
     font-size: map-get($font-size, size5);
-    .form-control:focus {
-        border-color: $color-dark; 
-        box-shadow: 0 0 0 0.2rem $color-dark;
+    background: none;
+    border: none;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff; 
     }
-}
+    .form-control:focus {
+    background: $color-dark;
+    color: $color-clear; 
+    box-shadow: 0 0 0 0.2rem $color-principal;
+    }
 /* Estilos para el boton */
 .btn {
-    font-family:$font-dos;
+    font-family:$font-uno;
     font-style: $font-normal;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: map-get($font-size, size5);
     color: $color-secundario;
     margin: 0;
-}
+    border-radius: 9999px;
+    background: $color-dark;
+    border: none;
+    }
 .btn-outline-success {
     border-color: $color-principal;
     color: $color-secundario;
-    .btn-outline-success:hover {
-        background-color: $color-dark;
-        color: $color-principal;
-        border-color: $color-principal;
+    }      
+.btn-outline-success:hover {
+    background-image: linear-gradient( #000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D) !important;
+    color: $color-dark;
+    border-color: $color-dark;
     }
-    .btn-outline-success:active {
-        background-color: $color-principal !important;
-        border-color:$color-dark !important;
-        color: $color-dark !important; 
+.btn-outline-success:active {
+    background-color: $color-principal !important;
+    color: $color-clear !important; 
+    border-color: $color-dark !important;
     }
-}
 /* LOGO */
 .logo {
     width: 150px;;

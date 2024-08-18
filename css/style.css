@@ -37,35 +37,47 @@
 
 /* Buscador */
 .form-control {
-  font-family: "Bona Nova SC", serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem; }
-  .form-control .form-control:focus {
-    border-color: #000000;
-    box-shadow: 0 0 0 0.2rem #000000; }
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px #050505;
+  color: #fff; }
+
+.form-control:focus {
+  background: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 0 0 0.2rem #FFC000; }
 
 /* Estilos para el boton */
 .btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bona Nova SC", serif;
   font-style: normal;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 0.8rem;
   color: #909090be;
-  margin: 0; }
+  margin: 0;
+  border-radius: 9999px;
+  background: #000000;
+  border: none; }
 
 .btn-outline-success {
   border-color: #FFC000;
   color: #909090be; }
-  .btn-outline-success .btn-outline-success:hover {
-    background-color: #000000;
-    color: #FFC000;
-    border-color: #FFC000; }
-  .btn-outline-success .btn-outline-success:active {
-    background-color: #FFC000 !important;
-    border-color: #000000 !important;
-    color: #000000 !important; }
+
+.btn-outline-success:hover {
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D) !important;
+  color: #000000;
+  border-color: #000000; }
+
+.btn-outline-success:active {
+  background-color: #FFC000 !important;
+  color: #FFFFFF !important;
+  border-color: #000000 !important; }
 
 /* LOGO */
 .logo {
@@ -186,7 +198,7 @@ main section {
   main section h2::after {
     content: "";
     width: 100%;
-    height: .1500rem;
+    height: .0938rem;
     background-color: #FFC000;
     position: absolute;
     left: 0;
@@ -233,7 +245,7 @@ main section {
   border-radius: 8px; }
 
 .drop:hover {
-  filter: drop-shadow(5px -5px 20px #FFC000); }
+  filter: drop-shadow(0 0 10px #FFFFFF); }
 
 .estrellas {
   max-width: 100%;
@@ -249,6 +261,29 @@ main section {
   gap: 1rem;
   -webkit-animation: heartbeat 1.5s linear infinite reverse both;
   animation: heartbeat 1.5s linear infinite reverse both; }
+
+/* Estilo de botones de WhatsApp */
+.whatsapp-button {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  color: #000000;
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+  border: 0.0625rem solid linear-gradient(#DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+  box-shadow: 1px 2px 0px #FFFFFF;
+  border-radius: .5rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 700; }
+
+.whatsapp-button:hover {
+  background-image: linear-gradient(#000000, #909090be);
+  color: #FFC000;
+  border: 0.0625rem solid #000000;
+  box-shadow: 1px 2px 0px #FFC000; }
 
 @-webkit-keyframes heartbeat {
   from {
@@ -307,26 +342,6 @@ main section {
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
-
-/* Estilo de botones de WhatsApp */
-.whatsapp-button {
-  display: inline-block;
-  padding: 0.4rem 1rem;
-  color: #FFFFFF;
-  background-color: #000000;
-  border: 0.0625rem solid #FFC000;
-  border-radius: .5rem;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  font-size: 1.2rem;
-  font-family: "Bona Nova SC", serif;
-  font-style: normal;
-  font-weight: 400; }
-
-.whatsapp-button:hover {
-  background-color: #FFC000;
-  color: #000000; }
 
 /* FONDO CUERPO HOME - THE BLACKJACK*/
 .fondo-cuerpo-home {
