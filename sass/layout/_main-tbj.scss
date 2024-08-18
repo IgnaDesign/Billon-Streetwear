@@ -17,9 +17,9 @@ section {
     border-radius: 10px;
     
     h2 {
-        font-family: "Bona Nova SC", serif;
+        font-family:$font-uno;
+        font-style: $font-normal;
         font-weight: 400;
-        font-style: normal;
         font-size: map-get($font-size, size2);
         color: $color-principal;
         margin-top: 0;
@@ -29,10 +29,10 @@ section {
         max-width: 100%;
     }
     p {
-        font-family: "Montserrat", sans-serif;
+        font-family:$font-dos;
+        font-style: $font-normal;
         font-optical-sizing: auto;
         font-weight: 400;
-        font-style: normal;
         font-size: map-get($font-size, size4);
         color: $color-dark;
         margin-bottom: 3px;
@@ -40,10 +40,10 @@ section {
         text-align: left;
     }
     label {
-        font-family: "Montserrat", sans-serif;
+        font-family:$font-dos;
+        font-style: $font-normal;
         font-optical-sizing: auto;
         font-weight: 400;
-        font-style: normal;
         font-size: map-get($font-size, size13);
         color: $color-dark;
         margin-top: 1rem;
@@ -51,10 +51,10 @@ section {
         text-align: right;
     }
     select {
-        font-family: "Montserrat", sans-serif;
+        font-family:$font-dos;
+        font-style: $font-normal;
         font-optical-sizing: auto;
         font-weight: 600;
-        font-style: normal;
         font-size: map-get($font-size, size5);
         margin-top: 1rem;
         margin-right: 1rem;
@@ -71,10 +71,10 @@ section {
     margin-bottom: .3125rem;
 }
 .drop-card .price {
-    font-family: "Montserrat", sans-serif;
+    font-family:$font-dos;
+    font-style: $font-normal;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
     font-size: map-get($font-size, size3);
     color: $color-dark;
     margin-bottom: 10px;
@@ -92,9 +92,9 @@ section {
 }
 .boton-uno, .boton-dos {
     display: inline-block;
-    font-family: "Bona Nova SC", serif;
+    font-family:$font-uno;
+    font-style: $font-normal;
     font-weight: 400;
-    font-style: normal;
     font-size: map-get($font-size, size4);
     color: #ffffff;
     background-color: $color-dark;
@@ -108,4 +108,12 @@ section {
 .boton-uno:hover, .boton-dos:hover {
     background-color: $color-principal;
     color: $color-dark;
+}
+/* FONDO CUERPO HOME - THE BLACKJACK*/
+.fondo-cuerpo-home {
+    position: relative;
+    background-image: url(../assets/img/fondohome.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center;
 }

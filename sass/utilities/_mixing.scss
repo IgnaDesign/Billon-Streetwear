@@ -1,4 +1,3 @@
-
 @mixin flex ($direction, $wrap, $justify, $aling, $flex) {
     display: flex;
     flex-direction: $direction;
@@ -7,7 +6,6 @@
     align-items: $aling;
     flex: $flex;
 }
-
 @mixin grid ($columns, $rows, $gap, $padding) {
     display: grid;
     grid-template-columns: $columns;
@@ -15,7 +13,6 @@
     gap: $gap;
     padding: $padding;
 }
-
 /* CONTENEDOR PRINCIPAL */
 .container {
     max-width: 1440px;

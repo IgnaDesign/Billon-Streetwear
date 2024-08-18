@@ -28,9 +28,9 @@
             }
             .subtitulo {
                 color: $color-principal;
-                font-family: "Bona Nova SC", serif;
+                font-family:$font-uno;
+                font-style: $font-normal;
                 font-weight: 700;
-                font-style: normal;
                 font-size: map-get($font-size, size5);
                 margin-top: 0.2rem;
                 display: block;
@@ -57,9 +57,9 @@ main section {
         position: relative;
         display: inline-block;
         color: $color-principal;
-        font-family: "Bona Nova SC", serif;
+        font-family:$font-uno;
+        font-style: $font-normal;
         font-weight: 700;
-        font-style: normal;
         font-size:  map-get($font-size, size3);
         text-shadow: 8px -5px 15px $color-secundario;
         margin-top: 2rem;
@@ -87,8 +87,8 @@ main section {
     color: $color-clear;
     box-sizing: border-box; 
     p { 
-        font-family: "Bona Nova SC", serif; 
-        font-style: normal; 
+        font-family:$font-uno;
+        font-style: $font-normal;
         text-align: left; 
         width: 80%; 
         margin-left: 3rem; 
@@ -100,10 +100,10 @@ main section {
         text-align: left;
         margin-left: 3rem;
         font-size: map-get($font-size, size3);
-        font-family: "Montserrat", sans-serif;
+        font-family:$font-dos;
+        font-style: $font-normal;
         font-optical-sizing: auto;
         font-weight: 600;
-        font-style: normal;
     }
 }
 .drop {
@@ -125,9 +125,79 @@ main section {
     justify-content:flex-end;
     margin-top: 0;
     margin-bottom: 3rem;
-    margin-right: 5rem;
+    margin-right: 3rem;
     gap: 1rem;
+    -webkit-animation: heartbeat 1.5s linear infinite reverse both;
+    animation: heartbeat 1.5s linear infinite reverse both;
 }
+@-webkit-keyframes heartbeat {
+    from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+}
+@keyframes heartbeat {
+    from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+}  
 /* Estilo de botones de WhatsApp */
 .whatsapp-button {
     display: inline-block;
@@ -140,11 +210,27 @@ main section {
     text-align: center;
     transition: background-color 0.3s ease;
     font-size: map-get($font-size, size3);
-    font-family: "Bona Nova SC", serif;
+    font-family:$font-uno;
+    font-style: $font-normal;
     font-weight: 400;
-    font-style: normal;
 }
 .whatsapp-button:hover {
     background-color: $color-principal;
     color: $color-dark;
+}
+/* FONDO CUERPO HOME - THE BLACKJACK*/
+.fondo-cuerpo-home {
+    position: relative;
+    background-image: url(../assets/img/fondohome.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center;
+}
+/* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
+.fondo-cuerpo-archivos {
+    position: relative;
+    background-image: url(../assets/img/fondoblanco.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center; 
 }

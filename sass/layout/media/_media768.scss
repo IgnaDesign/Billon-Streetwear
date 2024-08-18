@@ -182,8 +182,8 @@ form.d-flex {
         font-size: map-get($font-size, size6);
         padding-bottom: 2rem;
     }
-    
-footer {
+    /* PIE DE PAGINA */
+    footer {
     section {
         max-width: 48rem;
     }
@@ -196,5 +196,9 @@ footer {
     h4 {
     font-size: map-get($font-size, size16);
     }
+    }
+    /* FONDO CUERPO - Media 768px-390px-360px*/
+.fondo-cuerpo-home {
+    background: $color-dark;
 }
 }

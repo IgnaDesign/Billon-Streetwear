@@ -1,7 +1,5 @@
 /* BASE */
 @import "./base/resets";
-@import "./base/base";
-@import "./base/typography";
 
 /* UTILITIES */
 @import "./utilities/variables";
@@ -16,9 +14,8 @@
 @import "./layout/main-index";
 @import "./layout/main-tbj";
 @import "./layout/main-info";
-@import "./layout/main-pf";
+@import "./layout/main-preguntas";
 @import "./layout/main-contact";
-@import "./layout/fondo-main";
 @import "./layout/footer";
 
 /* MEDIA QUERY - MIX */

@@ -20,9 +20,9 @@
         width: 100%;
     }
     h1 {
-        font-family: "Bona Nova SC", serif;
+        font-family:$font-uno;
+        font-style: $font-normal;
         font-weight: 700;
-        font-style: normal;
         letter-spacing: 0.2rem;
         position: absolute;
         top: 35%;
@@ -48,3 +48,4 @@
 .portada-dos h1::after {
     bottom: -10px;
 }
+
