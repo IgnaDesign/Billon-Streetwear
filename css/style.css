@@ -367,9 +367,36 @@ section {
 .drop-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: none;
+  grid-template-rows: repeat(4, auto);
   gap: 1rem;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  /* Estilo de botones de WhatsApp */ }
+  .drop-section .buttoncontainerdos {
+    display: flex;
+    justify-content: center;
+    -webkit-animation: heartbeat 1.5s linear infinite reverse both;
+    animation: heartbeat 1.5s linear infinite reverse both; }
+  .drop-section .button-comprar {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    color: #000000;
+    background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+    border-image: 0.0625rem solid linear-gradient(#DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+    box-shadow: 1px 2px 0px #FFFFFF;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 700; }
+  .drop-section .button-comprar:hover {
+    background-image: linear-gradient(#000000, #909090be);
+    color: #FFC000;
+    border: 0.0625rem solid #000000;
+    box-shadow: 1px 2px 0px #FFC000;
+    cursor: none; }
 
 /* Elementos de producto */
 .drop-card {
@@ -379,7 +406,7 @@ section {
   justify-content: space-between;
   align-items: center;
   flex: none;
-  background: #FFFFFF;
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #CF9E25, #AE8225, #D6AB47, #FFFDBD, #DEB457, #000000);
   border: 1px solid #FFFFFF;
   padding: 20px;
   text-align: center;
@@ -390,38 +417,44 @@ section {
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #FFC000;
+    color: #000000;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative; }
+  .drop-card h2::after {
+    content: "";
+    width: 100%;
+    height: .0938rem;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem; }
   .drop-card img {
     max-width: 100%; }
   .drop-card p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1rem;
     color: #000000;
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: left; }
   .drop-card label {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1.1rem;
     color: #000000;
-    margin-top: 1rem;
+    margin-top: -2.5rem;
     margin-right: 1rem;
     text-align: right; }
   .drop-card select {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-top: -2.5rem;
     margin-right: 1rem;
     padding: 3px;
     border-radius: .625rem;
@@ -437,10 +470,10 @@ section {
 .drop-card .price {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 1.2rem;
   color: #000000;
+  margin-top: -1.5rem;
   margin-bottom: 10px;
   margin-left: 1.5rem; }
 
@@ -475,7 +508,7 @@ section {
   transition: background-color 0.3s ease; }
 
 .boton-uno:hover, .boton-dos:hover {
-  background-color: #FFC000;
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
   color: #000000; }
 
 /* FONDO CUERPO HOME - THE BLACKJACK*/
@@ -524,30 +557,44 @@ fieldset {
   padding: 1rem;
   width: 80%;
   max-width: 600px;
-  border: 2px solid #FFC000;
-  border-radius: 8px; }
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D); }
   fieldset legend {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: center; }
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+    color: #FFFFFF; }
+  fieldset .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  fieldset .form-row {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-top: .5rem; }
   fieldset label {
     display: block;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
+    font-style: italic;
     font-optical-sizing: auto;
-    font-weight: 500;
-    margin-bottom: 0.5rem; }
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-left: .3rem; }
   fieldset input[type="text"],
   fieldset textarea {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     width: 100%;
     padding: 0.5rem;
+    letter-spacing: -1px;
     margin-bottom: 1rem;
     border: 1px solid #FFC000;
     border-radius: 4px;
@@ -559,20 +606,23 @@ fieldset {
     font-weight: 300;
     resize: vertical; }
   fieldset input[type="checkbox"] {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    margin-top: 1.5rem; }
   fieldset input[type="submit"] {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 0.8rem;
-    background-color: #FFC000;
+    background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
     color: #000000;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
+    padding: 0.3rem 1rem;
+    border-color: #000000;
+    border-radius: 5px;
     cursor: pointer; }
   fieldset input[type="submit"]:hover {
-    background-color: #FFC000; }
+    color: #FFFFFF;
+    background-color: #909090;
+    cursor: none; }
 
 main section p {
   font-family: "Bona Nova SC", serif;
@@ -648,36 +698,51 @@ footer {
   /* CUERPO - Enlaces */
   .imagen-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
     gap: 1rem;
     padding: none;
-    padding-left: 5rem; }
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .imagen-links div {
+      margin: 1.5rem; }
+    .imagen-links a .subtitulo {
+      font-size: 0.7rem !important; }
   .drop {
     max-height: 18rem !important; }
   .estrellas {
     max-height: 3rem; }
+  .producto-card p {
+    width: 86.5%;
+    margin-left: 2rem; }
   .producto-card h3 {
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-left: 2rem; }
   .buttoncontainer {
-    margin-right: 2.5rem; }
+    margin-right: 3rem;
+    margin-top: -2.3rem; }
+  .whatsapp-button {
+    font-size: 0.8rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - Drops */
   /* Título de producto */
-  .drop-card h2 {
-    font-size: 1.2rem; }
-  /* Imagen del producto */
-  .drop-card img {
-    max-width: 90%;
-    height: auto; }
-  /* Texto de producto */
-  .drop-card p {
-    font-size: 0.8rem;
-    margin-bottom: 0; }
-  /* Precio de producto */
-  .drop-card .price {
-    font-size: 1rem;
-    margin-bottom: 0; } }
+  .drop-card {
+    /* Imagen del producto */
+    /* Texto de producto */
+    /* Precio de producto */ }
+    .drop-card h2 {
+      font-size: 1.2rem; }
+    .drop-card .drop-card img {
+      max-width: 90%;
+      height: auto; }
+    .drop-card .drop-card p {
+      font-size: 0.8rem;
+      margin-bottom: .5rem; }
+    .drop-card .drop-card .price {
+      font-size: 1rem;
+      margin-bottom: 0; }
+    .drop-card label {
+      margin-right: .5rem; } }
 
 /* TABLET -*/
 @media (max-width: 768px) {
@@ -694,7 +759,7 @@ footer {
     color: #FFC000;
     background-color: #000000;
     border: 2px solid #FFFFFF;
-    margin-left: 2rem; }
+    margin-left: 1rem; }
   .navbar-toggler-icon {
     background-size: contain; }
   .navbar-collapse {
@@ -705,7 +770,8 @@ footer {
     align-items: center;
     flex: 1; }
   .dropdown-menu {
-    padding: 0; }
+    padding: 0;
+    margin-left: .5rem !important; }
   .dropdown-item {
     font-size: 0.7rem; }
   .dropdown-divider {
@@ -732,13 +798,17 @@ footer {
   /* CUERPO - Enlaces */
   .imagen-links {
     gap: 0;
-    padding-left: 3rem; }
+    padding-left: 1rem; }
+    .imagen-links .subtitulo {
+      font-size: 0.7rem !important;
+      margin-top: -2.2rem !important; }
   /* Presentacion img */
   .presentacion img {
     width: 90%; }
   /* Productos Destacados */
   main section h2 {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem; }
     main section h2 ::after {
       height: .08rem; }
   .containerdos {
@@ -767,23 +837,28 @@ footer {
     margin-bottom: 3rem;
     margin-right: 2rem; }
   /* THE BLACKJACK COLLECTION */
-  /* CUERPO - Drops */
+  /* CUERPO - DROPS */
+  /* Estilo de botones de WhatsApp */
+  .button-comprar {
+    padding: 0.4rem 1rem;
+    margin-top: -1rem;
+    font-size: 0.5rem !important; }
   /* Título de producto */
   .drop-card h2 {
     font-size: 0.8rem !important;
     margin-bottom: .5rem; }
   .drop-card p {
     font-size: 0.576rem !important;
-    margin-bottom: 0; }
+    margin-bottom: -.5rem; }
   .drop-card label {
     font-size: 0.6rem !important;
     margin-right: 0.5rem !important;
-    margin-top: -1rem; }
+    margin-top: -1.5rem; }
   .drop-card select {
     font-size: 0.5rem;
     padding: .125rem;
     margin-right: 0;
-    margin-top: -1rem; }
+    margin-top: -1.5rem; }
   .drop-card .price {
     font-size: 0.625rem !important;
     text-align: left !important;
@@ -799,6 +874,16 @@ footer {
   /* Titulo portada */
   .portada-dos h1 {
     font-size: 1rem; }
+  .imagenes-horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    padding: none;
+    margin: 2rem 4rem 4rem 4rem; }
+    .imagenes-horizontal img {
+      width: calc(100% - 1rem);
+      height: auto; }
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
@@ -822,6 +907,8 @@ footer {
       font-size: 0.7rem; }
     fieldset input[type="submit"] {
       font-size: 0.625rem; }
+  section iframe {
+    width: 80%; }
   /* Parrafo del mapa */
   .ubicacion {
     font-size: 0.7rem;
@@ -850,7 +937,7 @@ footer {
     justify-content: none;
     align-items: flex-start;
     flex: none;
-    font-size: 0.625rem;
+    font-size: 0.576rem !important;
     gap: 0.2rem;
     margin: 0;
     padding: 0; }
@@ -860,21 +947,21 @@ footer {
     color: #FFC000;
     background-color: #000000;
     border: 1px solid #FFFFFF;
-    margin-left: .2rem; }
+    margin-left: .15rem; }
   .navbar-collapse {
     width: calc(100% - 2rem);
     display: flex;
     justify-content: space-between;
-    margin-left: 1.4rem;
+    margin-left: .7rem;
     overflow: hidden;
     position: relative; }
   .navbar-nav .nav-link {
     padding: 0 0.01rem;
     white-space: wrap; }
   .form-control {
-    font-size: xx-small;
+    font-size: 0.43rem;
     width: 70px;
-    padding: 0.2rem;
+    padding: 0.3rem;
     margin-right: 0.1rem; }
   form.d-flex {
     display: flex;
@@ -894,21 +981,31 @@ footer {
     margin: 0px; }
   .dropdown-menu {
     font-size: 0.6rem;
-    padding: 0.2rem 0; }
+    padding: 0.2rem 0;
+    margin-left: 0 !important; }
   .dropdown-item {
     font-size: 0.5rem;
     padding: 0.2rem 0.3rem; }
   .logo {
     width: 80px;
-    margin: 1px -3.8rem;
+    margin: 1px -3.3rem;
     transition: opacity 0.3s ease, transform 0.2s ease; }
   .logo.hidden {
     display: none; }
   .navbar-collapse.show + .navbar-brand .logo {
     opacity: 0;
     transform: translateX(100px); }
-  /* CUERPO */
-  /* Enlaces */
+  /* CUERPO - Enlaces */
+  .imagen-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    gap: 1rem;
+    padding: none;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .imagen-links a .subtitulo {
+      font-size: 0.6rem !important; }
   .imagen-links {
     padding-left: 0; }
   .imagen-links .subtitulo {
@@ -951,6 +1048,10 @@ footer {
     grid-template-rows: none;
     gap: 0.5rem;
     padding: 0 0.5rem; }
+    .drop-section .button-comprar {
+      padding: 0.4rem .5rem;
+      font-size: 0.45rem !important;
+      margin-bottom: .5rem; }
   .drop-card {
     padding: .1563rem;
     margin: 0.2rem; }
@@ -964,11 +1065,12 @@ footer {
     .drop-card p {
       font-size: 0.6rem !important;
       padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      margin-top: .5rem; }
     .drop-card label {
       font-size: 0.625rem !important;
       margin-right: 1.5rem !important;
-      margin-top: 0.45rem !important; }
+      margin-top: 1rem !important; }
     .drop-card select {
       font-size: 0.45rem;
       padding: 3px;
@@ -978,7 +1080,7 @@ footer {
       width: 35%; }
     .drop-card .price {
       font-size: 0.6rem !important;
-      margin-top: 0; }
+      margin-top: .5rem; }
   .price-talles-container {
     display: flex;
     flex-direction: none;
@@ -1037,15 +1139,20 @@ footer {
     padding: 0.5rem;
     width: 80%;
     margin: 1rem auto;
-    max-width: 300px;
-    height: 370px; }
+    max-width: 320px;
+    height: 330px; }
     fieldset legend {
       font-size: 0.7rem;
       margin-top: .5rem;
-      margin-bottom: .5rem; }
+      margin-bottom: .5rem;
+      margin-left: 4.5rem; }
     fieldset label {
       font-size: 0.625rem;
       margin-bottom: 0; }
+    fieldset input[type="checkbox"] {
+      margin-right: 0;
+      margin-top: 1rem;
+      margin-left: .3rem; }
     fieldset input[type="text"],
     fieldset textarea {
       font-size: 0.625rem;
@@ -1113,6 +1220,6 @@ footer {
   .drop-card label {
     font-size: 0.625rem;
     margin-right: 1.5rem !important;
-    margin-top: 0.45rem !important; }
+    margin-top: 1rem !important; }
   .drop-card select {
-    margin-top: -.9rem; } }
+    margin-top: -.85rem; } }

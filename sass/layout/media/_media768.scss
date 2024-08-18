@@ -15,7 +15,7 @@
     color: $color-principal;
     background-color: $color-dark;
     border: 2px solid $color-clear;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .navbar-toggler-icon {
     background-size: contain;
@@ -25,6 +25,7 @@
 }
 .dropdown-menu {
     padding: 0;
+    margin-left: .5rem !important;
 } 
 .dropdown-item {
     font-size: map-get($font-size, size6);
@@ -53,7 +54,11 @@ form.d-flex {
     /* CUERPO - Enlaces */
     .imagen-links {
         gap: 0;
-        padding-left: 3rem;
+        padding-left: 1rem;
+        .subtitulo {
+            font-size: map-get($font-size, size6) !important;
+            margin-top: -2.2rem !important;
+        }
     }
     /* Presentacion img */
     .presentacion img {
@@ -62,6 +67,7 @@ form.d-flex {
     /* Productos Destacados */
     main section h2 {
         font-size: map-get($font-size, size12);
+        margin-bottom: 1.5rem;
         ::after {
             height: .08rem;
         }
@@ -102,7 +108,13 @@ form.d-flex {
     }
 
     /* THE BLACKJACK COLLECTION */
-    /* CUERPO - Drops */
+    /* CUERPO - DROPS */
+    /* Estilo de botones de WhatsApp */
+    .button-comprar {
+        padding: 0.4rem 1rem;
+        margin-top: -1rem;
+        font-size: map-get($font-size, size9) !important;
+    }
     /* Título de producto */
     .drop-card {
         h2 {
@@ -111,18 +123,18 @@ form.d-flex {
         }
         p {
         font-size: map-get($font-size, size18)!important;
-        margin-bottom: 0;
+        margin-bottom: -.5rem;
         }
         label {
             font-size: map-get($font-size, size17) !important;
             margin-right: 0.5rem !important; 
-            margin-top: -1rem;
+            margin-top: -1.5rem;
         }
         select {
             font-size:map-get($font-size, size9);
             padding: .125rem; 
             margin-right: 0; 
-            margin-top: -1rem; 
+            margin-top: -1.5rem; 
         }
         .price {
             font-size: map-get($font-size, size7) !important;
@@ -144,6 +156,14 @@ form.d-flex {
     /* Titulo portada */
     .portada-dos h1 {
         font-size: map-get($font-size, size4);
+    }
+    .imagenes-horizontal {
+        @include grid (repeat(2, 1fr),repeat(2, auto),1rem,none);
+        margin: 2rem 4rem 4rem 4rem;
+        img {
+            width: calc(100% - 1rem);
+            height: auto;
+        }
     }
     /* PREGUNTAS FRECUENTES */
     /* CUERPO */
@@ -176,6 +196,9 @@ form.d-flex {
         input[type="submit"] {
             font-size: map-get($font-size, size7);
         }
+    }
+    section iframe {
+        width: 80%;
     }
     /* Parrafo del mapa */
     .ubicacion {

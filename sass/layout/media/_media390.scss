@@ -5,7 +5,7 @@
     /* ENCABEZADO PANTALLA 390PX*/
 .navbar-nav {
     @include flex (none,nowrap,none,flex-start,none);
-    font-size: map-get($font-size, size7);
+    font-size: map-get($font-size, size18) !important;
     gap: 0.2rem;
     margin: 0;
     padding: 0; 
@@ -16,13 +16,13 @@
     color: $color-principal;
     background-color: $color-dark;
     border: 1px solid $color-clear;
-    margin-left: .2rem;
+    margin-left: .15rem;
 }
 .navbar-collapse {
     width: calc(100% - 2rem);
     display: flex;
     justify-content: space-between;
-    margin-left: 1.4rem;
+    margin-left: .7rem;
     overflow: hidden;
     position: relative;
 }
@@ -31,9 +31,9 @@
     white-space: wrap;
 }
 .form-control {
-    font-size: xx-small;
+    font-size: map-get($font-size, size19);
     width: 70px;
-    padding: 0.2rem;
+    padding: 0.3rem;
     margin-right: 0.1rem;
 }
 form.d-flex {
@@ -53,6 +53,7 @@ form.d-flex {
 .dropdown-menu {
     font-size: map-get($font-size, size17);
     padding: 0.2rem 0;
+    margin-left: 0 !important;
 }
 .dropdown-item {
     font-size: map-get($font-size, size9);
@@ -60,7 +61,7 @@ form.d-flex {
 }
 .logo {
     width: 80px;
-    margin: 1px -3.8rem;
+    margin: 1px -3.3rem;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 .logo.hidden {
@@ -70,8 +71,17 @@ form.d-flex {
     opacity: 0;
     transform: translateX(100px);
 }
-    /* CUERPO */
-    /* Enlaces */
+/* CUERPO - Enlaces */
+.imagen-links {
+    @include grid (repeat(2, 1fr),none,1rem,none);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    a {
+        .subtitulo {
+            font-size: map-get($font-size, size17) !important;
+        }
+    }
+}
     .imagen-links {
         padding-left: 0;
     }
@@ -121,6 +131,11 @@ form.d-flex {
     }
     .drop-section {
         @include grid (repeat(2, 1fr),none,0.5rem,0 0.5rem);
+        .button-comprar {
+        padding: 0.4rem .5rem;
+        font-size: map-get($font-size, size10) !important;
+        margin-bottom: .5rem;
+        }
     }
     .drop-card {
         padding: .1563rem;
@@ -138,11 +153,12 @@ form.d-flex {
             font-size: map-get($font-size, size17) !important;
             padding-left: 1rem; 
             padding-right: 1rem; 
+            margin-top: .5rem;
         }
         label {
             font-size: map-get($font-size, size7) !important;
             margin-right: 1.5rem !important; 
-            margin-top: 0.45rem !important; 
+            margin-top: 1rem !important; 
         } 
         select {
             font-size: map-get($font-size, size10);
@@ -154,7 +170,7 @@ form.d-flex {
         }
         .price { 
             font-size: map-get($font-size, size17) !important;
-            margin-top: 0;
+            margin-top: .5rem;
             }
         }
         .price-talles-container {
@@ -213,17 +229,23 @@ form.d-flex {
         padding: 0.5rem;
         width: 80%;
         margin: 1rem auto;
-        max-width: 300px;
-        height: 370px;
+        max-width: 320px;
+        height: 330px;
         legend {
             font-size: map-get($font-size, size6);
             margin-top: .5rem; 
             margin-bottom: .5rem; 
+            margin-left: 4.5rem;
             }
         label {
             font-size: map-get($font-size, size7);
             margin-bottom: 0;
             }
+        input[type="checkbox"] {
+            margin-right: 0;
+            margin-top: 1rem;
+            margin-left: .3rem;
+        }
         input[type="text"],
         textarea {
             font-size: map-get($font-size, size7);
