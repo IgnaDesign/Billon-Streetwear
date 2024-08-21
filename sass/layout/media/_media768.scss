@@ -109,12 +109,15 @@ form.d-flex {
 
     /* THE BLACKJACK COLLECTION */
     /* CUERPO - DROPS */
+    .drop-section {
+        @include grid (repeat(3, 1fr),repeat(4, auto),1rem,0 2rem);
     /* Estilo de botones de WhatsApp */
     .button-comprar {
         padding: 0.4rem 1rem;
-        margin-top: -1rem;
+        margin-top: -.5rem;
         font-size: map-get($font-size, size9) !important;
     }
+}
     /* Título de producto */
     .drop-card {
         h2 {
@@ -123,18 +126,18 @@ form.d-flex {
         }
         p {
         font-size: map-get($font-size, size18)!important;
-        margin-bottom: -.5rem;
+        margin-bottom: -.3rem;
         }
         label {
             font-size: map-get($font-size, size17) !important;
-            margin-right: 0.5rem !important; 
-            margin-top: -1.5rem;
+            margin-right: -.1rem;
+            margin-top: -1rem;
         }
         select {
             font-size:map-get($font-size, size9);
             padding: .125rem; 
             margin-right: 0; 
-            margin-top: -1.5rem; 
+            margin-top: -1rem; 
         }
         .price {
             font-size: map-get($font-size, size7) !important;

@@ -39,28 +39,37 @@
 }
 /* THE BLACKJACK COLLECTION */
 /* CUERPO - Drops */
+.button-comprar {
+    font-size: map-get($font-size, size17) !important;
+}
 /* Título de producto */
 .drop-card {
+    text-align: center;
     h2 {
-    font-size: map-get($font-size, size3);
+    font-size: map-get($font-size, size4);
     }
     /* Imagen del producto */
-    .drop-card img {
+    img {
         max-width: 90%; 
         height: auto;
     }
     /* Texto de producto */
-    .drop-card p {
+    p {
         font-size: map-get($font-size, size5);
         margin-bottom: .5rem;
     }
     /* Precio de producto */
-    .drop-card .price {
-    font-size: map-get($font-size, size4);
+    .price {
+    font-size: map-get($font-size, size5);
     margin-bottom: 0;
     }
     label {
-        margin-right: .5rem;
+        font-size: map-get($font-size, size12);
+        margin-top: -2rem;
     }
+    select {
+        margin-top: -2rem;
+        padding: 0.5px;
     }
+}
 }

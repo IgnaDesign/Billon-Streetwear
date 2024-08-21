@@ -4,7 +4,7 @@ section {
     margin-bottom: 2rem;
 }
 .drop-section {
-    @include grid (repeat(3, 1fr),repeat(4, auto),1rem,0 2rem);
+    @include grid (repeat(4, 1fr),repeat(4, auto),1rem,0 2rem);
     .buttoncontainerdos {
         display: flex;
         justify-content:center;
@@ -50,7 +50,7 @@ section {
         font-family:$font-uno;
         font-style: $font-normal;
         font-weight: 400;
-        font-size: map-get($font-size, size2);
+        font-size: map-get($font-size, size3);
         color: $color-dark;
         margin-top: 0;
         margin-bottom: 0;
@@ -85,7 +85,7 @@ section {
         font-size: map-get($font-size, size13);
         color: $color-dark;
         margin-top: -2.5rem;
-        margin-right: 1rem;
+        margin-right: 0rem;
         text-align: right;
     }
     select {
@@ -94,7 +94,8 @@ section {
         font-weight: 600;
         font-size: map-get($font-size, size5);
         margin-top: -2.5rem;
-        margin-right: 1rem;
+        margin-right: 0rem;
+        margin-left: .5rem;
         padding: 3px;
         border-radius: .625rem;
         border: 1px solid $color-dark;
@@ -115,7 +116,7 @@ section {
     color: $color-dark;
     margin-top: -1.5rem;
     margin-bottom: 10px;
-    margin-left: 1.5rem;
+    margin-left: 0;
 }
 .talles-container {
     @include flex (none,none,center,center,none);

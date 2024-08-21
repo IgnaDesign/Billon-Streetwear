@@ -12,7 +12,6 @@
 .dropdown-item {
     font-family:$font-dos;
     font-style: $font-normal;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: map-get($font-size, size4);
 }
@@ -37,7 +36,6 @@
 .btn {
     font-family:$font-uno;
     font-style: $font-normal;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: map-get($font-size, size5);
     color: $color-secundario;

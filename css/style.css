@@ -31,7 +31,6 @@
 .dropdown-item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1rem; }
 
@@ -56,7 +55,6 @@
 .btn {
   font-family: "Bona Nova SC", serif;
   font-style: normal;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 0.8rem;
   color: #909090be;
@@ -366,7 +364,7 @@ section {
 
 .drop-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
   gap: 1rem;
   padding: 0 2rem;
@@ -416,7 +414,7 @@ section {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000000;
     margin-top: 0;
     margin-bottom: 0;
@@ -447,7 +445,7 @@ section {
     font-size: 1.1rem;
     color: #000000;
     margin-top: -2.5rem;
-    margin-right: 1rem;
+    margin-right: 0rem;
     text-align: right; }
   .drop-card select {
     font-family: "Montserrat", sans-serif;
@@ -455,7 +453,8 @@ section {
     font-weight: 600;
     font-size: 0.8rem;
     margin-top: -2.5rem;
-    margin-right: 1rem;
+    margin-right: 0rem;
+    margin-left: .5rem;
     padding: 3px;
     border-radius: .625rem;
     border: 1px solid #000000;
@@ -475,7 +474,7 @@ section {
   color: #000000;
   margin-top: -1.5rem;
   margin-bottom: 10px;
-  margin-left: 1.5rem; }
+  margin-left: 0; }
 
 .talles-container {
   display: flex;
@@ -725,24 +724,31 @@ footer {
     font-size: 0.8rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - Drops */
+  .button-comprar {
+    font-size: 0.6rem !important; }
   /* Título de producto */
   .drop-card {
+    text-align: center;
     /* Imagen del producto */
     /* Texto de producto */
     /* Precio de producto */ }
     .drop-card h2 {
-      font-size: 1.2rem; }
-    .drop-card .drop-card img {
+      font-size: 1rem; }
+    .drop-card img {
       max-width: 90%;
       height: auto; }
-    .drop-card .drop-card p {
+    .drop-card p {
       font-size: 0.8rem;
       margin-bottom: .5rem; }
-    .drop-card .drop-card .price {
-      font-size: 1rem;
+    .drop-card .price {
+      font-size: 0.8rem;
       margin-bottom: 0; }
     .drop-card label {
-      margin-right: .5rem; } }
+      font-size: 0.9rem;
+      margin-top: -2rem; }
+    .drop-card select {
+      margin-top: -2rem;
+      padding: 0.5px; } }
 
 /* TABLET -*/
 @media (max-width: 768px) {
@@ -838,27 +844,33 @@ footer {
     margin-right: 2rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - DROPS */
-  /* Estilo de botones de WhatsApp */
-  .button-comprar {
-    padding: 0.4rem 1rem;
-    margin-top: -1rem;
-    font-size: 0.5rem !important; }
+  .drop-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+    padding: 0 2rem;
+    /* Estilo de botones de WhatsApp */ }
+    .drop-section .button-comprar {
+      padding: 0.4rem 1rem;
+      margin-top: -.5rem;
+      font-size: 0.5rem !important; }
   /* Título de producto */
   .drop-card h2 {
     font-size: 0.8rem !important;
     margin-bottom: .5rem; }
   .drop-card p {
     font-size: 0.576rem !important;
-    margin-bottom: -.5rem; }
+    margin-bottom: -.3rem; }
   .drop-card label {
     font-size: 0.6rem !important;
-    margin-right: 0.5rem !important;
-    margin-top: -1.5rem; }
+    margin-right: -.1rem;
+    margin-top: -1rem; }
   .drop-card select {
     font-size: 0.5rem;
     padding: .125rem;
     margin-right: 0;
-    margin-top: -1.5rem; }
+    margin-top: -1rem; }
   .drop-card .price {
     font-size: 0.625rem !important;
     text-align: left !important;
