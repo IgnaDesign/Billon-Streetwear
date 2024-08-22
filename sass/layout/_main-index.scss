@@ -116,6 +116,8 @@ main section {
 }
 .drop:hover {
     filter: drop-shadow(0 0 10px $color-clear);
+    transform: scale(1.05);
+    transition: 200ms;
 }
 .estrellas {
     max-width: 100%;

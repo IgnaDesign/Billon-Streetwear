@@ -245,7 +245,9 @@ main section {
   border-radius: 8px; }
 
 .drop:hover {
-  filter: drop-shadow(0 0 10px #FFFFFF); }
+  filter: drop-shadow(0 0 10px #FFFFFF);
+  transform: scale(1.05);
+  transition: 200ms; }
 
 .estrellas {
   max-width: 100%;
@@ -515,7 +517,7 @@ section {
 /* FONDO CUERPO HOME - THE BLACKJACK*/
 .fondo-cuerpo-home {
   position: relative;
-  background-image: url(../assets/img/fondohome.png);
+  background-image: url(../assets/img/fondos/fondohome.png);
   backdrop-filter: blur(2px);
   background-size: cover;
   background-position: center; }
@@ -636,7 +638,7 @@ main section p {
 /* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
 .fondo-cuerpo-archivos {
   position: relative;
-  background-image: url(/assets/img/fondoblanco.png);
+  background-image: url(../assets/img/Fondos/fondoblanco.png);
   backdrop-filter: blur(2px);
   background-size: cover;
   background-position: center; }
