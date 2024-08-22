@@ -93,6 +93,9 @@ form.d-flex {
     .imagen-links div {
         margin: 2rem;
     }
+    .drop {
+        margin-bottom: .5rem;
+        }
     /* Productos Destacados */
     main section h2 {
         font-size: map-get($font-size, size17);
