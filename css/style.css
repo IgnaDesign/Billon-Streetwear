@@ -142,7 +142,7 @@
   padding: 0; }
   .imagen-links div {
     text-align: center;
-    margin: 2rem;
+    margin: .8rem;
     flex: 1 1 220px;
     max-width: 220px; }
     .imagen-links div a {
@@ -157,7 +157,9 @@
         box-shadow: 5px -5px 20px #FFC000;
         border-radius: 8px; }
       .imagen-links div a img:hover {
+        transform: scale(1.05);
         filter: drop-shadow(1px -1px 10px #FFFFFF);
+        transition: 400ms;
         box-shadow: none; }
       .imagen-links div a .subtitulo {
         color: #FFC000;
