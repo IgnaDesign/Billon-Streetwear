@@ -38,16 +38,33 @@ header nav ul li img {
     /* Subrayado de titulo */
     .portada-dos h1::before,
     .portada-dos h1::after {
-        height: 1px;
+        height: .1px;
     }
     /* CUERPO - THE BLACKJACK COLLECTION */
     /* Etiqueta de talle */
     .drop-card label {
         font-size: map-get($font-size, size7);
-        margin-right: 1.5rem !important;
+        margin-right: 3rem !important;
         margin-top: 1rem !important;
     }
     .drop-card select {
-        margin-top: -.85rem;
+        margin-top: -1.15rem;
+    }
+    /* CONTACTO */
+    /* Mapa */
+    .ubicacion {
+        font-size: map-get($font-size, size7);
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        padding-bottom: 2rem;
+        }
+    /* PIE DE PAGINA */
+    footer {
+        h4 {
+        font-size: map-get($font-size, size7);
+        margin-top: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        }
     }
 }

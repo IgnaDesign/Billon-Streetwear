@@ -3,7 +3,7 @@
     /* HOME- INDEX */
     /* ENCABEZADO PANTALLA 768PX*/
 .navbar-nav {
-    font-size: map-get($font-size, size15);
+    font-size: map-get($font-size, size12) !important;
     gap: .5rem;
     & .nav-link {
         padding: 0 1rem;
@@ -28,7 +28,7 @@
     margin-left: .5rem !important;
 } 
 .dropdown-item {
-    font-size: map-get($font-size, size6);
+    font-size: map-get($font-size, size5);
 }
 .dropdown-divider {
     margin: 0;
