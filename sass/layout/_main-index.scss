@@ -81,7 +81,7 @@ main section {
 .productos-destacados {
     @include flex (none,wrap,space-between,none,none);
     gap: 0.1rem; 
-}
+    }
 .producto-card { 
     text-align: center; 
     width: calc(33.333% - 0.1rem); 
@@ -113,17 +113,17 @@ main section {
     height: auto;
     max-height: 20rem;
     border-radius: 8px;
-}
+    }
 .drop:hover {
     filter: drop-shadow(0 0 10px $color-clear);
     transform: scale(1.05);
     transition: 200ms;
-}
+}   
 .estrellas {
     max-width: 100%;
     height: auto;
     max-height: 5rem;
-}
+    }   
 .buttoncontainer {
     display: flex;
     justify-content:flex-end;
@@ -133,7 +133,7 @@ main section {
     gap: 1rem;
     -webkit-animation: heartbeat 1.5s linear infinite reverse both;
     animation: heartbeat 1.5s linear infinite reverse both;
-}
+    }
 /* Estilo de botones de WhatsApp */
 .whatsapp-button {
     display: inline-block;
@@ -150,13 +150,13 @@ main section {
     font-family:$font-dos;
     font-style: $font-italic;
     font-weight: 700;
-}
+    }
 .whatsapp-button:hover {
     background-image: linear-gradient($color-dark, $color-secundario);
     color: $color-principal;
     border: .0625rem solid $color-dark;
     box-shadow: 1px 2px 0px $color-principal;
-}
+    }
 @-webkit-keyframes heartbeat {
     from {
     -webkit-transform: scale(1);
@@ -225,19 +225,4 @@ main section {
     animation-timing-function: ease-out;
     }
 }  
-/* FONDO CUERPO HOME - THE BLACKJACK*/
-.fondo-cuerpo-home {
-    position: relative;
-    background-image: url(../assets/img/fondohome.png);
-    backdrop-filter: blur(2px);
-    background-size: cover;
-    background-position: center;
-}
-/* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
-.fondo-cuerpo-archivos {
-    position: relative;
-    background-image: url(../assets/img/fondoblanco.png);
-    backdrop-filter: blur(2px);
-    background-size: cover;
-    background-position: center; 
-}
+
