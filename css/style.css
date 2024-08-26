@@ -11,16 +11,15 @@
 /* TAMAÑO DE FUENTE */
 /* CONTENEDOR PRINCIPAL */
 .container {
-  max-width: 1440px;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 100%;
+  padding: 0;
+  margin: 0; }
 
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
 /* BOOTSTRAP */
 .navbar-nav {
-  padding-left: 0rem;
+  padding-left: 1rem;
   font-size: 1.2rem; }
 
 .nav-link {
@@ -28,11 +27,19 @@
   font-style: normal;
   font-weight: 700; }
 
+.dropdown-menu-nosotros {
+  background-color: #FFC000; }
+  .dropdown-menu-nosotros :hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+    transform: scale(1.05);
+    transition: 300ms;
+    text-align: center; }
+
 .dropdown-item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 0.8rem; }
 
 /* Buscador */
 .form-control {
@@ -85,7 +92,6 @@
 /* HOME - THE BLACKJACKS COLLECTION */
 /* PORTADA */
 .portada {
-  max-width: 90rem;
   margin: 0 auto;
   position: relative; }
   .portada img {
@@ -95,7 +101,6 @@
 /* INFORMACIÓN / P.FRECUENTES / CONTACTO*/
 /* PORTADA*/
 .portada-dos {
-  max-width: 90rem;
   margin: 0 auto;
   position: relative; }
   .portada-dos img {
@@ -138,11 +143,11 @@
   justify-content: space-evenly;
   align-items: none;
   flex: none;
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 0; }
   .imagen-links div {
     text-align: center;
-    margin: .8rem;
+    margin: .5rem;
     flex: 1 1 220px;
     max-width: 220px; }
     .imagen-links div a {
@@ -172,13 +177,16 @@
 
 /* PRESENTACION */
 .presentacion {
-  margin-top: 3rem;
-  max-width: 90rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto; }
   .presentacion img {
-    width: 90%;
+    width: 80%;
     border-radius: 8px; }
+    .presentacion img:hover {
+      filter: drop-shadow(0 0 10px #FFC000);
+      transform: scale(1.05);
+      transition: 300ms; }
 
 /* PRODUCTOS DESTACADOS */
 /* TITULO */
@@ -241,7 +249,7 @@ main section {
 .drop {
   max-width: 100%;
   height: auto;
-  max-height: 20rem;
+  max-height: 18rem;
   border-radius: 8px; }
 
 .drop:hover {
@@ -257,9 +265,9 @@ main section {
 .buttoncontainer {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0;
-  margin-bottom: 3rem;
-  margin-right: 3rem;
+  margin-top: -2.5rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
   gap: 1rem;
   -webkit-animation: heartbeat 1.5s linear infinite reverse both;
   animation: heartbeat 1.5s linear infinite reverse both; }
@@ -997,7 +1005,8 @@ footer {
     grid-template-rows: none;
     gap: 1rem;
     padding: none;
-    padding-left: 0; }
+    padding-left: 1rem;
+    margin-top: -.5rem; }
     .imagen-links div {
       width: 120px; }
       .imagen-links div .subtitulo {
@@ -1186,7 +1195,8 @@ footer {
   /*  HOME - INDEX */
   /* ENCABEZADO PANTALLA 360PX*/
   .navbar-nav {
-    font-size: 0.625rem; }
+    font-size: 0.625rem;
+    margin-left: .1rem; }
   .form-control {
     font-size: xx-small;
     width: 85px;
@@ -1198,10 +1208,13 @@ footer {
     max-height: 5rem; }
   /* CUERPO */
   /* Enlaces */
-  .container {
-    padding: .5rem; }
-  .imagen-links img {
-    box-shadow: 2px -2px 20px #FFC000; }
+  .imagen-links {
+    padding-left: 0;
+    margin-top: .5rem; }
+    .imagen-links div {
+      width: 120px; }
+    .imagen-links img {
+      box-shadow: 2px -2px 20px #FFC000; }
   /* Productos Destacados */
   .estrellas {
     max-height: 3rem; }

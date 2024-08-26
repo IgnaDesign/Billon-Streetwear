@@ -4,6 +4,7 @@
     /* ENCABEZADO PANTALLA 360PX*/
 .navbar-nav {
     font-size: map-get($font-size, size7);
+    margin-left: .1rem;
 }
 .form-control { 
     font-size: xx-small; 
@@ -19,11 +20,15 @@ header nav ul li img {
 }
     /* CUERPO */
     /* Enlaces */
-    .container {
-        padding: .5rem;
-    }
-    .imagen-links img {
+    .imagen-links {
+        padding-left: 0;
+        margin-top: .5rem;
+        div {
+            width: 120px;
+        }
+        img {
         box-shadow: 2px -2px 20px $color-principal;
+        }
     }
     /* Productos Destacados */
     .estrellas {

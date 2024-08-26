@@ -3,11 +3,11 @@
 /* ENLACES */
 .imagen-links {
     @include flex (row,wrap,space-evenly,none,none);
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: 0;
     div {
         text-align: center;
-        margin: .8rem;
+        margin: .5rem;
         flex: 1 1 220px;
         max-width: 220px;
         a {
@@ -42,13 +42,17 @@
 }
 /* PRESENTACION */
 .presentacion {
-    margin-top: 3rem;
-    max-width: 90rem;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
     img {
-        width: 90%;
+        width: 80%;
         border-radius: 8px;
+        &:hover {
+            filter: drop-shadow(0 0 10px $color-principal);
+            transform: scale(1.05);
+            transition: 300ms;
+        }
     }
 }
 /* PRODUCTOS DESTACADOS */
@@ -111,7 +115,7 @@ main section {
 .drop {
     max-width: 100%;
     height: auto;
-    max-height: 20rem;
+    max-height: 18rem;
     border-radius: 8px;
     }
 .drop:hover {
@@ -127,9 +131,9 @@ main section {
 .buttoncontainer {
     display: flex;
     justify-content:flex-end;
-    margin-top: 0;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
+    margin-top: -2.5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
     gap: 1rem;
     -webkit-animation: heartbeat 1.5s linear infinite reverse both;
     animation: heartbeat 1.5s linear infinite reverse both;
