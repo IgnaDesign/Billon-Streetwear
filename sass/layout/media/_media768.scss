@@ -210,6 +210,7 @@ form.d-flex {
     }
     /* PIE DE PAGINA */
     footer {
+        background-image: url(../assets/img/Footer/footer768.png);
     section {
         max-width: 48rem;
     }
@@ -223,8 +224,4 @@ form.d-flex {
     font-size: map-get($font-size, size16);
     }
     }
-    /* FONDO CUERPO - Media 768px-390px-360px*/
-.fondo-cuerpo-home {
-    background: $color-dark;
-}
 }
