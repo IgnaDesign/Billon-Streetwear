@@ -135,6 +135,9 @@
   bottom: -10px; }
 
 /* CUERPO */
+body {
+  overflow-x: hidden; }
+
 /* ENLACES */
 .imagen-links {
   display: flex;
