@@ -28,7 +28,7 @@
   font-weight: 700; }
 
 .dropdown-menu-nosotros {
-  background-color: #FFC000; }
+  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #000000); }
   .dropdown-menu-nosotros :hover {
     filter: drop-shadow(0 0 10px #FFFFFF);
     transform: scale(1.05);
@@ -38,8 +38,8 @@
 .dropdown-item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 0.8rem; }
+  font-weight: 500;
+  font-size: 0.9rem; }
 
 /* Buscador */
 .form-control {
@@ -509,7 +509,7 @@ section {
 /* FONDO CUERPO HOME - THE BLACKJACK */
 .fondo-cuerpo-home {
   position: relative;
-  background-image: url(../assets/img/Fondos/fondohome.png);
+  background-image: url(../assets/img/Fondos/fondo.png);
   backdrop-filter: blur(2px);
   background-size: cover;
   background-position: center; }
@@ -637,12 +637,15 @@ main section p {
 
 footer {
   position: relative;
-  color: #000000;
+  color: #FFC000;
   text-align: center;
   padding: 0;
   margin-top: -2rem;
   z-index: 1;
-  background-color: #FFFFFF; }
+  background-image: url(../assets/img/Footer/footerimg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover; }
   footer section {
     display: flex;
     flex-direction: column;
@@ -660,16 +663,24 @@ footer {
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    z-index: -1;
-    background-image: url(../assets/img/Footer/mascara-fondo.png); }
+    z-index: -1; }
   footer p {
+    color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     margin-top: 2rem; }
+    footer p::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000000;
+      z-index: -1; }
   footer .iconos {
     margin-top: 0.5rem;
     display: flex;
@@ -678,14 +689,16 @@ footer {
     footer .iconos a {
       margin-right: 0.2rem; }
       footer .iconos a img {
-        width: 1.8rem;
+        width: 4rem;
         height: auto; }
   footer h4 {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 2rem;
-    font-size: .9375rem; }
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #FFFFFF; }
 
 /* MEDIA QUERY */
 /* LAPTOP*/

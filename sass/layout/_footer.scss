@@ -1,11 +1,14 @@
 footer {
     position: relative;
-    color: $color-dark;
+    color: $color-principal;
     text-align: center;
     padding: 0;
     margin-top: -2rem;
     z-index: 1;
-    background-color: $color-clear;
+    background-image: url(../assets/img/Footer/footerimg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
     section {
         @include flex (column,none,center,center,none);
         position: relative;
@@ -20,16 +23,25 @@ footer {
         height: 100%;
         opacity: 0.5;
         z-index: -1;
-        background-image: url(../assets/img/Footer/mascara-fondo.png);
         }
     p {
+        color: $color-clear;
         font-family: $font-dos;
         font-style: $font-normal;
-        font-optical-sizing: auto;
         font-weight: 600;
-        font-size: map-get($font-size, size4);
+        font-size: map-get($font-size, size13);
         margin-bottom: 1rem;
         margin-top: 2rem;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color-dark; 
+            z-index: -1
+            }
         }
     .iconos {
         margin-top: 0.5rem;
@@ -39,7 +51,7 @@ footer {
         a {
             margin-right: 0.2rem;
             img {
-                width: 1.8rem;
+                width: 4rem;
                 height: auto;
                 }
             }
@@ -47,8 +59,10 @@ footer {
     h4 {
         font-family: $font-uno;
         font-style: $font-normal;
-        font-weight: 400;
+        font-weight: 500;
         margin-top: 2rem;
-        font-size: .9375rem;
+        font-size: map-get($font-size, size13 );
+        margin-bottom: 2rem;
+        color: $color-clear;
         }
 }
