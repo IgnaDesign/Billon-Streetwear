@@ -4,7 +4,7 @@
     /* ENCABEZADO PANTALLA 768PX*/
 .navbar-nav {
     font-size: map-get($font-size, size12) !important;
-    gap: .5rem;
+    gap: .2rem;
     & .nav-link {
         padding: 0 1rem;
     }
@@ -14,7 +14,7 @@
     font-size: map-get($font-size, size4);
     color: $color-principal;
     background-color: $color-dark;
-    border: 2px solid $color-clear;
+    border: 2px solid $color-clear; 
     margin-left: 1rem;
 }
 .navbar-toggler-icon {
@@ -26,11 +26,13 @@
 .dropdown-menu {
     padding: 0;
     margin-left: .5rem !important;
+    border-color: $color-principal;
 } 
 .dropdown-item {
     font-size: map-get($font-size, size5);
 }
 .dropdown-divider {
+    border-color: $color-principal;
     margin: 0;
 }
 form.d-flex {
@@ -49,7 +51,7 @@ form.d-flex {
 }
 /* LOGO */
 .logo {
-    width: 150px;
+    width: 100px;
 }
     /* CUERPO - Enlaces */
     .imagen-links {
@@ -218,7 +220,7 @@ form.d-flex {
     font-size: map-get($font-size, size16);
     }
     .iconos a img {
-    width: 1.5rem;
+    width: 3rem;
     }
     h4 {
     font-size: map-get($font-size, size16);

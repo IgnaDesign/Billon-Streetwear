@@ -16,7 +16,7 @@
     color: $color-principal;
     background-color: $color-dark;
     border: 1px solid $color-clear;
-    margin-left: .15rem;
+    margin-left: 1rem;
 }
 .navbar-collapse {
     width: calc(100% - 2rem);
@@ -54,10 +54,18 @@ form.d-flex {
     padding: 0.2rem 0.3rem;
 }
 .logo {
-    width: 120px;
-    margin: 1px -6rem;
+    width: 80px;
+    margin: 1px -5rem;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
+.navbar-brand {
+        :hover {
+                filter: drop-shadow(0 0 10px $color-clear);
+                transform: scale(1.10);
+                transition: 200ms;
+                width: 85px;
+            }
+        }    
 .logo.hidden {
     display: none;
 }
@@ -271,7 +279,7 @@ form.d-flex {
     margin-bottom: 0.2rem;
     }
     .iconos a img {
-    width: 1.5rem;
+    width: 2rem;
     }
     h4 {
     font-size: map-get($font-size, size6);

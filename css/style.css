@@ -15,6 +15,9 @@
   padding: 0;
   margin: 0; }
 
+body {
+  overflow-x: hidden; }
+
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
 /* BOOTSTRAP */
@@ -28,10 +31,11 @@
   font-weight: 700; }
 
 .dropdown-menu-nosotros {
-  background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D, #000000); }
+  background-color: #FFC000;
+  border-color: #FFC000; }
   .dropdown-menu-nosotros :hover {
     filter: drop-shadow(0 0 10px #FFFFFF);
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 300ms;
     text-align: center; }
 
@@ -40,6 +44,9 @@
   font-style: normal;
   font-weight: 500;
   font-size: 0.9rem; }
+
+.dropdown-divider {
+  border-color: #FFFFFF; }
 
 /* Buscador */
 .form-control {
@@ -50,12 +57,13 @@
   background: none;
   border: none;
   border-radius: 9999px;
-  box-shadow: inset 2px 5px 10px #050505;
-  color: #fff; }
+  box-shadow: inset 2px 5px 10px #FFC000;
+  color: #FFFFFF;
+  margin-right: 2rem; }
 
 .form-control:focus {
-  background: #000000;
-  color: #FFFFFF;
+  background: #FFFFFF;
+  color: #000000;
   box-shadow: 0 0 0 0.2rem #FFC000; }
 
 /* Estilos para el boton */
@@ -64,20 +72,20 @@
   font-style: normal;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #909090be;
+  color: #FFFFFF;
   margin: 0;
   border-radius: 9999px;
-  background: #000000;
-  border: none; }
+  background: #FFFFFF;
+  border: none;
+  margin-right: 2rem; }
 
 .btn-outline-success {
-  border-color: #FFC000;
-  color: #909090be; }
-
-.btn-outline-success:hover {
   background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D) !important;
   color: #000000;
   border-color: #000000; }
+
+.btn-outline-success:hover {
+  color: #FFFFFF; }
 
 .btn-outline-success:active {
   background-color: #FFC000 !important;
@@ -86,7 +94,13 @@
 
 /* LOGO */
 .logo {
-  width: 150px; }
+  width: 90px; }
+
+.navbar-brand :hover {
+  filter: drop-shadow(0 0 10px #FFFFFF);
+  transform: scale(1.1);
+  transition: 200ms;
+  width: 100px; }
 
 /* LAYOUT */
 /* HOME - THE BLACKJACKS COLLECTION */
@@ -135,9 +149,6 @@
   bottom: -10px; }
 
 /* CUERPO */
-body {
-  overflow-x: hidden; }
-
 /* ENLACES */
 .imagen-links {
   display: flex;
@@ -771,7 +782,7 @@ footer {
   /* ENCABEZADO PANTALLA 768PX*/
   .navbar-nav {
     font-size: 0.9rem !important;
-    gap: .5rem; }
+    gap: .2rem; }
     .navbar-nav .nav-link {
       padding: 0 1rem; }
   .navbar-toggler {
@@ -792,10 +803,12 @@ footer {
     flex: 1; }
   .dropdown-menu {
     padding: 0;
-    margin-left: .5rem !important; }
+    margin-left: .5rem !important;
+    border-color: #FFC000; }
   .dropdown-item {
     font-size: 0.8rem; }
   .dropdown-divider {
+    border-color: #FFC000;
     margin: 0; }
   form.d-flex {
     display: flex;
@@ -815,7 +828,7 @@ footer {
     width: 150px; }
   /* LOGO */
   .logo {
-    width: 150px; }
+    width: 100px; }
   /* CUERPO - Enlaces */
   .imagen-links {
     gap: 0;
@@ -948,7 +961,7 @@ footer {
     footer p {
       font-size: 0.75rem; }
     footer .iconos a img {
-      width: 1.5rem; }
+      width: 3rem; }
     footer h4 {
       font-size: 0.75rem; } }
 
@@ -973,7 +986,7 @@ footer {
     color: #FFC000;
     background-color: #000000;
     border: 1px solid #FFFFFF;
-    margin-left: .15rem; }
+    margin-left: 1rem; }
   .navbar-collapse {
     width: calc(100% - 2rem);
     display: flex;
@@ -1007,9 +1020,14 @@ footer {
     font-size: 0.8rem;
     padding: 0.2rem 0.3rem; }
   .logo {
-    width: 120px;
-    margin: 1px -6rem;
+    width: 80px;
+    margin: 1px -5rem;
     transition: opacity 0.3s ease, transform 0.2s ease; }
+  .navbar-brand :hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+    transform: scale(1.1);
+    transition: 200ms;
+    width: 85px; }
   .logo.hidden {
     display: none; }
   .navbar-collapse.show + .navbar-brand .logo {
@@ -1202,7 +1220,7 @@ footer {
       font-size: 0.6rem;
       margin-bottom: 0.2rem; }
     footer .iconos a img {
-      width: 1.5rem; }
+      width: 2rem; }
     footer h4 {
       font-size: 0.7rem;
       margin-top: 1rem;
@@ -1216,6 +1234,8 @@ footer {
   .navbar-nav {
     font-size: 0.625rem;
     margin-left: .1rem; }
+  .navbar-toggler {
+    margin-left: .5rem; }
   .form-control {
     font-size: xx-small;
     width: 85px;
@@ -1225,6 +1245,15 @@ footer {
     margin-right: 0.8rem; }
   header nav ul li img {
     max-height: 5rem; }
+  .logo {
+    width: 70px;
+    margin: 1px -4rem;
+    transition: opacity 0.3s ease, transform 0.2s ease; }
+  .navbar-brand :hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+    transform: scale(1.05);
+    transition: 200ms;
+    width: 70px; }
   /* CUERPO */
   /* Enlaces */
   .imagen-links {
