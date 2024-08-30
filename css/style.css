@@ -46,7 +46,7 @@ body {
   font-size: 0.9rem; }
 
 .dropdown-divider {
-  border-color: #FFFFFF; }
+  border-color: #FFC000 !important; }
 
 /* Buscador */
 .form-control {
@@ -966,9 +966,9 @@ footer {
       font-size: 0.75rem; } }
 
 /* PHONE */
-@media (max-width: 390px) {
+@media (max-width: 426px) {
   /* HOME - INDEX */
-  /* ENCABEZADO PANTALLA 390PX*/
+  /* ENCABEZADO PANTALLA 425PX*/
   .navbar-nav {
     display: flex;
     flex-direction: none;
@@ -1040,7 +1040,7 @@ footer {
     grid-template-rows: none;
     gap: 1rem;
     padding: none;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     margin-top: -.5rem; }
     .imagen-links div {
       width: 120px; }
@@ -1064,15 +1064,16 @@ footer {
     width: 80%; }
     .producto-card p {
       font-size: 0.875rem !important;
-      margin-left: 2rem; }
+      margin-left: 3.5rem; }
     .producto-card h3 {
       text-align: left;
-      margin-left: .5rem;
+      margin-left: 2rem;
       font-size: 1rem !important; }
   .whatsapp-button {
     padding: 0.5rem 0.5rem;
     font-size: 0.7rem !important;
-    margin-top: -2rem; }
+    margin-top: -2rem;
+    margin-right: 1rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - Drops */
   section {
@@ -1148,7 +1149,7 @@ footer {
   /* INFORMACION - CONTACTO . PREG FRECUENTES */
   /* Titulo portada */
   .portada-dos h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: .5rem; }
   /* INFORMACION */
   /* Ajuste de imagenes */
@@ -1170,9 +1171,9 @@ footer {
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .informacion p {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   /* CONTACTO */
   /* CUERPO */
   /* Formulario */
@@ -1180,15 +1181,15 @@ footer {
     padding: 0.5rem;
     width: 80%;
     margin: 1rem auto;
-    max-width: 320px;
-    height: 350px; }
+    max-width: 350px;
+    height: 380px; }
     fieldset legend {
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-top: .5rem;
       margin-bottom: .5rem;
       margin-left: 4.5rem; }
     fieldset label {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin-bottom: 0; }
     fieldset input[type="checkbox"] {
       margin-right: 0;
@@ -1196,16 +1197,16 @@ footer {
       margin-left: .3rem; }
     fieldset input[type="text"],
     fieldset textarea {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       padding: 0.25rem;
       margin-bottom: 0.5rem;
       margin-top: 0; }
     fieldset input[type="submit"] {
-      font-size: 0.7rem; }
+      font-size: 0.8rem; }
   /* Mapa */
   section iframe {
-    height: 270px;
-    width: 270px; }
+    height: 300px;
+    width: 290px; }
   .ubicacion {
     font-size: 0.75rem;
     padding-left: 1.8rem;
@@ -1226,6 +1227,47 @@ footer {
       margin-top: 1rem;
       margin-left: .5rem;
       margin-right: .5rem; } }
+
+/* PHONE */
+@media (max-width: 390px) {
+  /* HOME - INDEX */
+  /* CUERPO - Enlaces */
+  .imagen-links {
+    padding-left: 1rem; }
+  /* Productos Destacados */
+  .producto-card p {
+    margin-left: 2rem; }
+  .producto-card h3 {
+    margin-left: .5rem; }
+  /* INFORMACION - CONTACTO . PREG FRECUENTES */
+  /* Titulo portada */
+  .portada-dos h1 {
+    font-size: 0.8rem; }
+  /* PREGUNTAS FRECUENTES */
+  /* CUERPO */
+  .informacion h3 {
+    font-size: 1rem; }
+  .informacion p {
+    font-size: 0.8rem; }
+  /* CONTACTO */
+  /* CUERPO */
+  /* Formulario */
+  fieldset {
+    max-width: 320px;
+    height: 350px; }
+    fieldset legend {
+      font-size: 0.8rem; }
+    fieldset label {
+      font-size: 0.7rem; }
+    fieldset input[type="text"],
+    fieldset textarea {
+      font-size: 0.7rem; }
+    fieldset input[type="submit"] {
+      font-size: 0.7rem; }
+  /* Mapa */
+  section iframe {
+    height: 270px;
+    width: 270px; } }
 
 /* PHONE */
 @media (max-width: 360px) {
@@ -1298,3 +1340,51 @@ footer {
       margin-top: 1rem;
       margin-left: .5rem;
       margin-right: .5rem; } }
+
+/* PHONE */
+@media (max-width: 321px) {
+  /*  HOME - INDEX */
+  /* ENCABEZADO PANTALLA 320PX*/
+  .navbar-nav {
+    font-size: 0.6rem !important; }
+  .navbar-toggler {
+    font-size: 0.625rem; }
+  .dropdown-item {
+    font-size: 0.576rem; }
+  .logo {
+    width: 60px;
+    margin: 1px -3rem; }
+  /* CUERPO - Enlaces */
+  .imagen-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
+    gap: 1rem;
+    padding: none;
+    padding-left: 3.5rem;
+    margin-top: 0; }
+    .imagen-links div {
+      width: 160px; }
+      .imagen-links div .subtitulo {
+        font-size: 0.8rem !important;
+        margin-top: .6rem;
+        margin-bottom: -2rem; }
+  .whatsapp-button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.6rem !important;
+    margin-top: -2rem;
+    margin-right: -.3rem; }
+  /* CONTACTO */
+  /* CUERPO */
+  /* Formulario */
+  fieldset legend {
+    margin-left: 3rem; }
+  /* Mapa */
+  section iframe {
+    height: 220px;
+    width: 220px; }
+  /* PIE DE PAGINA */
+  footer {
+    background-image: url(../assets/img/Footer/footer360.png); }
+    footer h4 {
+      font-size: 0.576rem; } }

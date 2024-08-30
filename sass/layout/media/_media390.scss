@@ -1,216 +1,23 @@
-
 /* PHONE */
 @media (max-width: 390px) {
-    /* HOME - INDEX */
-    /* ENCABEZADO PANTALLA 390PX*/
-.navbar-nav {
-    @include flex (none,nowrap,none,flex-start,none);
-    font-size: map-get($font-size, size15) !important;
-    gap: 0.2rem;
-    margin: 0;
-    padding: 0;
-}
-.navbar-toggler {
-    padding: 0.2rem;
-    font-size: map-get($font-size, size15);
-    color: $color-principal;
-    background-color: $color-dark;
-    border: 1px solid $color-clear;
-    margin-left: 1rem;
-}
-.navbar-collapse {
-    width: calc(100% - 2rem);
-    display: flex;
-    justify-content: space-between;
-    margin-left: .7rem;
-    overflow: hidden;
-    position: relative;
-}
-.navbar-nav .nav-link {
-    padding: 0 0.01rem;
-    white-space: wrap;
-}
-.form-control {
-    display: none
-}
-form.d-flex {
-    @include flex (none,none,none,center,none);
-    margin-left: 0.5rem;
-    margin-right: 3.5rem;
-}
-.search-hidden {
-    display: none;
-}
-.btn {
-    display: none;
-}
-.dropdown-menu {
-    font-size: map-get($font-size, size17);
-    padding: 0.2rem 0;
-    margin-left: 0 !important;
-}
-.dropdown-item {
-    font-size: map-get($font-size, size5);
-    padding: 0.2rem 0.3rem;
-}
-.logo {
-    width: 80px;
-    margin: 1px -5rem;
-    transition: opacity 0.3s ease, transform 0.2s ease;
-}
-.navbar-brand {
-        :hover {
-                filter: drop-shadow(0 0 10px $color-clear);
-                transform: scale(1.10);
-                transition: 200ms;
-                width: 85px;
-            }
-        }    
-.logo.hidden {
-    display: none;
-}
-.navbar-collapse.show + .navbar-brand .logo {
-    opacity: 0;
-    transform: translateX(100px);
-}
+/* HOME - INDEX */
 /* CUERPO - Enlaces */
 .imagen-links {
-    @include grid (repeat(2, 1fr),none,1rem,none);
     padding-left: 1rem;
-    margin-top: -.5rem;
-    div {
-        width: 120px;
-        .subtitulo {
-            font-size: map-get($font-size, size6) !important;
-            margin-top: .5625rem;
-            margin-bottom: -2rem;
-            }
-        }
     }
     /* Productos Destacados */
-    main section h2 {
-        font-size: map-get($font-size, size17);
-        margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
-        ::after {
-            height: .05rem;
-        }
-    }
-    .productos-destacados {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        }
     .producto-card {
-        width: 80%;
         p {
-            font-size: map-get($font-size, size15) !important; 
             margin-left: 2rem;
         }
         h3 {
-            text-align: left;
             margin-left: .5rem;
-            font-size: map-get($font-size, size4) !important;
         }
     }
-    .whatsapp-button {
-        padding: 0.5rem 0.5rem;
-        font-size: map-get($font-size, size6) !important;
-        margin-top: -2rem;
-    }
-    /* THE BLACKJACK COLLECTION */
-    /* CUERPO - Drops */
-    section {
-        margin-bottom: .8rem;
-    }
-    .drop-section {
-        @include grid (repeat(1, 1fr),none,2rem,1rem 2rem);
-        .button-comprar {
-        padding: 0.4rem .5rem;
-        font-size: map-get($font-size, size6) !important;
-        margin-bottom: 1rem;
-        }
-    }
-    .drop-card {
-        padding: .1563rem;
-        margin: 0.2rem;
-        h2 {
-            font-size: map-get($font-size, size3) !important;
-            padding-top: .8rem;   
-        }
-        img { 
-            max-width: 80% !important;  
-            padding-top: 0.1rem !important;
-            padding-bottom: 0.1rem !important;
-        }
-        p {
-            font-size: map-get($font-size, size5) !important;
-            padding-left: 1rem; 
-            padding-right: 1rem; 
-            margin-top: .5rem;
-        }
-        label {
-            font-size: map-get($font-size, size4) !important;
-            margin-right: 3rem !important; 
-            margin-top: 1rem !important; 
-        } 
-        select {
-            font-size: map-get($font-size, size17);
-            padding: 3px;
-            margin-top: -1.2rem;
-            margin-right: .5rem;
-            padding: 0px;
-            width: 35%;
-        }
-        .price { 
-            font-size: map-get($font-size, size4) !important;
-            margin-top: .5rem;
-            }
-        }
-        .price-talles-container {
-            @include flex (none,none,space-between,flex-start,none);
-            width: 100%;
-            margin-top: -1rem;
-            font-size: map-get($font-size, size17) !important;
-        }
-        .talles-container {
-            @include flex (column,none,none,flex-end,none);
-            padding-right: 1rem;
-        }
-        .botones {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 90%;
-            padding-top: 0rem;
-            padding-bottom: 3rem;
-            margin-left: 2.5rem;
-        }
-        .boton-uno, .boton-dos {
-            font-size:map-get($font-size, size18);
-            margin-bottom: -.5rem;
-        }
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */
     .portada-dos h1 {
         font-size: map-get($font-size, size5);
-        margin-top: .5rem;
-    }
-    /* INFORMACION */
-    /* Ajuste de imagenes */
-    .imagenes-horizontal {
-        @include grid (repeat(1, 1fr),repeat(1, auto),none,none);
-        justify-items: center;
-        align-items: center;
-        margin: 1rem 2rem 2rem 2rem;
-        img {
-            width: 90%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
     }
     /* PREGUNTAS FRECUENTES */
     /* CUERPO */
@@ -226,32 +33,17 @@ form.d-flex {
     /* CUERPO */
     /* Formulario */
     fieldset {
-        padding: 0.5rem;
-        width: 80%;
-        margin: 1rem auto;
         max-width: 320px;
         height: 350px;
         legend {
             font-size: map-get($font-size, size5);
-            margin-top: .5rem; 
-            margin-bottom: .5rem; 
-            margin-left: 4.5rem;
             }
         label {
             font-size: map-get($font-size, size6);
-            margin-bottom: 0;
             }
-        input[type="checkbox"] {
-            margin-right: 0;
-            margin-top: 1rem;
-            margin-left: .3rem;
-        }
         input[type="text"],
         textarea {
             font-size: map-get($font-size, size6);
-            padding: 0.25rem; 
-            margin-bottom: 0.5rem;
-            margin-top: 0;
             }
         input[type="submit"] {
             font-size: map-get($font-size, size6);
@@ -262,30 +54,5 @@ form.d-flex {
             height: 270px;
             width: 270px;
             }
-    .ubicacion {
-        font-size: map-get($font-size, size16);
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
-        padding-bottom: 2rem;
-        }
-    /* PIE DE PAGINA */
-    footer {
-        background-image: url(../assets/img/Footer/footer390.png);
-    section {
-    max-width: 24.375rem;
-    }   
-    p {
-    font-size: map-get($font-size, size17);
-    margin-bottom: 0.2rem;
-    }
-    .iconos a img {
-    width: 2rem;
-    }
-    h4 {
-    font-size: map-get($font-size, size6);
-    margin-top: 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    }
-    }
+
 }

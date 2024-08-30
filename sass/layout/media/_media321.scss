@@ -1,0 +1,58 @@
+ /* PHONE */
+@media (max-width: 321px) {
+    /*  HOME - INDEX */
+    /* ENCABEZADO PANTALLA 320PX*/
+    .navbar-nav {
+        font-size: map-get($font-size, size17) !important;
+    }
+    .navbar-toggler {
+        font-size: map-get($font-size, size7);
+    }
+    .dropdown-item {
+        font-size: map-get($font-size, size18);
+    }
+    .logo {
+        width: 60px;
+        margin: 1px -3rem;
+    }
+    /* CUERPO - Enlaces */
+.imagen-links {
+    @include grid (repeat(1, 1fr),none,1rem,none);
+    padding-left: 3.5rem;
+    margin-top: 0;
+    div {
+        width: 160px;
+        .subtitulo {
+            font-size: map-get($font-size, size5) !important;
+            margin-top: .6rem;
+            margin-bottom: -2rem;
+            }
+        }
+    }
+    .whatsapp-button {
+        padding: 0.5rem 0.5rem;
+        font-size: map-get($font-size, size17) !important;
+        margin-top: -2rem;
+        margin-right: -.3rem;
+    }
+    /* CONTACTO */
+    /* CUERPO */
+    /* Formulario */
+    fieldset {
+        legend {
+            margin-left: 3rem;
+        }
+    }
+        /* Mapa */
+        section iframe {
+            height: 220px;
+            width: 220px;
+            }
+    /* PIE DE PAGINA */
+    footer {
+        background-image: url(../assets/img/Footer/footer360.png);
+        h4 {
+        font-size: map-get($font-size, size18);
+        }
+    }
+}
