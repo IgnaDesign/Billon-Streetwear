@@ -198,12 +198,11 @@ form.d-flex {
         margin-top: .5rem;
     }
     /* INFORMACION */
-    /* Ajuste de imagenes */
     .imagenes-horizontal {
         @include grid (repeat(1, 1fr),repeat(1, auto),none,none);
         justify-items: center;
         align-items: center;
-        margin: 1rem 2rem 2rem 2rem;
+        margin: 3rem 2rem 2rem 2rem;
         img {
             width: 90%;
             height: auto;

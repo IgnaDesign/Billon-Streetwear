@@ -539,7 +539,12 @@ section {
   gap: 1rem; }
   .imagenes-horizontal img {
     width: calc(100% - 1rem);
-    height: auto; }
+    height: auto;
+    border-radius: 8px; }
+    .imagenes-horizontal img:hover {
+      filter: drop-shadow(0 0 10px #FFC000);
+      transform: scale(1.1);
+      transition: 150ms; }
 
 .informacion {
   padding: 2rem; }
@@ -549,7 +554,8 @@ section {
     font-weight: 700;
     font-size: 1.3rem;
     color: #FFC000;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
     text-align: left; }
   .informacion p {
     font-family: "Montserrat", sans-serif;
@@ -558,7 +564,8 @@ section {
     font-weight: 400;
     font-size: 0.9rem;
     color: #000000;
-    margin-bottom: 1rem;
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
     text-align: left; }
 
 fieldset {
@@ -914,16 +921,18 @@ footer {
   /* Titulo portada */
   .portada-dos h1 {
     font-size: 1rem; }
+  /* INFORMACION */
   .imagenes-horizontal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
     padding: none;
-    margin: 2rem 4rem 4rem 4rem; }
+    margin: 4rem 4rem 4rem 4rem; }
     .imagenes-horizontal img {
       width: calc(100% - 1rem);
-      height: auto; }
+      height: auto;
+      margin-bottom: 1.5rem; }
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
@@ -1152,7 +1161,6 @@ footer {
     font-size: 1rem;
     margin-top: .5rem; }
   /* INFORMACION */
-  /* Ajuste de imagenes */
   .imagenes-horizontal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1161,7 +1169,7 @@ footer {
     padding: none;
     justify-items: center;
     align-items: center;
-    margin: 1rem 2rem 2rem 2rem; }
+    margin: 3rem 2rem 2rem 2rem; }
     .imagenes-horizontal img {
       width: 90%;
       height: auto;
@@ -1374,6 +1382,9 @@ footer {
     font-size: 0.6rem !important;
     margin-top: -2rem;
     margin-right: -.3rem; }
+  /* INFORMACION */
+  .imagenes-horizontal {
+    margin: 2rem 2rem 2rem 2rem; }
   /* CONTACTO */
   /* CUERPO */
   /* Formulario */

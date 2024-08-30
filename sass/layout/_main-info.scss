@@ -5,5 +5,11 @@
     img {
         width: calc(100% - 1rem);
         height: auto;
+        border-radius: 8px;
+        &:hover {
+            filter: drop-shadow(0 0 10px $color-principal);
+            transform: scale(1.10);
+            transition: 150ms;
+        }
     }
 }
