@@ -147,11 +147,11 @@ section {
     background-image: linear-gradient( #000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
     color: $color-dark;
 }
-/* FONDO CUERPO HOME - THE BLACKJACK */
-.fondo-cuerpo-home {
-    position: relative;
+/* BACKGROUND HOME - THE BLACKJACK*/
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
     background-image: url(../assets/img/Fondos/fondo.png);
-    backdrop-filter: blur(2px);
-    background-size: cover;
-    background-position: center;
 }

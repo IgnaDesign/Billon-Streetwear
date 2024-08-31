@@ -1,6 +1,6 @@
 .imagenes-horizontal {
     @include flex (row,nowrap,space-evenly,center,none);
-    margin: 2rem 4rem 4rem 4rem;
+    margin: 3rem 4rem 4rem 4rem;
     gap: 1rem;
     img {
         width: calc(100% - 1rem);

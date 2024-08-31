@@ -13,7 +13,9 @@
 .container {
   max-width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  z-index: 99; }
 
 body {
   overflow-x: hidden; }
@@ -216,7 +218,7 @@ main section {
     font-size: 1.2rem;
     text-shadow: 8px -5px 15px #909090be;
     margin-top: 2rem;
-    margin-bottom: 3rem; }
+    margin-bottom: .5rem; }
   main section h2::after {
     content: "";
     width: 100%;
@@ -238,10 +240,17 @@ main section {
 
 .producto-card {
   text-align: center;
-  width: calc(33.333% - 0.1rem);
-  margin: 0;
+  width: calc(30% - 0.1rem);
   color: #FFFFFF;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #000000;
+  margin: 2rem 1rem;
+  border: 2px solid #333333;
+  /* Borde de 2px con color gris oscuro */
+  border-radius: 10px;
+  /* Borde redondeado para el contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad */ }
   .producto-card p {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
@@ -264,7 +273,8 @@ main section {
   max-width: 100%;
   height: auto;
   max-height: 18rem;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-top: 1.5rem; }
 
 .drop:hover {
   filter: drop-shadow(0 0 10px #FFFFFF);
@@ -280,7 +290,7 @@ main section {
   display: flex;
   justify-content: flex-end;
   margin-top: -2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   margin-right: 2rem;
   gap: 1rem;
   -webkit-animation: heartbeat 1.5s linear infinite reverse both;
@@ -520,13 +530,13 @@ section {
   background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
   color: #000000; }
 
-/* FONDO CUERPO HOME - THE BLACKJACK */
-.fondo-cuerpo-home {
-  position: relative;
-  background-image: url(../assets/img/Fondos/fondo.png);
-  backdrop-filter: blur(2px);
-  background-size: cover;
-  background-position: center; }
+/* BACKGROUND HOME - THE BLACKJACK*/
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-image: url(../assets/img/Fondos/fondo.png); }
 
 .imagenes-horizontal {
   display: flex;
@@ -535,7 +545,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   flex: none;
-  margin: 2rem 4rem 4rem 4rem;
+  margin: 3rem 4rem 4rem 4rem;
   gap: 1rem; }
   .imagenes-horizontal img {
     width: calc(100% - 1rem);
@@ -737,26 +747,39 @@ footer {
       margin: 1.5rem; }
     .imagen-links a .subtitulo {
       font-size: 0.7rem !important; }
+  /* DROPS */
+  .productos-destacados {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: none;
+    flex: none;
+    gap: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
   .drop {
-    max-height: 18rem !important;
-    margin-bottom: 1rem; }
+    max-height: 15.5rem !important;
+    margin-bottom: .5rem; }
   .estrellas {
     max-height: 3rem; }
   .producto-card p {
-    width: 86.5%;
-    margin-left: 2rem; }
+    width: 85%;
+    margin-left: 1.5rem; }
   .producto-card h3 {
     font-size: 1rem;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    margin-top: -.5rem; }
   .buttoncontainer {
-    margin-right: 3rem;
-    margin-top: -2.3rem; }
+    margin-right: 1.4rem;
+    margin-top: -2rem; }
   .whatsapp-button {
-    font-size: 0.8rem; }
-  /* THE BLACKJACK COLLECTION */
-  /* CUERPO - Drops */
+    font-size: 0.8rem;
+    padding: 0.3rem .5rem; }
   .button-comprar {
     font-size: 0.6rem !important; }
+  /* THE BLACKJACK COLLECTION */
+  /* CUERPO - Drops */
   /* Título de producto */
   .drop-card {
     text-align: center;
@@ -839,44 +862,53 @@ footer {
   /* CUERPO - Enlaces */
   .imagen-links {
     gap: 0;
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    margin-top: -.5rem; }
     .imagen-links .subtitulo {
       font-size: 0.7rem !important;
       margin-top: -2.2rem !important; }
   /* Presentacion img */
   .presentacion img {
-    width: 90%; }
+    width: 90%;
+    margin-top: -3rem;
+    margin-bottom: -1rem; }
   /* Productos Destacados */
   main section h2 {
     font-size: 0.9rem;
     margin-bottom: 1.5rem; }
     main section h2 ::after {
       height: .08rem; }
+  .producto-card {
+    margin: 0;
+    margin-bottom: 2rem; }
+    .producto-card p {
+      width: 80%;
+      font-size: 0.7rem !important;
+      margin-bottom: 0.5rem !important;
+      margin-left: 1.5rem; }
+    .producto-card h3 {
+      margin-left: 0;
+      text-align: left;
+      padding-left: 1.5rem;
+      font-size: 0.7rem !important; }
   .containerdos {
-    max-width: 48rem; }
+    max-width: 48rem;
+    padding: 0;
+    margin: 0;
+    position: relative; }
   .drop {
-    max-height: 14rem !important; }
+    max-height: 12rem !important;
+    margin-top: 1rem; }
   .estrellas {
     max-height: 2.5rem; }
-  .producto-card p {
-    width: 80%;
-    font-size: 0.7rem !important;
-    margin-bottom: 0.5rem !important;
-    margin-left: 1.5rem; }
-  .producto-card h3 {
-    margin-left: 0;
-    text-align: left;
-    padding-left: 1.5rem;
-    font-size: 0.75rem !important; }
   /* Estilo de botones de WhatsApp */
   .whatsapp-button {
-    font-size: 0.6rem !important;
-    padding: 0.5rem 0.5rem;
-    margin-top: -2rem; }
+    font-size: 0.625rem !important;
+    padding: 0.3rem 0.5rem; }
   .buttoncontainer {
-    margin-top: .6rem !important;
-    margin-bottom: 3rem;
-    margin-right: 2rem; }
+    margin-top: -1.5rem !important;
+    margin-bottom: 1rem;
+    margin-right: 1rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - DROPS */
   .drop-section {
@@ -1057,9 +1089,15 @@ footer {
         font-size: 0.7rem !important;
         margin-top: .5625rem;
         margin-bottom: -2rem; }
+  /* PRESENTACION */
+  .presentacion {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem; }
   /* Productos Destacados */
   main section h2 {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem; }
     main section h2 ::after {
@@ -1068,20 +1106,27 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 2rem; }
   .producto-card {
     width: 80%; }
     .producto-card p {
       font-size: 0.875rem !important;
-      margin-left: 3.5rem; }
+      margin-left: 2.5rem; }
     .producto-card h3 {
       text-align: left;
-      margin-left: 2rem;
+      margin-left: 1rem;
+      margin-top: .1rem;
       font-size: 1rem !important; }
+  .drop {
+    max-height: 16rem !important;
+    margin-top: 1.5rem; }
+  .estrellas {
+    max-height: 3rem; }
   .whatsapp-button {
     padding: 0.5rem 0.5rem;
     font-size: 0.7rem !important;
-    margin-top: -2rem;
+    margin-top: -.5rem;
     margin-right: 1rem; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - Drops */
@@ -1247,6 +1292,11 @@ footer {
     margin-left: 2rem; }
   .producto-card h3 {
     margin-left: .5rem; }
+  .drop {
+    max-height: 14rem !important;
+    margin-top: 1.5rem; }
+  .whatsapp-button {
+    padding: 0.3rem 0.3rem; }
   /* INFORMACION - CONTACTO . PREG FRECUENTES */
   /* Titulo portada */
   .portada-dos h1 {
@@ -1367,20 +1417,36 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: none;
-    gap: 1rem;
+    gap: 0;
     padding: none;
     padding-left: 3.5rem;
-    margin-top: 0; }
+    margin-top: -.5rem; }
     .imagen-links div {
       width: 160px; }
       .imagen-links div .subtitulo {
-        font-size: 0.8rem !important;
-        margin-top: .6rem;
-        margin-bottom: -2rem; }
+        font-size: 0.73 !important;
+        margin: 0; }
+  /* PRESENTACION */
+  .presentacion {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem; }
+    .presentacion img {
+      width: 80%; }
+  /* DROPS */
+  /* Productos Destacados */
+  .producto-card h3 {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem;
+    margin-top: -.5rem; }
+  .drop {
+    max-height: 12rem !important;
+    margin-top: 1rem; }
   .whatsapp-button {
-    padding: 0.5rem 0.5rem;
+    padding: 0.3rem 0.3rem;
     font-size: 0.6rem !important;
-    margin-top: -2rem;
+    margin-top: -1rem;
     margin-right: -.3rem; }
   /* INFORMACION */
   .imagenes-horizontal {

@@ -15,24 +15,46 @@
         width: 60px;
         margin: 1px -3rem;
     }
-    /* CUERPO - Enlaces */
+/* CUERPO - Enlaces */
 .imagen-links {
-    @include grid (repeat(1, 1fr),none,1rem,none);
+    @include grid (repeat(1, 1fr),none,0,none);
     padding-left: 3.5rem;
-    margin-top: 0;
+    margin-top: -.5rem;
     div {
         width: 160px;
         .subtitulo {
-            font-size: map-get($font-size, size5) !important;
-            margin-top: .6rem;
-            margin-bottom: -2rem;
+            font-size: map-get($font-size, size20) !important;
+            margin: 0;
             }
         }
     }
+/* PRESENTACION */
+.presentacion {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    img {
+        width: 80%;
+        }
+    }
+/* DROPS */
+/* Productos Destacados */
+    .producto-card {
+        h3 {
+            font-size: map-get($font-size, size12) !important;
+            margin-bottom: 1rem;
+            margin-top: -.5rem;
+        }
+    }
+.drop {
+    max-height: 12rem !important;
+    margin-top: 1rem;
+}
     .whatsapp-button {
-        padding: 0.5rem 0.5rem;
+        padding: 0.3rem 0.3rem;
         font-size: map-get($font-size, size17) !important;
-        margin-top: -2rem;
+        margin-top: -1rem;
         margin-right: -.3rem;
     }
      /* INFORMACION */

@@ -5,7 +5,7 @@
 .imagen-links {
     padding-left: 1rem;
     }
-    /* Productos Destacados */
+/* Productos Destacados */
     .producto-card {
         p {
             margin-left: 2rem;
@@ -13,6 +13,13 @@
         h3 {
             margin-left: .5rem;
         }
+    }
+    .drop {
+        max-height: 14rem !important;
+        margin-top: 1.5rem;
+    }
+    .whatsapp-button {
+        padding: 0.3rem 0.3rem;
     }
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */

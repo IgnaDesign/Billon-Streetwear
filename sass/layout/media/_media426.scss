@@ -86,9 +86,16 @@ form.d-flex {
             }
         }
     }
+    /* PRESENTACION */
+.presentacion {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
     /* Productos Destacados */
     main section h2 {
-        font-size: map-get($font-size, size17);
+        font-size: map-get($font-size, size15);
         margin-top: 0.5rem;
         margin-bottom: 1.5rem;
         ::after {
@@ -100,23 +107,32 @@ form.d-flex {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 2rem;
         }
     .producto-card {
         width: 80%;
         p {
             font-size: map-get($font-size, size15) !important; 
-            margin-left: 3.5rem;
+            margin-left: 2.5rem;
         }
         h3 {
             text-align: left;
-            margin-left: 2rem;
+            margin-left: 1rem;
+            margin-top: .1rem;
             font-size: map-get($font-size, size4) !important;
         }
+    }
+    .drop {
+        max-height: 16rem !important;
+        margin-top: 1.5rem;
+    }
+    .estrellas {
+        max-height: 3rem;
     }
     .whatsapp-button {
         padding: 0.5rem 0.5rem;
         font-size: map-get($font-size, size6) !important;
-        margin-top: -2rem;
+        margin-top: -.5rem;
         margin-right: 1rem;
     }
     /* THE BLACKJACK COLLECTION */

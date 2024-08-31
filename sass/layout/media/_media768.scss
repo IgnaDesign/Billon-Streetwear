@@ -57,6 +57,7 @@ form.d-flex {
     .imagen-links {
         gap: 0;
         padding-left: 1rem;
+        margin-top: -.5rem;
         .subtitulo {
             font-size: map-get($font-size, size6) !important;
             margin-top: -2.2rem !important;
@@ -65,6 +66,8 @@ form.d-flex {
     /* Presentacion img */
     .presentacion img {
         width: 90%;
+        margin-top: -3rem;
+        margin-bottom: -1rem;
     }
     /* Productos Destacados */
     main section h2 {
@@ -74,16 +77,9 @@ form.d-flex {
             height: .08rem;
         }
     }
-    .containerdos {
-        max-width: 48rem;
-    }
-    .drop {
-        max-height: 14rem !important;
-    }
-    .estrellas {
-        max-height: 2.5rem;
-    }
     .producto-card {
+        margin: 0;
+        margin-bottom: 2rem;
         p {
             width: 80%;
             font-size: map-get($font-size, size6) !important;
@@ -94,19 +90,31 @@ form.d-flex {
             margin-left: 0;
             text-align: left;
             padding-left: 1.5rem;
-            font-size: map-get($font-size, size16) !important;
+            font-size: map-get($font-size, size6) !important;
         }
+    }
+    .containerdos {
+        max-width: 48rem;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .drop {
+        max-height: 12rem !important;
+        margin-top: 1rem; 
+    }
+    .estrellas {
+        max-height: 2.5rem;
     }
     /* Estilo de botones de WhatsApp */
     .whatsapp-button {
-        font-size: map-get($font-size, size17) !important;
-        padding: 0.5rem 0.5rem;
-        margin-top: -2rem;
+        font-size: map-get($font-size, size7) !important;
+        padding: 0.3rem 0.5rem;
     }
     .buttoncontainer {
-        margin-top: .6rem !important;
-        margin-bottom: 3rem;
-        margin-right: 2rem;
+        margin-top: -1.5rem !important;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
 
     /* THE BLACKJACK COLLECTION */

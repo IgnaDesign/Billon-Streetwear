@@ -14,35 +14,44 @@
         }
     }
 }
+/* DROPS */
+.productos-destacados {
+    @include flex (none,wrap,space-between,none,none);
+    gap: 0.1rem; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 .drop {
-    max-height: 18rem !important; 
-    margin-bottom: 1rem;
+    max-height: 15.5rem !important; 
+    margin-bottom: .5rem;
     }
 .estrellas {
     max-height: 3rem;
     }
 .producto-card {
     p { 
-        width: 86.5%; 
-        margin-left: 2rem; 
+        width: 85%; 
+        margin-left: 1.5rem; 
     } 
     h3 {
     font-size: map-get($font-size, size4);
     margin-left: 2rem;
+    margin-top: -.5rem;
     }
 }
 .buttoncontainer {
-    margin-right: 3rem;
-    margin-top: -2.3rem;
+    margin-right: 1.4rem;
+    margin-top: -2rem;
     }
 .whatsapp-button {
     font-size: map-get($font-size, size5);
+    padding: 0.3rem .5rem;
 }
-/* THE BLACKJACK COLLECTION */
-/* CUERPO - Drops */
 .button-comprar {
     font-size: map-get($font-size, size17) !important;
 }
+/* THE BLACKJACK COLLECTION */
+/* CUERPO - Drops */
 /* Título de producto */
 .drop-card {
     text-align: center;
