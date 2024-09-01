@@ -71,8 +71,11 @@
     /* CUERPO */
     /* Formulario */
     fieldset {
+        max-width: 250px;
+        height: 360px;
+        margin-left: 2.2rem;
         legend {
-            margin-left: 3rem;
+            margin-left: 0;
         }
     }
         /* Mapa */

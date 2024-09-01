@@ -1,0 +1,40 @@
+@media (max-width: 376px) {
+    .logo {
+        width: 70px;
+        margin: 1px -4rem;
+    }
+    /* HOME - INDEX */
+    /* CUERPO - Enlaces */
+    .imagen-links {
+        padding-left: .5rem;
+        }
+    }
+    fieldset {
+        max-width: 240px;
+        height: 350px;
+        margin-left: 4rem;
+        legend {
+            font-size: map-get($font-size, size5);
+            margin-left: .3125rem;
+            }
+        label {
+            font-size: map-get($font-size, size6);
+            }
+        input[type="text"],
+        textarea {
+            font-size: map-get($font-size, size6);
+            }
+        input[type="submit"] {
+            font-size: map-get($font-size, size6);
+            }
+        }
+    /* Mapa */
+    section iframe {
+        height: 250px;
+        width: 250px;
+        }
+    footer {
+    section {
+    max-width: 23.5rem;
+    }
+}   

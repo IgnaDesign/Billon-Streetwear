@@ -46,8 +46,9 @@
     /* CUERPO */
     /* Formulario */
     fieldset {
-        max-width: 320px;
+        max-width: 270px;
         height: 350px;
+        margin-left: 3.5rem;
         legend {
             font-size: map-get($font-size, size5);
             }

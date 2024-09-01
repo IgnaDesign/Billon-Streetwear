@@ -978,11 +978,11 @@ footer {
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
     padding: none;
-    margin: 4rem 4rem 4rem 4rem; }
+    margin: 4rem 4rem 2rem 4rem; }
     .imagenes-horizontal img {
       width: calc(100% - 1rem);
       height: auto;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 2.5rem; }
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
@@ -1244,7 +1244,7 @@ footer {
       height: auto;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 1rem; }
+      margin-bottom: 2.5rem; }
   /* PREGUNTAS FRECUENTES */
   /* CUERPO */
   .informacion h3 {
@@ -1257,8 +1257,9 @@ footer {
   fieldset {
     padding: 0.5rem;
     width: 80%;
-    margin: 1rem auto;
-    max-width: 350px;
+    margin: 1rem;
+    margin-left: 3.9rem;
+    max-width: 300px;
     height: 380px; }
     fieldset legend {
       font-size: 1rem;
@@ -1340,8 +1341,9 @@ footer {
   /* CUERPO */
   /* Formulario */
   fieldset {
-    max-width: 320px;
-    height: 350px; }
+    max-width: 270px;
+    height: 350px;
+    margin-left: 3.5rem; }
     fieldset legend {
       font-size: 0.8rem; }
     fieldset label {
@@ -1355,6 +1357,38 @@ footer {
   section iframe {
     height: 270px;
     width: 270px; } }
+
+@media (max-width: 376px) {
+  .logo {
+    width: 70px;
+    margin: 1px -4rem; }
+  /* HOME - INDEX */
+  /* CUERPO - Enlaces */
+  .imagen-links {
+    padding-left: .5rem; } }
+
+fieldset {
+  max-width: 240px;
+  height: 350px;
+  margin-left: 4rem; }
+  fieldset legend {
+    font-size: 0.8rem;
+    margin-left: .3125rem; }
+  fieldset label {
+    font-size: 0.7rem; }
+  fieldset input[type="text"],
+  fieldset textarea {
+    font-size: 0.7rem; }
+  fieldset input[type="submit"] {
+    font-size: 0.7rem; }
+
+/* Mapa */
+section iframe {
+  height: 250px;
+  width: 250px; }
+
+footer section {
+  max-width: 23.5rem; }
 
 /* PHONE */
 @media (max-width: 360px) {
@@ -1493,8 +1527,12 @@ footer {
   /* CONTACTO */
   /* CUERPO */
   /* Formulario */
-  fieldset legend {
-    margin-left: 3rem; }
+  fieldset {
+    max-width: 250px;
+    height: 360px;
+    margin-left: 2.2rem; }
+    fieldset legend {
+      margin-left: 0; }
   /* Mapa */
   section iframe {
     height: 220px;

@@ -173,11 +173,11 @@ form.d-flex {
     /* INFORMACION */
     .imagenes-horizontal {
         @include grid (repeat(2, 1fr),repeat(2, auto),1rem,none);
-        margin: 4rem 4rem 4rem 4rem;
+        margin: 4rem 4rem 2rem 4rem;
         img {
             width: calc(100% - 1rem);
             height: auto;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
         }
     }
     /* PREGUNTAS FRECUENTES */
