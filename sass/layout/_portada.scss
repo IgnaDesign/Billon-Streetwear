@@ -17,18 +17,6 @@
         display: block;
         width: 100%;
     }
-    h1 {
-        font-family:$font-uno;
-        font-style: $font-normal;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2rem;
-        color:$color-clear;
-    }
 }
 .portada-dos h1::before,
 .portada-dos h1::after {

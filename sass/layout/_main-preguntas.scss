@@ -1,14 +1,27 @@
 .informacion {
     padding: 2rem;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
     h3 {
         font-family:$font-uno;
         font-style: $font-normal;
         font-weight: 700;
         font-size: map-get($font-size, size14);
         color: $color-principal;
-        margin-bottom: .5rem;
+        margin-bottom: 2rem;
         margin-top: 1rem;
         text-align: left;
+        position: relative;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.395);
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -.5rem; 
+            height: 1.5px;
+            background-color: $color-principal;
+        }
     }
     p {
         font-family:$font-dos;
@@ -20,5 +33,15 @@
         margin-top: -.5rem;
         margin-bottom: -.5rem;
         text-align: left;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

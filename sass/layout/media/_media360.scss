@@ -55,6 +55,12 @@ header nav ul li img {
         font-size: map-get($font-size, size6) !important;
         width: 80%;
     }
+    .containerdos {
+        max-width: 22.5rem;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
     /* PORTADA PREG FRECUENTES - CONTACTO -INFORMACION */
     /* Subrayado de titulo */
     .portada-dos h1::before,

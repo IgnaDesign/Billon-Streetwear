@@ -18,7 +18,8 @@
   z-index: 99; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: 0; }
 
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
@@ -122,17 +123,6 @@ body {
   .portada-dos img {
     display: block;
     width: 100%; }
-  .portada-dos h1 {
-    font-family: "Bona Nova SC", serif;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    color: #FFFFFF; }
 
 .portada-dos h1::before,
 .portada-dos h1::after {
@@ -266,7 +256,6 @@ main section {
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 600; }
 
 .drop {
@@ -557,16 +546,28 @@ section {
       transition: 150ms; }
 
 .informacion {
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative;
+  animation: fadeIn 2s ease-in-out; }
   .informacion h3 {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.3rem;
     color: #FFC000;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
-    text-align: left; }
+    text-align: left;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.395); }
+    .informacion h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -.5rem;
+      height: 1.5px;
+      background-color: #FFC000; }
   .informacion p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -577,6 +578,14 @@ section {
     margin-top: -.5rem;
     margin-bottom: -.5rem;
     text-align: left; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 fieldset {
   margin: 2rem auto;
@@ -803,6 +812,15 @@ footer {
     .drop-card select {
       margin-top: -2rem;
       padding: 0.5px; }
+  /* PREGUNTAS FRECUENTES */
+  .informacion h3 {
+    margin-bottom: 1rem; }
+    .informacion h3::after {
+      content: '';
+      bottom: -.5rem; }
+  .informacion p {
+    margin-top: .5rem;
+    margin-bottom: -1rem !important; }
   footer {
     background-image: url(../assets/img/Footer/footer1024.png); } }
 
@@ -969,10 +987,11 @@ footer {
   /* CUERPO */
   .informacion h3 {
     font-size: 0.9rem;
-    margin-bottom: 0 !important; }
+    margin-bottom: 1rem !important; }
   .informacion p {
     font-size: 0.75rem;
-    margin-bottom: -.5rem !important; }
+    margin-top: .5rem;
+    margin-bottom: -1rem !important; }
   /* CONTACTO */
   /* CUERPO */
   /* Formulario */
@@ -1095,6 +1114,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem; }
+  .containerdos {
+    max-width: 26.625rem;
+    padding: 0;
+    margin: 0;
+    position: relative; }
   /* Productos Destacados */
   main section h2 {
     font-size: 0.875rem;
@@ -1292,6 +1316,11 @@ footer {
     margin-left: 2rem; }
   .producto-card h3 {
     margin-left: .5rem; }
+  .containerdos {
+    max-width: 24.375rem;
+    padding: 0;
+    margin: 0;
+    position: relative; }
   .drop {
     max-height: 14rem !important;
     margin-top: 1.5rem; }
@@ -1370,6 +1399,11 @@ footer {
     margin-left: 2rem;
     font-size: 0.7rem !important;
     width: 80%; }
+  .containerdos {
+    max-width: 22.5rem;
+    padding: 0;
+    margin: 0;
+    position: relative; }
   /* PORTADA PREG FRECUENTES - CONTACTO -INFORMACION */
   /* Subrayado de titulo */
   .portada-dos h1::before,
@@ -1440,6 +1474,11 @@ footer {
     font-size: 0.9rem !important;
     margin-bottom: 1rem;
     margin-top: -.5rem; }
+  .containerdos {
+    max-width: 20.0625rem;
+    padding: 0;
+    margin: 0;
+    position: relative; }
   .drop {
     max-height: 12rem !important;
     margin-top: 1rem; }

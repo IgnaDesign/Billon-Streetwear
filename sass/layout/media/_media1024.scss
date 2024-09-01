@@ -82,6 +82,20 @@
         padding: 0.5px;
     }
 }
+    /* PREGUNTAS FRECUENTES */
+.informacion {
+    h3 {
+        margin-bottom: 1rem;
+        &::after {
+            content: '';
+            bottom: -.5rem; 
+        }
+    }
+    p {
+        margin-top: .5rem;
+        margin-bottom: -1rem !important;
+    }
+}
 footer {
     background-image: url(../assets/img/Footer/footer1024.png);
     }
