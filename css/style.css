@@ -732,6 +732,7 @@ footer {
     justify-content: center;
     gap: .5rem; }
     footer .iconos a {
+      display: inline-flex;
       margin-right: 0.2rem; }
       footer .iconos a img {
         width: 4rem;
