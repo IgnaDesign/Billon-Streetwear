@@ -6,6 +6,8 @@
     img {
         display: block;
         width: 100%;
+        height: auto; 
+        max-height: 600px; 
     }
 }
 /* INFORMACIÓN / P.FRECUENTES / CONTACTO*/
@@ -16,6 +18,8 @@
     img {
         display: block;
         width: 100%;
+        height: auto; 
+        max-height: 600px;
     }
 }
 .portada-dos h1::before,

@@ -75,14 +75,18 @@
 /* LOGO */
 .logo {
     width: 90px;
+    height: auto;
 }
 .navbar-brand {
-    :hover {
-            filter: drop-shadow(0 0 10px $color-clear);
-            transform: scale(1.10);
-            transition: 200ms;
-            width: 100px;
-        }
+    img {
+        width: 90px;
+        height: auto; 
+        transition: transform 200ms, filter 200ms;
     }
-
+    
+    &:hover {
+        filter: drop-shadow(0 0 10px $color-clear);
+        transform: scale(1.10);
+    }
+}
 
