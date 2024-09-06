@@ -75,10 +75,9 @@
 /* LOGO */
 .logo {
     width: 90px;
-    height: auto;
 }
 .navbar-brand {
-    &:hover {
+    :hover {
             filter: drop-shadow(0 0 10px $color-clear);
             transform: scale(1.10);
             transition: 200ms;

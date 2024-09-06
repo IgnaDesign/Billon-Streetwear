@@ -97,10 +97,9 @@ body {
 
 /* LOGO */
 .logo {
-  width: 90px;
-  height: auto; }
+  width: 90px; }
 
-.navbar-brand:hover {
+.navbar-brand :hover {
   filter: drop-shadow(0 0 10px #FFFFFF);
   transform: scale(1.1);
   transition: 200ms;
@@ -732,7 +731,6 @@ footer {
     justify-content: center;
     gap: .5rem; }
     footer .iconos a {
-      display: inline-flex;
       margin-right: 0.2rem; }
       footer .iconos a img {
         width: 4rem;
