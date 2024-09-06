@@ -547,7 +547,7 @@ section {
   margin: 3rem 4rem 4rem 4rem;
   gap: 1rem; }
   .imagenes-horizontal img {
-    width: 100%;
+    width: calc(100% - 1rem);
     height: auto;
     border-radius: 8px; }
     .imagenes-horizontal img:hover {
