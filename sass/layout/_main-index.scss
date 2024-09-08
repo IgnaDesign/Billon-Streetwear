@@ -21,12 +21,14 @@
                 box-shadow: 5px -5px 20px $color-principal;
                 border-radius: 8px;
             }
+            
             img:hover {
                 transform: scale(1.05);
                 filter: drop-shadow(1px -1px 10px $color-clear);
                 transition: 400ms;
                 box-shadow: none;
             }
+
             .subtitulo {
                 color: $color-principal;
                 font-family:$font-uno;
