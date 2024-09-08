@@ -97,13 +97,14 @@ body {
 
 /* LOGO */
 .logo {
+  height: auto;
   width: 90px; }
 
 .navbar-brand :hover {
   filter: drop-shadow(0 0 10px #FFFFFF);
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 200ms;
-  width: 100px; }
+  width: 95px; }
 
 /* LAYOUT */
 /* HOME - THE BLACKJACKS COLLECTION */
@@ -166,6 +167,7 @@ body {
       position: relative; }
       .imagen-links div a img {
         display: block;
+        width: 100%;
         max-width: 100%;
         height: auto;
         margin-bottom: -2rem;
@@ -192,6 +194,7 @@ body {
   margin-right: auto; }
   .presentacion img {
     width: 80%;
+    height: 100%;
     border-radius: 8px; }
     .presentacion img:hover {
       filter: drop-shadow(0 0 10px #FFC000);
@@ -263,6 +266,7 @@ main section {
     font-weight: 600; }
 
 .drop {
+  width: 300px;
   max-width: 100%;
   height: auto;
   max-height: 18rem;
@@ -275,6 +279,7 @@ main section {
   transition: 200ms; }
 
 .estrellas {
+  width: 250px;
   max-width: 100%;
   height: auto;
   max-height: 5rem; }
@@ -441,7 +446,9 @@ section {
     left: 0;
     bottom: -0.2rem; }
   .drop-card img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    width: 300px; }
   .drop-card p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -734,7 +741,7 @@ footer {
       margin-right: 0.2rem; }
       footer .iconos a img {
         width: 4rem;
-        height: auto; }
+        height: 4rem; }
   footer h4 {
     font-family: "Bona Nova SC", serif;
     font-style: normal;

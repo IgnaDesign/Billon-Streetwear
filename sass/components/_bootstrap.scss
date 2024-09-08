@@ -74,14 +74,15 @@
     }
 /* LOGO */
 .logo {
+    height: auto;
     width: 90px;
 }
 .navbar-brand {
     :hover {
             filter: drop-shadow(0 0 10px $color-clear);
-            transform: scale(1.10);
+            transform: scale(1.05);
             transition: 200ms;
-            width: 100px;
+            width: 95px;
         }
     }
 
