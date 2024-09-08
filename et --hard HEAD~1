@@ -1,0 +1,70 @@
+[33m3a5d6e8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrama-bootstrap[m[33m, [m[1;31morigin/rama-bootstrap[m[33m)[m agregado de width y height en img para rendimiento web
+[33m1e1f6da[m ajustes de comillas mas colocadas
+[33m25933c0[m nuevos ajustes
+[33m007e891[m ajuste de error
+[33mebb5b6d[m ajuste de optimizacion
+[33m187f418[m ajuste de optimizacion
+[33mb3f48c5[m ajuste de optimizacion
+[33maf70425[m ajuste de media query, llave fuera de lugar
+[33m7529eb5[m ajuste de media query, llave fuera de lugar
+[33m321c1ac[m ajuste de footer
+[33me8ec4f6[m ajuste de imagenes
+[33m5f17f02[m reduccion de tamaño img en general
+[33m8fae0fd[m detalles
+[33m5316168[m ajuste de formulario
+[33m80eb0b6[m nuevo cambio de portadas
+[33mcbd3478[m cambio de portadas y ajuste de texto en preguntas frecuentes
+[33m95bff56[m cambio de background home - blackjack, fondo a productos destacados y ajuste de margenes y textos
+[33m7281d84[m ajuste de imagenes de informacion y suma de filtro drop shadow
+[33m7664aa1[m suma de 425px y 320px media query
+[33m4d6377e[m Detalles finales
+[33m58934f5[m Detalles finales
+[33mea3c0bf[m container
+[33mdfdf5b2[m background footer
+[33mbfb022d[m cambios en footer y encabezado
+[33m13eda06[m modificacion de contenedores y encabezado
+[33mdd12656[m prueba de fondo 2
+[33m80ec75d[m prueba de fondo
+[33m3569bc3[m cambios en media 390px y 360px
+[33m6f87faf[m acomodando error en pie de pagina
+[33m92b11e3[m completando los atributos alt
+[33mf8148d5[m transformacion en productos destacados
+[33m16b6bb9[m transformacion en enlaces - index
+[33m64b7b78[m ajuste de imagen de fondo footer
+[33m4a1d043[m orden de assets y reducion de peso en imagenes
+[33m444cbc2[m Logo.ico
+[33m51c917d[m SEO
+[33ma97debc[m SASS
+[33m529a60c[m SASS
+[33m9acd82c[m SASS
+[33m3da8e65[m SASS
+[33md760700[m SASS
+[33m1fd1fa9[m SASS
+[33m93017a7[m SASS
+[33m6e6cfc6[m SASS
+[33m29fc563[m SASS
+[33m8338770[m SASS
+[33m2badeca[m SASS
+[33m3ba1564[m SASS
+[33m719bd88[m SASS
+[33m0fe3871[m SASS
+[33m28ad2aa[m subrayado titulo de drops
+[33m1cf6315[m cambio de tipografia y ajustes de proyecto en general
+[33m03281ad[m modificacion en el encabezado
+[33m2614013[m Ajustes en el encabezado
+[33m4cbf331[m rama-bootstrap
+[33m70511b1[m texto final
+[33m7465a18[m probando tipografia
+[33ma3c4ae2[m texto
+[33m0c73078[m texto
+[33m7280240[m ajustes nuevamente
+[33m8bbcafd[m Ajustes de texto
+[33m9da22f6[m correccion de tipografia
+[33mb9b625c[m Cambio de tipografia en el encabezado
+[33m7387585[m Cambio de encabezado con Bootstrap
+[33m5c3add2[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m css
+[33m732d542[m css
+[33m76a6351[m css
+[33m92b88dc[m css
+[33md01a962[m css
+[33m1137ad5[m inicio de proyecto
