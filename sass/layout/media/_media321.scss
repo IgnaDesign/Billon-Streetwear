@@ -1,9 +1,9 @@
- /* PHONE */
 @media (max-width: 321px) {
     /*  HOME - INDEX */
     /* ENCABEZADO PANTALLA 320PX*/
     .navbar-nav {
         font-size: map-get($font-size, size17) !important;
+        margin-top: 0.5rem;
     }
 
     .navbar-toggler {
@@ -11,12 +11,17 @@
     }
 
     .dropdown-item {
-        font-size: map-get($font-size, size18);
+        font-size: map-get($font-size, size16) !important;
     }
 
     .logo {
         width: 60px;
         margin: 1px -3rem;
+    }
+
+    .navbar-nav li a {
+        font-size: map-get($font-size, size12);
+        margin-right: 0.5rem;
     }
 
 /* CUERPO - Enlaces */
@@ -75,6 +80,15 @@
         margin-top: -1rem;
         margin-right: -0.3rem;
     }
+// THE BLACKJACKS - DROPS
+.drop-section {
+    padding: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    }
+
+
 
      /* INFORMACION */
     .imagenes-horizontal {
