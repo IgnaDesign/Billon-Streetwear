@@ -1,72 +1,85 @@
- /* PHONE */
 @media (max-width: 360px) {
-    /*  HOME - INDEX */
-    /* ENCABEZADO PANTALLA 360PX*/
+/*  HOME - INDEX */
+/* ENCABEZADO PANTALLA 360PX*/
 .navbar-nav {
     font-size: map-get($font-size, size7);
-    margin-left: .1rem;
+    margin-left: 0.1rem;
 }
+
 .navbar-toggler {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
+
 .form-control { 
     font-size: xx-small; 
     width: 85px; 
     padding: 0.2rem; 
     margin-right: 0.1rem; 
 }
+
 header nav ul li:last-child {
     margin-right: 0.8rem;
 }
+
 header nav ul li img {
     max-height: 5rem;
 }
+
 .logo {
     width: 70px;
     margin: 1px -4rem;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
+
 .navbar-brand {
-    :hover {
+    &:hover {
             filter: drop-shadow(0 0 10px $color-clear);
             transform: scale(1.05);
             transition: 200ms;
             width: 70px;
         }
     }    
-    /* CUERPO */
-    /* Enlaces */
+
+/* CUERPO */
+/* Enlaces */
     .imagen-links {
         padding-left: 0;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
+
         div {
             width: 120px;
         }
+
         img {
         box-shadow: 2px -2px 20px $color-principal;
         }
     }
+
     /* Productos Destacados */
     .estrellas {
         max-height: 3rem;
     }
+
     .producto-card p {
         margin-left: 2rem;
         font-size: map-get($font-size, size6) !important;
         width: 80%;
     }
+
     .containerdos {
         max-width: 22.5rem;
         padding: 0;
         margin: 0;
         position: relative;
     }
+
     /* PORTADA PREG FRECUENTES - CONTACTO -INFORMACION */
     /* Subrayado de titulo */
     .portada-dos h1::before,
     .portada-dos h1::after {
-        height: .1px;
+        height: 0.1px;
     }
+
     /* CUERPO - THE BLACKJACK COLLECTION */
     /* Etiqueta de talle */
     .drop-card label {
@@ -74,9 +87,11 @@ header nav ul li img {
         margin-right: 3rem !important;
         margin-top: 1rem !important;
     }
+
     .drop-card select {
         margin-top: -1.15rem;
     }
+
     /* CONTACTO */
     /* Mapa */
     .ubicacion {
@@ -85,9 +100,11 @@ header nav ul li img {
         padding-right: 1.8rem;
         padding-bottom: 2rem;
         }
+
     /* PIE DE PAGINA */
     footer {
         background-image: url(../assets/img/Footer/footer360.png);
+        
         h4 {
         font-size: map-get($font-size, size7);
         margin-top: 1rem;

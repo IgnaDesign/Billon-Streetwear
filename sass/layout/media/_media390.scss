@@ -1,47 +1,60 @@
-/* PHONE */
 @media (max-width: 390px) {
 /* HOME - INDEX */
 /* CUERPO - Enlaces */
 .imagen-links {
     padding-left: 1rem;
     }
+
+/* Presentacion img */
+    .presentacion img {
+        margin: 0.3rem 0;
+    }
+
 /* Productos Destacados */
     .producto-card {
         p {
             margin-left: 2rem;
         }
+
         h3 {
-            margin-left: .5rem;
+            margin-left: 0.5rem;
         }
     }
+
     .containerdos {
         max-width: 24.375rem;
         padding: 0;
         margin: 0;
         position: relative;
     }
+
     .drop {
         max-height: 14rem !important;
         margin-top: 1.5rem;
     }
+
     .whatsapp-button {
         padding: 0.3rem 0.3rem;
     }
+
     /* INFORMACION - CONTACTO . PREG FRECUENTES */
     /* Titulo portada */
     .portada-dos h1 {
         font-size: map-get($font-size, size5);
     }
+
     /* PREGUNTAS FRECUENTES */
     /* CUERPO */
     .informacion {
         h3 {
             font-size:map-get($font-size, size4);
         }
+
         p {
             font-size: map-get($font-size, size5);
         }
     }
+
     /* CONTACTO */
     /* CUERPO */
     /* Formulario */
@@ -49,20 +62,25 @@
         max-width: 270px;
         height: 350px;
         margin-left: 3.5rem;
+
         legend {
             font-size: map-get($font-size, size5);
             }
+
         label {
             font-size: map-get($font-size, size6);
             }
+
         input[type="text"],
         textarea {
             font-size: map-get($font-size, size6);
             }
+
         input[type="submit"] {
             font-size: map-get($font-size, size6);
             }
         }
+        
     /* Mapa */
     section iframe {
             height: 270px;

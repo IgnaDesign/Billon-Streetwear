@@ -5,11 +5,6 @@
   margin: 0;
   padding: 0; }
 
-/* UTILITIES */
-/* PALETA DE COLORES */
-/* TIPOGRAFIAS */
-/* TAMAÑO DE FUENTE */
-/* CONTENEDOR PRINCIPAL */
 .container {
   max-width: 100%;
   padding: 0;
@@ -21,6 +16,18 @@ body {
   overflow-x: hidden;
   margin: 0; }
 
+/* BACKGROUND HOME - THE BLACKJACK*/
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-image: url(../assets/img/Fondos/fondo.png); }
+
+/* UTILITIES */
+/* PALETA DE COLORES */
+/* TIPOGRAFIAS */
+/* TAMAÑO DE FUENTE */
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL - PANTALLA 1440PX - 1024PX */
 /* BOOTSTRAP */
@@ -31,7 +38,8 @@ body {
 .nav-link {
   font-family: "Bona Nova SC", serif;
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.2rem; }
 
 .dropdown-menu-nosotros {
   background-color: #FFC000;
@@ -172,17 +180,17 @@ body {
         margin-bottom: -2rem;
         box-shadow: 5px -5px 20px #FFC000;
         border-radius: 8px; }
-      .imagen-links div a img:hover {
-        transform: scale(1.05);
-        filter: drop-shadow(1px -1px 10px #FFFFFF);
-        transition: 400ms;
-        box-shadow: none; }
+        .imagen-links div a img:hover {
+          transform: scale(1.05);
+          filter: drop-shadow(1px -1px 10px #FFFFFF);
+          transition: 400ms;
+          box-shadow: none; }
       .imagen-links div a .subtitulo {
-        color: #FFC000;
         font-family: "Bona Nova SC", serif;
         font-style: normal;
         font-weight: 700;
         font-size: 0.8rem;
+        color: #FFC000;
         margin-top: 0.2rem;
         display: block; }
 
@@ -206,22 +214,22 @@ main section {
   main section h2 {
     position: relative;
     display: inline-block;
-    color: #FFC000;
     font-family: "Bona Nova SC", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
+    color: #FFC000;
     text-shadow: 8px -5px 15px #909090be;
     margin-top: 2rem;
     margin-bottom: .5rem; }
-  main section h2::after {
-    content: "";
-    width: 100%;
-    height: .0938rem;
-    background-color: #FFC000;
-    position: absolute;
-    left: 0;
-    bottom: -0.2rem; }
+    main section h2::after {
+      content: "";
+      width: 100%;
+      height: .0938rem;
+      background-color: #FFC000;
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem; }
 
 /* DROPS */
 .productos-destacados {
@@ -241,27 +249,25 @@ main section {
   background-color: #000000;
   margin: 2rem 1rem;
   border: 2px solid #333333;
-  /* Borde de 2px con color gris oscuro */
   border-radius: 10px;
-  /* Borde redondeado para el contenedor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Sombra para dar profundidad */ }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
   .producto-card p {
     font-family: "Bona Nova SC", serif;
     font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
     text-align: left;
     width: 80%;
     margin-left: 3rem;
     margin-top: auto;
-    font-size: 0.9rem;
     box-sizing: border-box; }
   .producto-card h3 {
-    text-align: left;
-    margin-left: 3rem;
-    font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 3rem; }
 
 .drop {
   max-width: 100%;
@@ -269,11 +275,10 @@ main section {
   max-height: 18rem;
   border-radius: 8px;
   margin-top: 1.5rem; }
-
-.drop:hover {
-  filter: drop-shadow(0 0 10px #FFFFFF);
-  transform: scale(1.05);
-  transition: 200ms; }
+  .drop .drop:hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+    transform: scale(1.05);
+    transition: 200ms; }
 
 .estrellas {
   max-width: 100%;
@@ -282,18 +287,25 @@ main section {
 
 .buttoncontainer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
+  align-items: none;
+  flex: none;
   margin-top: -2.5rem;
   margin-bottom: 1rem;
   margin-right: 2rem;
   gap: 1rem;
-  -webkit-animation: heartbeat 1.5s linear infinite reverse both;
   animation: heartbeat 1.5s linear infinite reverse both; }
 
 /* Estilo de botones de WhatsApp */
 .whatsapp-button {
   display: inline-block;
   padding: 0.4rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
   color: #000000;
   background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
   border: 0.0625rem solid linear-gradient(#DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
@@ -301,11 +313,7 @@ main section {
   border-radius: .5rem;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  font-weight: 700; }
+  transition: background-color 0.3s ease; }
 
 .whatsapp-button:hover {
   background-image: linear-gradient(#000000, #909090be);
@@ -313,62 +321,23 @@ main section {
   border: 0.0625rem solid #000000;
   box-shadow: 1px 2px 0px #FFC000; }
 
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
-
+/* Animación heartbeat */
 @keyframes heartbeat {
   from {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   10% {
-    -webkit-transform: scale(0.91);
     transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   17% {
-    -webkit-transform: scale(0.98);
     transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   33% {
-    -webkit-transform: scale(0.87);
     transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   45% {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
 /* CUERPO */
@@ -524,14 +493,6 @@ section {
   background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
   color: #000000; }
 
-/* BACKGROUND HOME - THE BLACKJACK*/
-#particles-js {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: -1;
-  background-image: url(../assets/img/Fondos/fondo.png); }
-
 .imagenes-horizontal {
   display: flex;
   flex-direction: row;
@@ -541,14 +502,17 @@ section {
   flex: none;
   margin: 3rem 4rem 4rem 4rem;
   gap: 1rem; }
-  .imagenes-horizontal img {
-    width: calc(100% - 1rem);
-    height: auto;
-    border-radius: 8px; }
-    .imagenes-horizontal img:hover {
-      filter: drop-shadow(0 0 10px #FFC000);
-      transform: scale(1.1);
-      transition: 150ms; }
+  .imagenes-horizontal .img-container {
+    width: 100%;
+    max-width: 300px; }
+    .imagenes-horizontal .img-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px; }
+      .imagenes-horizontal .img-container img:hover {
+        filter: drop-shadow(0 0 10px #FFC000);
+        transform: scale(1.1);
+        transition: 150ms; }
 
 .informacion {
   padding: 2rem;
@@ -576,12 +540,11 @@ section {
   .informacion p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: 0.9rem;
     color: #000000;
-    margin-top: -.5rem;
-    margin-bottom: -.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
     text-align: left; }
 
 @keyframes fadeIn {
@@ -626,24 +589,26 @@ fieldset {
     font-weight: 700;
     margin-bottom: 0;
     margin-left: .3rem; }
-  fieldset input[type="text"],
-  fieldset textarea {
+  fieldset input[type="text"], fieldset textarea {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 400;
-    width: 100%;
-    padding: 0.5rem;
-    letter-spacing: -1px;
-    margin-bottom: 1rem;
     border: 1px solid #FFC000;
     border-radius: 4px;
-    box-sizing: border-box; }
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+    margin-bottom: 1rem; }
   fieldset textarea {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
     font-weight: 300;
+    border: 1px solid #FFC000;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
     resize: vertical; }
   fieldset input[type="checkbox"] {
     margin-right: 0.5rem;
@@ -652,11 +617,17 @@ fieldset {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.8rem;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
     background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
-    color: #000000;
-    padding: 0.3rem 1rem;
-    border-color: #000000;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    width: auto;
+    display: inline-block;
+    border: 1px solid #000000;
     border-radius: 5px;
     cursor: pointer; }
   fieldset input[type="submit"]:hover {
@@ -708,7 +679,8 @@ footer {
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    z-index: -1; }
+    z-index: -1;
+    background: inherit; }
   footer p {
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
@@ -716,7 +688,8 @@ footer {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    position: relative; }
     footer p::after {
       content: "";
       position: absolute;
@@ -730,7 +703,7 @@ footer {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: .5rem; }
+    gap: 0.5rem; }
     footer .iconos a {
       margin-right: 0.2rem; }
       footer .iconos a img {
@@ -755,8 +728,7 @@ footer {
     grid-template-rows: none;
     gap: 1rem;
     padding: none;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding: 0 1rem; }
     .imagen-links div {
       margin: 1.5rem; }
     .imagen-links a .subtitulo {
@@ -770,8 +742,7 @@ footer {
     align-items: none;
     flex: none;
     gap: 0.1rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
+    margin: 0 1rem; }
   .drop {
     max-height: 15.5rem !important;
     margin-bottom: .5rem; }
@@ -783,13 +754,12 @@ footer {
   .producto-card h3 {
     font-size: 1rem;
     margin-left: 2rem;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
   .buttoncontainer {
-    margin-right: 1.4rem;
-    margin-top: -2rem; }
+    margin: -2rem 1.4rem 0 0; }
   .whatsapp-button {
     font-size: 0.8rem;
-    padding: 0.3rem .5rem; }
+    padding: 0.3rem 0.5rem; }
   .button-comprar {
     font-size: 0.6rem !important; }
   /* THE BLACKJACK COLLECTION */
@@ -807,7 +777,7 @@ footer {
       height: auto; }
     .drop-card p {
       font-size: 0.8rem;
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
     .drop-card .price {
       font-size: 0.8rem;
       margin-bottom: 0; }
@@ -822,9 +792,9 @@ footer {
     margin-bottom: 1rem; }
     .informacion h3::after {
       content: '';
-      bottom: -.5rem; }
+      bottom: -0.5rem; }
   .informacion p {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: -1rem !important; }
   footer {
     background-image: url(../assets/img/Footer/footer1024.png); } }
@@ -835,7 +805,7 @@ footer {
   /* ENCABEZADO PANTALLA 768PX*/
   .navbar-nav {
     font-size: 0.9rem !important;
-    gap: .2rem; }
+    gap: 0.2rem; }
     .navbar-nav .nav-link {
       padding: 0 1rem; }
   .navbar-toggler {
@@ -870,14 +840,13 @@ footer {
     justify-content: none;
     align-items: center;
     flex: none;
-    margin-left: 2rem;
-    margin-right: .5rem; }
+    margin: 0 0.5rem 0 2rem; }
   /* Estilos para el boton */
   .btn {
     font-size: 0.7rem; }
   /* Busqueda */
   .form-control {
-    font-size: xx-small;
+    font-size: 0.5rem;
     width: 150px; }
   /* LOGO */
   .logo {
@@ -886,29 +855,29 @@ footer {
   .imagen-links {
     gap: 0;
     padding-left: 1rem;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
     .imagen-links .subtitulo {
       font-size: 0.7rem !important;
       margin-top: -2.2rem !important; }
   /* Presentacion img */
   .presentacion img {
     width: 90%;
-    margin-top: -3rem;
-    margin-bottom: -1rem; }
+    margin: -3rem 0 -1rem; }
   /* Productos Destacados */
   main section h2 {
     font-size: 0.9rem;
     margin-bottom: 1.5rem; }
-    main section h2 ::after {
+    main section h2::after {
       height: .08rem; }
+  .productos-destacados {
+    margin-bottom: 5rem; }
   .producto-card {
-    margin: 0;
-    margin-bottom: 2rem; }
+    width: 30%;
+    margin: 0 1.25%; }
     .producto-card p {
       width: 80%;
       font-size: 0.7rem !important;
-      margin-bottom: 0.5rem !important;
-      margin-left: 1.5rem; }
+      margin: 0.5rem 0 0.5rem 1.5rem !important; }
     .producto-card h3 {
       margin-left: 0;
       text-align: left;
@@ -943,32 +912,31 @@ footer {
     /* Estilo de botones de WhatsApp */ }
     .drop-section .button-comprar {
       padding: 0.4rem 1rem;
-      margin-top: -.5rem;
+      margin-top: -0.5rem;
       font-size: 0.5rem !important; }
   /* Título de producto */
   .drop-card h2 {
     font-size: 0.8rem !important;
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
   .drop-card p {
     font-size: 0.576rem !important;
-    margin-bottom: -.3rem; }
+    margin-bottom: -0.3rem; }
   .drop-card label {
     font-size: 0.6rem !important;
-    margin-right: -.1rem;
+    margin-right: -0.1rem;
     margin-top: -1rem; }
   .drop-card select {
     font-size: 0.5rem;
-    padding: .125rem;
+    padding: 0.125rem;
     margin-right: 0;
     margin-top: -1rem; }
   .drop-card .price {
     font-size: 0.625rem !important;
     text-align: left !important;
     margin-left: 0;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
   .botones {
-    padding-top: 0.5rem;
-    padding-bottom: 2.5rem; }
+    padding: 0.5rem 0 2.5rem; }
   /* Estilo de botones */
   .boton-uno, .boton-dos {
     font-size: 0.6rem; }
@@ -1071,12 +1039,7 @@ footer {
     justify-content: none;
     align-items: center;
     flex: none;
-    margin-left: 0.5rem;
-    margin-right: 3.5rem; }
-  .search-hidden {
-    display: none; }
-  .btn {
-    display: none; }
+    margin: 0 3.5rem 0 0.5rem; }
   .dropdown-menu {
     font-size: 0.6rem;
     padding: 0.2rem 0;
@@ -1088,7 +1051,7 @@ footer {
     width: 80px;
     margin: 1px -5rem;
     transition: opacity 0.3s ease, transform 0.2s ease; }
-  .navbar-brand :hover {
+  .navbar-brand:hover {
     filter: drop-shadow(0 0 10px #FFFFFF);
     transform: scale(1.1);
     transition: 200ms;
@@ -1106,19 +1069,15 @@ footer {
     gap: 1rem;
     padding: none;
     padding-left: 1.5rem;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
     .imagen-links div {
       width: 120px; }
       .imagen-links div .subtitulo {
         font-size: 0.7rem !important;
-        margin-top: .5625rem;
-        margin-bottom: -2rem; }
+        margin: 0.5625rem 0 -2rem 0; }
   /* PRESENTACION */
   .presentacion {
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem; }
+    margin: 5rem auto 2rem auto; }
   .containerdos {
     max-width: 26.625rem;
     padding: 0;
@@ -1127,16 +1086,15 @@ footer {
   /* Productos Destacados */
   main section h2 {
     font-size: 0.875rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem; }
+    margin: 0.5rem 0 1.5rem 0; }
     main section h2 ::after {
-      height: .05rem; }
+      height: 0.05rem; }
   .productos-destacados {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem; }
+    gap: 1rem; }
   .producto-card {
     width: 80%; }
     .producto-card p {
@@ -1144,8 +1102,7 @@ footer {
       margin-left: 2.5rem; }
     .producto-card h3 {
       text-align: left;
-      margin-left: 1rem;
-      margin-top: .1rem;
+      margin: 0.1rem 0 0 1rem;
       font-size: 1rem !important; }
   .drop {
     max-height: 16rem !important;
@@ -1156,11 +1113,11 @@ footer {
     padding: 0.5rem 0.5rem;
     font-size: 0.7rem !important;
     margin-top: -.5rem;
-    margin-right: 1rem; }
+    margin: -0.5rem 1rem 0 0; }
   /* THE BLACKJACK COLLECTION */
   /* CUERPO - Drops */
   section {
-    margin-bottom: .8rem; }
+    margin-bottom: 0.8rem; }
   .drop-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1168,7 +1125,7 @@ footer {
     gap: 2rem;
     padding: 1rem 2rem; }
     .drop-section .button-comprar {
-      padding: 0.4rem .5rem;
+      padding: 0.4rem 0.5rem;
       font-size: 0.7rem !important;
       margin-bottom: 1rem; }
   .drop-card {
@@ -1176,30 +1133,26 @@ footer {
     margin: 0.2rem; }
     .drop-card h2 {
       font-size: 1.2rem !important;
-      padding-top: .8rem; }
+      padding-top: 0.8rem;
+      margin-bottom: 0.5rem; }
     .drop-card img {
       max-width: 80% !important;
-      padding-top: 0.1rem !important;
-      padding-bottom: 0.1rem !important; }
+      padding: 0.1rem 0 !important; }
     .drop-card p {
       font-size: 0.8rem !important;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-top: .5rem; }
+      padding: 0 1rem;
+      margin-top: 1rem; }
     .drop-card label {
       font-size: 1rem !important;
-      margin-right: 3rem !important;
-      margin-top: 1rem !important; }
+      margin: 1.5rem 3.5rem 0 !important; }
     .drop-card select {
       font-size: 0.6rem;
-      padding: 3px;
-      margin-top: -1.2rem;
-      margin-right: .5rem;
-      padding: 0px;
-      width: 35%; }
+      padding: 0.1rem;
+      margin: -1.3rem 0.5rem 0 0.5rem;
+      width: 25%; }
     .drop-card .price {
       font-size: 1rem !important;
-      margin-top: .5rem; }
+      margin: 1rem 1rem 0 0; }
   .price-talles-container {
     display: flex;
     flex-direction: none;
@@ -1208,7 +1161,7 @@ footer {
     align-items: flex-start;
     flex: none;
     width: 100%;
-    margin-top: -1rem;
+    margin: 0.5rem 0 1rem 0;
     font-size: 0.6rem !important; }
   .talles-container {
     display: flex;
@@ -1217,23 +1170,23 @@ footer {
     justify-content: none;
     align-items: flex-end;
     flex: none;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    margin-top: -0.5rem; }
   .botones {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
-    padding-top: 0rem;
-    padding-bottom: 3rem;
+    padding: 0 0 3rem 0;
     margin-left: 2.5rem; }
   .boton-uno, .boton-dos {
     font-size: 0.576rem;
-    margin-bottom: -.5rem; }
+    margin-bottom: -0.5rem; }
   /* INFORMACION - CONTACTO . PREG FRECUENTES */
   /* Titulo portada */
   .portada-dos h1 {
     font-size: 1rem;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
   /* INFORMACION */
   .imagenes-horizontal {
     display: grid;
@@ -1267,22 +1220,17 @@ footer {
     height: 380px; }
     fieldset legend {
       font-size: 1rem;
-      margin-top: .5rem;
-      margin-bottom: .5rem;
-      margin-left: 4.5rem; }
+      margin: 0.5rem 0 0.5rem 4.5rem; }
     fieldset label {
       font-size: 0.8rem;
       margin-bottom: 0; }
     fieldset input[type="checkbox"] {
-      margin-right: 0;
-      margin-top: 1rem;
-      margin-left: .3rem; }
+      margin: 1rem 0 0 0.3rem; }
     fieldset input[type="text"],
     fieldset textarea {
       font-size: 0.8rem;
       padding: 0.25rem;
-      margin-bottom: 0.5rem;
-      margin-top: 0; }
+      margin: 0 0 0.5rem 0; }
     fieldset input[type="submit"] {
       font-size: 0.8rem; }
   /* Mapa */
@@ -1291,9 +1239,7 @@ footer {
     width: 290px; }
   .ubicacion {
     font-size: 0.75rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    padding-bottom: 2rem; }
+    padding: 0 1.8rem 2rem 1.8rem; }
   /* PIE DE PAGINA */
   footer {
     background-image: url(../assets/img/Footer/footer390.png); }
@@ -1310,17 +1256,19 @@ footer {
       margin-left: .5rem;
       margin-right: .5rem; } }
 
-/* PHONE */
 @media (max-width: 390px) {
   /* HOME - INDEX */
   /* CUERPO - Enlaces */
   .imagen-links {
     padding-left: 1rem; }
+  /* Presentacion img */
+  .presentacion img {
+    margin: 0.3rem 0; }
   /* Productos Destacados */
   .producto-card p {
     margin-left: 2rem; }
   .producto-card h3 {
-    margin-left: .5rem; }
+    margin-left: 0.5rem; }
   .containerdos {
     max-width: 24.375rem;
     padding: 0;
@@ -1369,14 +1317,14 @@ footer {
   /* HOME - INDEX */
   /* CUERPO - Enlaces */
   .imagen-links {
-    padding-left: .5rem; }
+    padding-left: 0.5rem; }
   fieldset {
     max-width: 240px;
     height: 350px;
     margin-left: 4rem; }
     fieldset legend {
       font-size: 0.8rem;
-      margin-left: .3125rem; }
+      margin-left: 0.3125rem; }
     fieldset label {
       font-size: 0.7rem; }
     fieldset input[type="text"],
@@ -1391,15 +1339,14 @@ footer {
   footer section {
     max-width: 23.5rem; } }
 
-/* PHONE */
 @media (max-width: 360px) {
   /*  HOME - INDEX */
   /* ENCABEZADO PANTALLA 360PX*/
   .navbar-nav {
     font-size: 0.625rem;
-    margin-left: .1rem; }
+    margin-left: 0.1rem; }
   .navbar-toggler {
-    margin-left: .5rem; }
+    margin-left: 0.5rem; }
   .form-control {
     font-size: xx-small;
     width: 85px;
@@ -1413,7 +1360,7 @@ footer {
     width: 70px;
     margin: 1px -4rem;
     transition: opacity 0.3s ease, transform 0.2s ease; }
-  .navbar-brand :hover {
+  .navbar-brand:hover {
     filter: drop-shadow(0 0 10px #FFFFFF);
     transform: scale(1.05);
     transition: 200ms;
@@ -1422,7 +1369,7 @@ footer {
   /* Enlaces */
   .imagen-links {
     padding-left: 0;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
     .imagen-links div {
       width: 120px; }
     .imagen-links img {
@@ -1443,7 +1390,7 @@ footer {
   /* Subrayado de titulo */
   .portada-dos h1::before,
   .portada-dos h1::after {
-    height: .1px; }
+    height: 0.1px; }
   /* CUERPO - THE BLACKJACK COLLECTION */
   /* Etiqueta de talle */
   .drop-card label {
@@ -1489,7 +1436,7 @@ footer {
     gap: 0;
     padding: none;
     padding-left: 3.5rem;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
     .imagen-links div {
       width: 160px; }
       .imagen-links div .subtitulo {
@@ -1508,7 +1455,7 @@ footer {
   .producto-card h3 {
     font-size: 0.9rem !important;
     margin-bottom: 1rem;
-    margin-top: -.5rem; }
+    margin-top: -0.5rem; }
   .containerdos {
     max-width: 20.0625rem;
     padding: 0;
@@ -1521,7 +1468,7 @@ footer {
     padding: 0.3rem 0.3rem;
     font-size: 0.6rem !important;
     margin-top: -1rem;
-    margin-right: -.3rem; }
+    margin-right: -0.3rem; }
   /* INFORMACION */
   .imagenes-horizontal {
     margin: 2rem 2rem 2rem 2rem; }

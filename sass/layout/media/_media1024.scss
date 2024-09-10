@@ -3,99 +3,116 @@
 /* CUERPO - Enlaces */
 .imagen-links {
     @include grid (repeat(4, 1fr),none,1rem,none);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
+
     div {
         margin: 1.5rem;
     }
+
     a {
         .subtitulo {
             font-size: map-get($font-size, size6) !important;
         }
     }
 }
+
 /* DROPS */
 .productos-destacados {
     @include flex (none,wrap,space-between,none,none);
     gap: 0.1rem; 
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
     }
+
 .drop {
     max-height: 15.5rem !important; 
     margin-bottom: .5rem;
     }
+
 .estrellas {
     max-height: 3rem;
     }
+
 .producto-card {
     p { 
         width: 85%; 
         margin-left: 1.5rem; 
     } 
+
     h3 {
     font-size: map-get($font-size, size4);
     margin-left: 2rem;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     }
 }
+
 .buttoncontainer {
-    margin-right: 1.4rem;
-    margin-top: -2rem;
+    margin: -2rem 1.4rem 0 0;
     }
 .whatsapp-button {
     font-size: map-get($font-size, size5);
-    padding: 0.3rem .5rem;
+    padding: 0.3rem 0.5rem;
 }
+
 .button-comprar {
     font-size: map-get($font-size, size17) !important;
 }
+
 /* THE BLACKJACK COLLECTION */
 /* CUERPO - Drops */
 /* Título de producto */
 .drop-card {
     text-align: center;
+
     h2 {
     font-size: map-get($font-size, size4);
     }
+
     /* Imagen del producto */
     img {
         max-width: 90%; 
         height: auto;
     }
+
     /* Texto de producto */
     p {
         font-size: map-get($font-size, size5);
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
+
     /* Precio de producto */
     .price {
     font-size: map-get($font-size, size5);
     margin-bottom: 0;
     }
+
     label {
         font-size: map-get($font-size, size12);
         margin-top: -2rem;
     }
+
     select {
         margin-top: -2rem;
         padding: 0.5px;
     }
 }
-    /* PREGUNTAS FRECUENTES */
+
+/* PREGUNTAS FRECUENTES */
 .informacion {
     h3 {
         margin-bottom: 1rem;
+
         &::after {
             content: '';
-            bottom: -.5rem; 
+            bottom: -0.5rem; 
         }
     }
+
     p {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         margin-bottom: -1rem !important;
     }
 }
+
 footer {
     background-image: url(../assets/img/Footer/footer1024.png);
     }

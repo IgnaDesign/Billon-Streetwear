@@ -5,68 +5,82 @@
     .navbar-nav {
         font-size: map-get($font-size, size17) !important;
     }
+
     .navbar-toggler {
         font-size: map-get($font-size, size7);
     }
+
     .dropdown-item {
         font-size: map-get($font-size, size18);
     }
+
     .logo {
         width: 60px;
         margin: 1px -3rem;
     }
+
 /* CUERPO - Enlaces */
 .imagen-links {
     @include grid (repeat(1, 1fr),none,0,none);
     padding-left: 3.5rem;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
+    
     div {
         width: 160px;
+
         .subtitulo {
             font-size: map-get($font-size, size20) !important;
             margin: 0;
             }
         }
     }
+
 /* PRESENTACION */
 .presentacion {
     margin-top: 6rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+
     img {
         width: 80%;
         }
     }
+
 /* DROPS */
 /* Productos Destacados */
     .producto-card {
         h3 {
             font-size: map-get($font-size, size12) !important;
             margin-bottom: 1rem;
-            margin-top: -.5rem;
+            margin-top: -0.5rem;
         }
     }
+
     .containerdos {
         max-width: 20.0625rem;
         padding: 0;
         margin: 0;
         position: relative;
     }
+
 .drop {
     max-height: 12rem !important;
     margin-top: 1rem;
 }
+
     .whatsapp-button {
         padding: 0.3rem 0.3rem;
         font-size: map-get($font-size, size17) !important;
         margin-top: -1rem;
-        margin-right: -.3rem;
+        margin-right: -0.3rem;
     }
+
      /* INFORMACION */
     .imagenes-horizontal {
         margin: 2rem 2rem 2rem 2rem;
     }
+
     /* CONTACTO */
     /* CUERPO */
     /* Formulario */
@@ -74,18 +88,22 @@
         max-width: 250px;
         height: 360px;
         margin-left: 2.2rem;
+
         legend {
             margin-left: 0;
         }
     }
+
         /* Mapa */
         section iframe {
             height: 220px;
             width: 220px;
             }
+
     /* PIE DE PAGINA */
     footer {
         background-image: url(../assets/img/Footer/footer360.png);
+        
         h4 {
         font-size: map-get($font-size, size18);
         }

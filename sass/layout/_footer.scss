@@ -9,6 +9,7 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+
     section {
         @include flex (column,none,center,center,none);
         position: relative;
@@ -16,6 +17,7 @@ footer {
         max-width: 90rem;
         margin: 0 auto;
         }
+
     section::before {
         content: "";
         position: absolute;
@@ -23,7 +25,9 @@ footer {
         height: 100%;
         opacity: 0.5;
         z-index: -1;
+        background: inherit;
         }
+
     p {
         color: $color-clear;
         font-family: $font-dos;
@@ -32,6 +36,8 @@ footer {
         font-size: map-get($font-size, size13);
         margin-bottom: 1rem;
         margin-top: 2rem;
+        position: relative;
+
         &::after {
             content: "";
             position: absolute;
@@ -43,19 +49,23 @@ footer {
             z-index: -1
             }
         }
+
     .iconos {
         margin-top: 0.5rem;
         display: flex;
         justify-content: center;
-        gap: .5rem;
+        gap: 0.5rem;
+
         a {
             margin-right: 0.2rem;
+
             img {
                 width: 4rem;
                 height: auto;
                 }
             }
         }
+
     h4 {
         font-family: $font-uno;
         font-style: $font-normal;
@@ -65,4 +75,4 @@ footer {
         margin-bottom: 2rem;
         color: $color-clear;
         }
-}
+    }

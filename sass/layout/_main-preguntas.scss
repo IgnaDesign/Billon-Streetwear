@@ -2,6 +2,7 @@
     padding: 2rem;
     position: relative;
     animation: fadeIn 2s ease-in-out;
+
     h3 {
         font-family:$font-uno;
         font-style: $font-normal;
@@ -13,6 +14,7 @@
         text-align: left;
         position: relative;
         text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.395);
+        
         &::after {
             content: '';
             position: absolute;
@@ -26,12 +28,11 @@
     p {
         font-family:$font-dos;
         font-style: $font-normal;
-        font-optical-sizing: auto;
         font-weight: 400;
         font-size: map-get($font-size, size12);
         color: $color-dark;
-        margin-top: -.5rem;
-        margin-bottom: -.5rem;
+        margin-top: -0.5rem;
+        margin-bottom: -0.5rem;
         text-align: left;
     }
     @keyframes fadeIn {

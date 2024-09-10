@@ -1,3 +1,16 @@
+@mixin container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+
+@mixin no-scrollbar {
+    overflow-x: hidden;
+    margin: 0;
+}
+
 @mixin flex ($direction, $wrap, $justify, $aling, $flex) {
     display: flex;
     flex-direction: $direction;
@@ -6,6 +19,7 @@
     align-items: $aling;
     flex: $flex;
 }
+
 @mixin grid ($columns, $rows, $gap, $padding) {
     display: grid;
     grid-template-columns: $columns;
@@ -14,16 +28,59 @@
     padding: $padding;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    z-index: 99;
-}
-body {
-    overflow-x: hidden;
-    margin: 0;
+// Mixins de tipografía
+@mixin font($family, $style, $weight, $size) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: map-get($font-size, $size);
 }
 
+@mixin form-input($font-family, $font-style, $font-weight, $border-color) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+// Mixins de transición y transformación
+@mixin transition($property, $duration, $ease) {
+    transition: $property $duration $ease;
+}
+@mixin transform($scale, $shadow) {
+    transform: scale($scale);
+    filter: drop-shadow($shadow);
+}
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: $color-clear) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin button-style($bg-color, $border-color) {
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+    color: $border-color;
+    padding: 0.7em 2.7em;
+    border-radius: 0.6em;
+    transition: all 0.3s;
+    
+    &:hover {
+        background-color: $border-color;
+        color: $color-clear;
+    }
+}
+
+@mixin portada {
+    margin: 0 auto;
+    position: relative;
+    
+    img {
+        @include block;
+        width: 100%;
+        height: auto;
+        max-height: $max-height-portada;
+    }
+}

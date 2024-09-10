@@ -2,14 +2,21 @@
     @include flex (row,nowrap,space-evenly,center,none);
     margin: 3rem 4rem 4rem 4rem;
     gap: 1rem;
-    img {
-        width: calc(100% - 1rem);
-        height: auto;
-        border-radius: 8px;
-        &:hover {
+
+    .img-container {
+        width: 100%;
+        max-width: 300px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+
+            &:hover {
             filter: drop-shadow(0 0 10px $color-principal);
             transform: scale(1.10);
             transition: 150ms;
+            }
         }
     }
 }

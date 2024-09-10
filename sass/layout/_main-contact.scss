@@ -6,6 +6,7 @@ fieldset {
     border: 2px solid $color-dark;
     border-radius: 8px;
     background-image: linear-gradient( #000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+    
     legend {
         font-family:$font-uno;
         font-style: $font-normal;
@@ -16,17 +17,20 @@ fieldset {
         text-align: left;
         color: $color-clear;
     }
+
     .form-group {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .form-row {
         display: flex;
         flex-direction: column;
         width: 48%;
         margin-top: .5rem;
     }
+
     label {
         display: block;
         font-family:$font-dos;
@@ -36,50 +40,42 @@ fieldset {
         margin-bottom: 0;
         margin-left: .3rem;
     }
-    input[type="text"],
-    textarea {
-    font-family:$font-dos;
-    font-style: $font-normal;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    width: 100%;
-    padding: 0.5rem;
-    letter-spacing: -1px;
-    margin-bottom: 1rem;
-    border: 1px solid $color-principal;
-    border-radius: 4px;
-    box-sizing: border-box;
+    
+    input[type="text"], textarea {
+        @include form-input($font-dos, $font-normal, 400, $color-principal);
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
     }
+
     textarea {
-        font-family:$font-dos;
-        font-style: $font-normal;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        resize: vertical;
+    @include form-input($font-dos, $font-normal, 300, $color-principal);
+    resize: vertical;
     }
+
     input[type="checkbox"] {
         margin-right: 0.5rem;
         margin-top: 1.5rem;
     }
+    
     input[type="submit"] {
-        font-family:$font-dos;
-        font-style: $font-normal;
-        font-weight: 500;
+        @include form-input($font-dos, $font-normal, 500, #000000);
+        background-image: $gradient-background;
         font-size: map-get($font-size, size5);
-        background-image: linear-gradient( #000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
-        color: $color-dark;
-        padding: 0.3rem 1rem;
-        border-color: #000000;
-        border-radius: 5px;
+        padding: 0.5rem 1rem;  
+        width: auto; 
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 5px; 
         cursor: pointer;
-        
     }
+
     input[type="submit"]:hover {
         color: $color-clear;
         background-color: #909090;
         cursor: none;
+        }
     }
-}
+
 main section p {
     font-family:$font-uno;
     font-style: $font-normal;
@@ -88,6 +84,7 @@ main section p {
     padding-bottom: 1rem;
     font-size: map-get($font-size, size12);
 }
+
 /* FONDO CUERPO CONTACTO - INFORMACION - P.FRECUENTES */
 .fondo-cuerpo-archivos {
     position: relative;

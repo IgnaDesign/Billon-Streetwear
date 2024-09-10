@@ -4,15 +4,18 @@
     @include flex (row,wrap,space-evenly,none,none);
     margin-top: 4rem;
     padding: 0;
+
     div {
         text-align: center;
         margin: .5rem;
         flex: 1 1 220px;
         max-width: 220px;
+
         a {
             text-decoration: none;
             display: block;
             position: relative;
+            
             img {
                 display: block;
                 max-width: 100%;
@@ -20,35 +23,35 @@
                 margin-bottom: -2rem;
                 box-shadow: 5px -5px 20px $color-principal;
                 border-radius: 8px;
-            }
             
-            img:hover {
+                &:hover {
                 transform: scale(1.05);
                 filter: drop-shadow(1px -1px 10px $color-clear);
                 transition: 400ms;
                 box-shadow: none;
+                }
             }
 
             .subtitulo {
+                @include font($font-uno, $font-normal, 700, size5);
                 color: $color-principal;
-                font-family:$font-uno;
-                font-style: $font-normal;
-                font-weight: 700;
-                font-size: map-get($font-size, size5);
                 margin-top: 0.2rem;
                 display: block;
             }
         }
     }
 }
+
 /* PRESENTACION */
 .presentacion {
     margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
+
     img {
         width: 80%;
         border-radius: 8px;
+
         &:hover {
             filter: drop-shadow(0 0 10px $color-principal);
             transform: scale(1.05);
@@ -56,23 +59,22 @@
         }
     }
 }
+
 /* PRODUCTOS DESTACADOS */
 /* TITULO */
 main section {
     text-align: center;
+
     h2 {
         position: relative;
         display: inline-block;
+        @include font($font-uno, $font-normal, 700, size3);
         color: $color-principal;
-        font-family:$font-uno;
-        font-style: $font-normal;
-        font-weight: 700;
-        font-size:  map-get($font-size, size3);
         text-shadow: 8px -5px 15px $color-secundario;
         margin-top: 2rem;
         margin-bottom: .5rem;
-    }
-    h2::after {
+
+        &::after {
         content: "";
         width: 100%;
         height: .0938rem;
@@ -80,13 +82,16 @@ main section {
         position: absolute;
         left: 0;
         bottom: -0.2rem;
+        }
     }
 }
+
 /* DROPS */
 .productos-destacados {
     @include flex (none,wrap,space-between,none,none);
     gap: 0.1rem; 
     }
+
 .producto-card { 
     text-align: center; 
     width: calc(30% - 0.1rem); 
@@ -94,144 +99,99 @@ main section {
     box-sizing: border-box; 
     background-color: #000000;
     margin: 2rem 1rem;
-    border: 2px solid #333333; /* Borde de 2px con color gris oscuro */
-    border-radius: 10px; /* Borde redondeado para el contenedor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    border: 2px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
     p { 
-        font-family:$font-uno;
-        font-style: $font-normal;
-        text-align: left; 
-        width: 80%; 
-        margin-left: 3rem; 
-        margin-top: auto; 
-        font-size: map-get($font-size, size12);
+        @include font($font-uno, $font-normal, 400, size12);
+        text-align: left;
+        width: 80%;
+        margin-left: 3rem;
+        margin-top: auto;
         box-sizing: border-box;
     } 
+
     h3 {
+        @include font($font-dos, $font-normal, 600, size3);
         text-align: left;
         margin-left: 3rem;
-        font-size: map-get($font-size, size3);
-        font-family:$font-dos;
-        font-style: $font-normal;
-        font-weight: 600;
     }
 }
+
 .drop {
     max-width: 100%;
     height: auto;
     max-height: 18rem;
     border-radius: 8px;
     margin-top: 1.5rem;
-    }
-.drop:hover {
+    
+    .drop:hover {
     filter: drop-shadow(0 0 10px $color-clear);
     transform: scale(1.05);
     transition: 200ms;
-}   
+    }  
+}
+
 .estrellas {
     max-width: 100%;
     height: auto;
     max-height: 5rem;
     }   
+
 .buttoncontainer {
-    display: flex;
-    justify-content:flex-end;
+    @include flex(row, nowrap, flex-end, none, none);
     margin-top: -2.5rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
     gap: 1rem;
-    -webkit-animation: heartbeat 1.5s linear infinite reverse both;
     animation: heartbeat 1.5s linear infinite reverse both;
-    }
+}
+
 /* Estilo de botones de WhatsApp */
 .whatsapp-button {
     display: inline-block;
     padding: 0.4rem 1rem;
+    @include font($font-dos, $font-italic, 700, size4);
     color: $color-dark;
-    background-image: linear-gradient( #000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
+    background-image: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
     border: .0625rem solid linear-gradient(#DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
     box-shadow: 1px 2px 0px $color-clear;
     border-radius: .5rem;
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s ease;
-    font-size: map-get($font-size, size4);
-    font-family:$font-dos;
-    font-style: $font-italic;
-    font-weight: 700;
-    }
+}
+
 .whatsapp-button:hover {
     background-image: linear-gradient($color-dark, $color-secundario);
     color: $color-principal;
     border: .0625rem solid $color-dark;
     box-shadow: 1px 2px 0px $color-principal;
     }
-@-webkit-keyframes heartbeat {
-    from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    }
-    10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    }
-    17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    }
-    33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    }
-    45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    }
-}
+
+/* Animación heartbeat */
 @keyframes heartbeat {
     from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
     }
     10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
     }
     17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
     }
     33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
     }
     45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        transform: scale(1);
+        animation-timing-function: ease-out;
     }
-}  
+}
 

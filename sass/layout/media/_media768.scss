@@ -4,11 +4,13 @@
     /* ENCABEZADO PANTALLA 768PX*/
 .navbar-nav {
     font-size: map-get($font-size, size12) !important;
-    gap: .2rem;
+    gap: 0.2rem;
+
     & .nav-link {
         padding: 0 1rem;
     }
 }
+
 .navbar-toggler {
     padding: 0.2rem 0.2rem;
     font-size: map-get($font-size, size4);
@@ -17,75 +19,92 @@
     border: 2px solid $color-clear; 
     margin-left: 1rem;
 }
+
 .navbar-toggler-icon {
     background-size: contain;
 }
+
 .navbar-collapse {
     @include flex (none,none,space-between,center,1); 
 }
+
 .dropdown-menu {
     padding: 0;
     margin-left: .5rem !important;
     border-color: $color-principal;
 } 
+
 .dropdown-item {
     font-size: map-get($font-size, size5);
 }
+
 .dropdown-divider {
     border-color: $color-principal;
     margin: 0;
 }
+
 form.d-flex {
     @include flex (none,none,none,center,none);
-    margin-left: 2rem;
-    margin-right: .5rem;
+    margin: 0 0.5rem 0 2rem;
 }
+
 /* Estilos para el boton */
 .btn {
     font-size: map-get($font-size, size6);
 }
+
 /* Busqueda */
 .form-control {
-    font-size:xx-small;
+    font-size: map-get($font-size, size9);
     width: 150px;
 }
+
 /* LOGO */
 .logo {
     width: 100px;
 }
-    /* CUERPO - Enlaces */
-    .imagen-links {
+
+/* CUERPO - Enlaces */
+.imagen-links {
         gap: 0;
         padding-left: 1rem;
-        margin-top: -.5rem;
+        margin-top: -0.5rem;
+
         .subtitulo {
             font-size: map-get($font-size, size6) !important;
             margin-top: -2.2rem !important;
         }
     }
+
     /* Presentacion img */
     .presentacion img {
         width: 90%;
-        margin-top: -3rem;
-        margin-bottom: -1rem;
+        margin: -3rem 0 -1rem;
     }
+
     /* Productos Destacados */
     main section h2 {
         font-size: map-get($font-size, size12);
         margin-bottom: 1.5rem;
-        ::after {
+        &::after {
             height: .08rem;
         }
     }
+
+    .productos-destacados {
+        margin-bottom: 5rem;
+    }
+
     .producto-card {
-        margin: 0;
-        margin-bottom: 2rem;
+        width: 30%;
+        margin: 0 1.25%;
+
         p {
             width: 80%;
             font-size: map-get($font-size, size6) !important;
-            margin-bottom: 0.5rem !important;
-            margin-left: 1.5rem;
+            margin: 0.5rem 0 0.5rem 1.5rem !important;
         }
+
         h3 {
             margin-left: 0;
             text-align: left;
@@ -93,24 +112,29 @@ form.d-flex {
             font-size: map-get($font-size, size6) !important;
         }
     }
+
     .containerdos {
         max-width: 48rem;
         padding: 0;
         margin: 0;
         position: relative;
     }
+
     .drop {
         max-height: 12rem !important;
         margin-top: 1rem; 
     }
+
     .estrellas {
         max-height: 2.5rem;
     }
+
     /* Estilo de botones de WhatsApp */
     .whatsapp-button {
         font-size: map-get($font-size, size7) !important;
         padding: 0.3rem 0.5rem;
     }
+
     .buttoncontainer {
         margin-top: -1.5rem !important;
         margin-bottom: 1rem;
@@ -121,45 +145,52 @@ form.d-flex {
     /* CUERPO - DROPS */
     .drop-section {
         @include grid (repeat(3, 1fr),repeat(4, auto),1rem,0 2rem);
-    /* Estilo de botones de WhatsApp */
+    
+        /* Estilo de botones de WhatsApp */
     .button-comprar {
         padding: 0.4rem 1rem;
-        margin-top: -.5rem;
+        margin-top: -0.5rem;
         font-size: map-get($font-size, size9) !important;
     }
 }
+
     /* Título de producto */
     .drop-card {
         h2 {
             font-size: map-get($font-size, size5) !important;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
+
         p {
         font-size: map-get($font-size, size18)!important;
-        margin-bottom: -.3rem;
+        margin-bottom: -0.3rem;
         }
+
         label {
             font-size: map-get($font-size, size17) !important;
-            margin-right: -.1rem;
+            margin-right: -0.1rem;
             margin-top: -1rem;
         }
+
         select {
             font-size:map-get($font-size, size9);
-            padding: .125rem; 
+            padding: 0.125rem; 
             margin-right: 0; 
             margin-top: -1rem; 
         }
+
         .price {
             font-size: map-get($font-size, size7) !important;
             text-align: left !important; 
             margin-left: 0 ;
-            margin-top: -.5rem;
+            margin-top: -0.5rem;
         }
     }
+
     .botones {
-        padding-top: 0.5rem;
-        padding-bottom: 2.5rem;
+        padding: 0.5rem 0 2.5rem;
     }
+
     /* Estilo de botones */
     .boton-uno, .boton-dos {
         font-size:map-get($font-size, size17);
@@ -170,16 +201,19 @@ form.d-flex {
     .portada-dos h1 {
         font-size: map-get($font-size, size4);
     }
+
     /* INFORMACION */
     .imagenes-horizontal {
         @include grid (repeat(2, 1fr),repeat(2, auto),1rem,none);
         margin: 4rem 4rem 2rem 4rem;
+
         img {
             width: calc(100% - 1rem);
             height: auto;
             margin-bottom: 2.5rem;
         }
     }
+
     /* PREGUNTAS FRECUENTES */
     /* CUERPO */
     .informacion {
@@ -193,48 +227,60 @@ form.d-flex {
             margin-bottom: -1rem !important;
         }
     }
+
     /* CONTACTO */
     /* CUERPO */
     /* Formulario */
     fieldset {
         padding: 0.5rem;
         width: 60%;
+
         legend {
             font-size: map-get($font-size, size5);
         }
+
         label {
             font-size: map-get($font-size, size16);
         }
+
         input[type="text"],
         textarea {
             font-size: map-get($font-size, size6);
         }
+
         input[type="submit"] {
             font-size: map-get($font-size, size7);
         }
     }
+
     section iframe {
         width: 80%;
     }
+
     /* Parrafo del mapa */
     .ubicacion {
         font-size: map-get($font-size, size6);
         padding-bottom: 2rem;
     }
+
     /* PIE DE PAGINA */
     footer {
         background-image: url(../assets/img/Footer/footer768.png);
-    section {
+    
+        section {
         max-width: 48rem;
     }
+
     p {
     font-size: map-get($font-size, size16);
     }
+
     .iconos a img {
     width: 3rem;
     }
+
     h4 {
     font-size: map-get($font-size, size16);
-    }
+        }
     }
 }

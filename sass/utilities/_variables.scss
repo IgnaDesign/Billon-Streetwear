@@ -3,11 +3,13 @@ $color-principal: #FFC000;
 $color-secundario: #909090be;
 $color-dark: #000000;
 $color-clear: #FFFFFF;
+
 /* TIPOGRAFIAS */
 $font-uno: "Bona Nova SC", serif;
 $font-dos: "Montserrat", sans-serif;
 $font-normal: normal;
 $font-italic: italic;
+
 /* TAMAÑO DE FUENTE */
 $font-size: (
     size1: 2rem,
@@ -31,3 +33,7 @@ $font-size: (
     size19: .43rem,
     size11: .3rem,
 );
+
+$max-height-portada: 600px;
+
+$gradient-background: linear-gradient(#000000, #DEB457, #FFFDBD, #D6AB47, #AE8225, #CF9E25, #B48A2D);
