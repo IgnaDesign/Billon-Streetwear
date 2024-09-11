@@ -1,4 +1,4 @@
-@media (max-width: 360px) {
+@media (max-width: 361px) {
 /*  HOME - INDEX */
 /* ENCABEZADO PANTALLA 360PX*/
 .navbar-nav {
@@ -8,6 +8,11 @@
 
 .navbar-toggler {
     margin-left: 0.5rem;
+}
+
+.navbar-nav li a {
+    font-size: map-get($font-size, size5);
+    margin-right: 0.5rem;
 }
 
 .form-control { 

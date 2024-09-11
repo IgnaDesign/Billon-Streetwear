@@ -1339,7 +1339,7 @@ footer {
   footer section {
     max-width: 23.5rem; } }
 
-@media (max-width: 360px) {
+@media (max-width: 361px) {
   /*  HOME - INDEX */
   /* ENCABEZADO PANTALLA 360PX*/
   .navbar-nav {
@@ -1347,6 +1347,9 @@ footer {
     margin-left: 0.1rem; }
   .navbar-toggler {
     margin-left: 0.5rem; }
+  .navbar-nav li a {
+    font-size: 0.8rem;
+    margin-right: 0.5rem; }
   .form-control {
     font-size: xx-small;
     width: 85px;
